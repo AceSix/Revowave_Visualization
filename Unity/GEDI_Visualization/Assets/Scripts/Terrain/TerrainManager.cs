@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq; // <--- Add this
 using UnityEngine;
 using UnityEngine.UI; // Required for UI elements
-using Unity.VisualScripting; // loading global params and structs
 
 using TriangleNet.Geometry;
 using TriangleNet.Topology;

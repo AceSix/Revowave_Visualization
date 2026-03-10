@@ -1,104 +1,178 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
-
-
 using GEDIGlobals;
 
 public class WaveformTools
 {
-
     public static Mesh GenerateCylinderMesh(float[] rawWaveform, float[] rawPositions, Vector3 slantDirection)
     {
+        if (rawWaveform == null) throw new ArgumentNullException(nameof(rawWaveform));
+        if (rawPositions == null) throw new ArgumentNullException(nameof(rawPositions));
+
+        if (rawWaveform.Length != rawPositions.Length)
+        {
+            throw new ArgumentException(
+                $"rawWaveform.Length ({rawWaveform.Length}) != rawPositions.Length ({rawPositions.Length})");
+        }
+
+        if (rawWaveform.Length < 2)
+        {
+            throw new ArgumentException(
+                $"Need at least 2 waveform samples to build a cylinder, got {rawWaveform.Length}");
+        }
+
+        int circleResolution = Params.RevolutionResolution;
+        if (circleResolution < 3)
+        {
+            throw new ArgumentException(
+                $"Params.RevolutionResolution must be >= 3, got {circleResolution}");
+        }
+
         List<Vector3> vertices = new List<Vector3>();
         List<int> triangles = new List<int>();
         List<Vector2> uvs = new List<Vector2>();
-        List<Vector2> heights = new List<Vector2>(); // UV2 for height data
-        
-        int circleResolution = Params.RevolutionResolution;
-        float angleIncrement = Mathf.PI * 2 / circleResolution;
-        
-        // vertices for each layer
+        List<Vector2> heights = new List<Vector2>();
+
+        float angleIncrement = Mathf.PI * 2f / circleResolution;
+
+        // Build rings
         for (int i = 0; i < rawWaveform.Length; i++)
         {
             float y = rawPositions[i] * Params.TerrainScale;
             Vector3 slantOffset = slantDirection * y;
-            float radius = rawWaveform[i];
-            radius = radius * Params.RadiusScale * 25.0f;
-            // radius = Math.Clamp(radius, 0f, 120f * Params.SCALE);
-            // radius = Math.Clamp(radius, 0f, 12f * Params.SCALE);
-            
-            // create vertices for this circle
+
+            float radius = rawWaveform[i] * Params.RadiusScale * 25.0f;
+
+            // Optional: clamp negative / invalid radii
+            if (float.IsNaN(radius) || float.IsInfinity(radius))
+                radius = 0f;
+
+            if (radius < 0f)
+                radius = 0f;
+
             for (int j = 0; j < circleResolution; j++)
             {
                 float angle = j * angleIncrement;
                 float x = radius * Mathf.Cos(angle);
                 float z = radius * Mathf.Sin(angle);
-                
-                // slant offset
-                vertices.Add(new Vector3(x + slantOffset.x, y, z + slantOffset.z));
-                
-                // UV mapping using height ratio
-                float u = j / (float) circleResolution;
-                float v = (rawPositions[i] - 10f)/80f; // height ratio for v
+
+                vertices.Add(new Vector3(
+                    x + slantOffset.x,
+                    y,
+                    z + slantOffset.z
+                ));
+
+                float u = j / (float)circleResolution;
+                float v = (rawPositions[i] - 10f) / 80f;
                 uvs.Add(new Vector2(u, v));
-                
-                // actual height in meters (not scaled) in UV2
-                heights.Add(new Vector2(rawPositions[i], 0));
+                heights.Add(new Vector2(rawPositions[i], 0f));
             }
         }
-        // generate triangles
-        for (int i = 0; i < rawWaveform.Length - 1; i++)
+
+        int ringCount = rawWaveform.Length;
+
+        // Side faces
+        for (int i = 0; i < ringCount - 1; i++)
         {
             int baseIndex = i * circleResolution;
+            int nextBaseIndex = (i + 1) * circleResolution;
+
             for (int j = 0; j < circleResolution; j++)
             {
                 int nextJ = (j + 1) % circleResolution;
-                
-                // 1st triangle (ccw)
-                triangles.Add(baseIndex + j);
-                triangles.Add(baseIndex + nextJ);
-                triangles.Add(baseIndex + circleResolution + j);
-                
-                // 2nd triangle
-                triangles.Add(baseIndex + nextJ);
-                triangles.Add(baseIndex + circleResolution + nextJ);
-                triangles.Add(baseIndex + circleResolution + j);
+
+                int a = baseIndex + j;
+                int b = baseIndex + nextJ;
+                int c = nextBaseIndex + j;
+                int d = nextBaseIndex + nextJ;
+
+                triangles.Add(a);
+                triangles.Add(c);
+                triangles.Add(b);
+
+                triangles.Add(b);
+                triangles.Add(c);
+                triangles.Add(d);
             }
         }
 
-        // add top and bottom caps
-        int bottomStart = 0;
-        int topStart = vertices.Count - circleResolution;
-
-        // bottom cap
-        for (int i = 1; i < circleResolution - 1; i++)
+        // Real cap center vertices
+        int bottomCenterIndex = vertices.Count;
         {
-            triangles.Add(bottomStart);
-            triangles.Add(bottomStart + i);
-            triangles.Add(bottomStart + i + 1);
+            float y = rawPositions[0] * Params.TerrainScale;
+            Vector3 slantOffset = slantDirection * y;
+            vertices.Add(new Vector3(slantOffset.x, y, slantOffset.z));
+            uvs.Add(new Vector2(0.5f, 0.5f));
+            heights.Add(new Vector2(rawPositions[0], 0f));
         }
 
-        // top cap
-        for (int i = 1; i < circleResolution - 1; i++)
+        int topCenterIndex = vertices.Count;
         {
-            triangles.Add(topStart);
-            triangles.Add(topStart + i + 1);
-            triangles.Add(topStart + i);
+            int last = ringCount - 1;
+            float y = rawPositions[last] * Params.TerrainScale;
+            Vector3 slantOffset = slantDirection * y;
+            vertices.Add(new Vector3(slantOffset.x, y, slantOffset.z));
+            uvs.Add(new Vector2(0.5f, 0.5f));
+            heights.Add(new Vector2(rawPositions[last], 0f));
         }
 
-        Mesh mesh = new Mesh {
-            name = "WaveformCylinderMesh",
-            vertices = vertices.ToArray(),
-            triangles = triangles.ToArray(),
-            uv = uvs.ToArray(),
-            uv2 = heights.ToArray() // Include UV2 with height data
-        };
-        mesh.RecalculateNormals();
-    
-        return mesh;
+        // Bottom cap
+        int bottomRingStart = 0;
+        for (int j = 0; j < circleResolution; j++)
+        {
+            int nextJ = (j + 1) % circleResolution;
+            triangles.Add(bottomCenterIndex);
+            triangles.Add(bottomRingStart + j);
+            triangles.Add(bottomRingStart + nextJ);
+        }
+
+        // Top cap
+        int topRingStart = (ringCount - 1) * circleResolution;
+        for (int j = 0; j < circleResolution; j++)
+        {
+            int nextJ = (j + 1) % circleResolution;
+            triangles.Add(topCenterIndex);
+            triangles.Add(topRingStart + nextJ);
+            triangles.Add(topRingStart + j);
+        }
+
+        // Validate indices before assigning
+        int vertexCount = vertices.Count;
+        if (triangles.Count % 3 != 0)
+        {
+            throw new Exception($"Triangle list length is not divisible by 3: {triangles.Count}");
+        }
+
+        for (int i = 0; i < triangles.Count; i++)
+        {
+            int idx = triangles[i];
+            if (idx < 0 || idx >= vertexCount)
+            {
+                throw new Exception(
+                    $"Triangle index out of range at triangles[{i}] = {idx}, vertexCount = {vertexCount}");
+            }
+        }
+
+        if (uvs.Count != vertexCount || heights.Count != vertexCount)
+        {
+            throw new Exception(
+                $"Attribute count mismatch. vertices={vertexCount}, uv={uvs.Count}, uv2={heights.Count}");
+        }
+
+        Mesh unityMesh = new Mesh();
+        unityMesh.name = "WaveformCylinderMesh";
+        unityMesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+
+        unityMesh.SetVertices(vertices);
+        unityMesh.SetUVs(0, uvs);
+        unityMesh.SetUVs(1, heights);
+        unityMesh.SetTriangles(triangles, 0, true);
+        unityMesh.RecalculateNormals();
+        unityMesh.RecalculateBounds();
+
+        return unityMesh;
     }
-
 
     public static Vector3 CalculateISSDirection(Footprint dataPoint)
     {   

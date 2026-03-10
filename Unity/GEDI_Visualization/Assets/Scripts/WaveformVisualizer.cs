@@ -1,12 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Required for UI elements
-using System.Linq;
-using System;
-using System.Collections;
 
 using GEDIGlobals;
-using Unity.VisualScripting; // loading global params and structs
 
 
 
@@ -21,8 +17,7 @@ public class WaveformVisualizer : MonoBehaviour
     public Button toggleDataScale;
     private int gediVizState = 0; // 0 = footprints, 1 = subclusters, 2 = clusters
     private const int VIZ_NUM_STATES = 3; // Total number of states
-    private Dictionary<Vector2Int, Vector3> gridPositions = new Dictionary<Vector2Int, Vector3>();
-
+    
     [Header("Filtering Options")]
     public float waveformHeightThreshold = 5f; // Minimum height in meters for waveforms
     public float waveformEnergyThreshold = 5f; // Only render parts of the waveform above this energy

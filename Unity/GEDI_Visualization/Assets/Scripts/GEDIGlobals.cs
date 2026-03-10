@@ -12,11 +12,6 @@ namespace GEDIGlobals
         public const float RadiusScale = 0.2f;
         public const int RevolutionResolution = 12;
 
-
-        // public Vector4 geoBounds = new Vector4(-71.5f, -71.4f, -46.6f, -46.5f);
-
-        // public Vector4 textureBounds = new Vector4(-71.5f, -71.4f, -46.6f, -46.5f);
-
     }
 
     public class TerrainPoint

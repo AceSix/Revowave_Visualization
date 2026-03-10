@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Mapia_Scene.unity
     guid: e8c944eca51694ad2a84984ab95afa8e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRScene.unity
     guid: 6a4bfec75471aeb468daed64f9730b69
+  - enabled: 1
+    path: Assets/Scenes/Ardeche_Scene.unity
+    guid: 7f4281fc9dbcacc479da6c2b3a1f7b64
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e25ee91a59ba4d74799a1f8c93d7ca2a, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 63b435b64f9da7041b50d06b2e71b00d, type: 2}

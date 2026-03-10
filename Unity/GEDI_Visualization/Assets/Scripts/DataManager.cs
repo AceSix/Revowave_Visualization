@@ -15,9 +15,9 @@ public class DataManager : MonoBehaviour
 {
     [Header("Data and Material")]
     
-    public string footprintPath = "Assets/Data/Ardeche.bin";
-    public string clusterPath = "Assets/Data/Ardeche_cluster.bin";
-    public string subclusterPath = "Assets/Data/Ardeche_subcluster.bin";
+    public string footprintPath = "Ardeche.bin";
+    public string clusterPath = "Ardeche_cluster.bin";
+    public string subclusterPath = "Ardeche_subcluster.bin";
 
     private List<Footprint> footprints;
     private List<Footprint> clusters;
@@ -39,9 +39,9 @@ public class DataManager : MonoBehaviour
         float referenceElevation = 50f;  // placeholder
         this.referenceCenter = new Vector3(referenceLongitude, referenceElevation, referenceLatitude);
         //// load data
-        this.footprints = BinaryParser.Load(footprintPath);
-        this.clusters = BinaryParser.Load(clusterPath);
-        this.subclusters = BinaryParser.Load(subclusterPath);
+        this.footprints = BinaryParser.Load(Application.streamingAssetsPath + "/" + footprintPath);
+        this.clusters = BinaryParser.Load(Application.streamingAssetsPath + "/" + clusterPath);
+        this.subclusters = BinaryParser.Load(Application.streamingAssetsPath + "/" + subclusterPath);
     }
 
     public Vector3 LatLong2Unity(float latitude, float longitude, float elevation)
