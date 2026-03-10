@@ -37,7 +37,7 @@ public class CameraControllerMouse : MonoBehaviour
         HandleMovement();
         HandleRotation();
         
-        if ((transform.position - lastCameraPosition).sqrMagnitude > threshold * Params.SCALE)
+        if ((transform.position - lastCameraPosition).sqrMagnitude > threshold * threshold * Params.SCALE * Params.SCALE)
         {
             lastCameraPosition = transform.position;
             UpdateVisibleObjects();
@@ -53,45 +53,47 @@ public class CameraControllerMouse : MonoBehaviour
         int viz_scale = this.visualizer.GetVizScale();
 
         Vector2 cameraPos = new Vector2(transform.position.x, transform.position.z);
+        float maxRenderDistanceSq = Params.SCALE * maxRenderDistance * maxRenderDistance;
 
         if (viz_scale==0)
         {
             foreach (GameObject obj in footprints)
             {
-                Vector2 objPos = new Vector2(obj.transform.position.x, obj.transform.position.z);
-
-                float dist = Vector2.Distance(cameraPos, objPos);
-                bool inView = dist < maxRenderDistance * Params.SCALE;
-
-                obj.GetComponent<Renderer>().enabled = inView;
+                Vector3 p = obj.transform.position;
+                float dx = cameraPos.x - p.x;
+                float dz = cameraPos.y - p.z;
+                bool inView = (dx * dx + dz * dz) < maxRenderDistanceSq;
+                if (obj.GetComponent<Renderer>().enabled != inView)
+                    obj.GetComponent<Renderer>().enabled = inView;
             }    
         }
-
-        if (viz_scale==1)
-        {
-            foreach (GameObject obj in subclusters)
-            {
-                Vector2 objPos = new Vector2(obj.transform.position.x, obj.transform.position.z);
-
-                float dist = Vector2.Distance(cameraPos, objPos);
-                bool inView = dist < maxRenderDistance * Params.SCALE * 10;
-
-                obj.GetComponent<Renderer>().enabled = inView;
-            }
-        }
         
-        if (viz_scale==2)
+        if (viz_scale==1)
         {
             foreach (GameObject obj in clusters)
             {
-                Vector2 objPos = new Vector2(obj.transform.position.x, obj.transform.position.z);
-
-                float dist = Vector2.Distance(cameraPos, objPos);
-                bool inView = dist < maxRenderDistance * Params.SCALE * 100;
-
-                obj.GetComponent<Renderer>().enabled = inView;
+                Vector3 p = obj.transform.position;
+                float dx = cameraPos.x - p.x;
+                float dz = cameraPos.y - p.z;
+                bool inView = (dx * dx + dz * dz) < maxRenderDistanceSq*100;
+                if (obj.GetComponent<Renderer>().enabled != inView)
+                    obj.GetComponent<Renderer>().enabled = inView;
             }
         }
+
+        if (viz_scale==2)
+        {
+            foreach (GameObject obj in subclusters)
+            {
+                Vector3 p = obj.transform.position;
+                float dx = cameraPos.x - p.x;
+                float dz = cameraPos.y - p.z;
+                bool inView = (dx * dx + dz * dz) < maxRenderDistanceSq*10;
+                if (obj.GetComponent<Renderer>().enabled != inView)
+                    obj.GetComponent<Renderer>().enabled = inView;
+            }
+        }
+        
 
     }
 

@@ -28,8 +28,8 @@ public class WaveformVisualizer : MonoBehaviour
     public Button ToggleDataScale;
     private int gediVizState = 0; // 0 = footprints, 1 = subclusters, 2 = clusters
     private const int VIZ_STATE_FOOTPRINT = 0;
-    private const int VIZ_STATE_SUBCLUSTER = 1;
-    private const int VIZ_STATE_CLUSTER = 2;
+    private const int VIZ_STATE_CLUSTER = 1;
+    private const int VIZ_STATE_SUBCLUSTER = 2;
     private const int VIZ_NUM_STATES = 3; // Total number of states
     private Dictionary<Vector2Int, Vector3> gridPositions = new Dictionary<Vector2Int, Vector3>();
 
@@ -242,7 +242,6 @@ public class WaveformVisualizer : MonoBehaviour
         gediVizState = (gediVizState + 1) % VIZ_NUM_STATES;
         Text buttonText = ToggleDataScale.GetComponentInChildren<Text>();
         
-        
         switch (gediVizState)
         {
             case VIZ_STATE_FOOTPRINT: // State 0: Footprints
@@ -251,13 +250,13 @@ public class WaveformVisualizer : MonoBehaviour
                 foreach (GameObject obj in subclusters) obj.GetComponent<Renderer>().enabled = false;
                 break;
 
-            case VIZ_STATE_SUBCLUSTER: // State 1: Sub-Clusters
+            case VIZ_STATE_CLUSTER: // State 1: Sub-Clusters
                 buttonText.text = "Clusters";
                 GameObject[] footprints = GameObject.FindGameObjectsWithTag("footprint");
                 foreach (GameObject obj in footprints) obj.GetComponent<Renderer>().enabled = false;
                 break;
 
-            case VIZ_STATE_CLUSTER: // State 2: Clusters
+            case VIZ_STATE_SUBCLUSTER: // State 2: Clusters
                 buttonText.text = "Sub-Clusters";
                 GameObject[] clusters = GameObject.FindGameObjectsWithTag("cluster");
                 foreach (GameObject obj in clusters) obj.GetComponent<Renderer>().enabled = false;
