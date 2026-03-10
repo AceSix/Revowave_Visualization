@@ -85,8 +85,8 @@
     <Compile Include="Assets\Triangle.Rendering\Util\ColorMap.cs" />
     <Compile Include="Assets\Triangle\Topology\DCEL\Vertex.cs" />
     <Compile Include="Assets\Triangle\Topology\Otri.cs" />
+    <Compile Include="Assets\Scripts\DataManager.cs" />
     <Compile Include="Assets\Triangle.Rendering\Text\FormattingStreamWriter.cs" />
-    <Compile Include="Assets\Scripts\BinaryParser.cs" />
     <Compile Include="Assets\Triangle.Rendering\RenderContext.cs" />
     <Compile Include="Assets\Triangle\Tools\CuthillMcKee.cs" />
     <Compile Include="Assets\Triangle\IO\FileProcessor.cs" />
@@ -111,7 +111,7 @@
     <Compile Include="Assets\Triangle\TriangleSampler.cs" />
     <Compile Include="Assets\Scripts\Controls\CameraController.cs" />
     <Compile Include="Assets\Triangle.Rendering\Text\SvgImage.cs" />
-    <Compile Include="Assets\Scripts\OldWaveformViz.cs" />
+    <Compile Include="Assets\Scripts\Utils\BinaryParser.cs" />
     <Compile Include="Assets\Triangle\Voronoi\Legacy\IVoronoi.cs" />
     <Compile Include="Assets\Scripts\Controls\MetaController.cs" />
     <Compile Include="Assets\Triangle\Voronoi\IVoronoiFactory.cs" />
@@ -131,13 +131,13 @@
     <Compile Include="Assets\Triangle\Geometry\IEdge.cs" />
     <Compile Include="Assets\Triangle\Geometry\Contour.cs" />
     <Compile Include="Assets\Triangle\Geometry\Vertex.cs" />
-    <Compile Include="Assets\Scripts\CSVParser.cs" />
     <Compile Include="Assets\Triangle\IO\TriangleReader.cs" />
     <Compile Include="Assets\Triangle\IO\MfemMesh.cs" />
     <Compile Include="Assets\Samples\Meta XR Core SDK\76.0.0\Tracking Origin Sample\TrackingOriginSample.cs" />
     <Compile Include="Assets\Samples\Meta XR Core SDK\76.0.0\Mixed Reality Sample\Scripts\CustomSceneManager\SnapshotSceneManager.cs" />
     <Compile Include="Assets\Triangle\Meshing\IQualityMesher.cs" />
     <Compile Include="Assets\Triangle\Voronoi\Legacy\BoundedVoronoiLegacy.cs" />
+    <Compile Include="Assets\Scripts\Utils\CSVParser.cs" />
     <Compile Include="Assets\Triangle.Rendering\Util\ReflectionHelper.cs" />
     <Compile Include="Assets\Triangle\Meshing\Data\BadTriangle.cs" />
     <Compile Include="Assets\Triangle\Meshing\GenericMesher.cs" />
@@ -175,6 +175,7 @@
     <Compile Include="Assets\Triangle\IO\InputTriangle.cs" />
     <Compile Include="Assets\Triangle.Rendering\Buffer\IBuffer.cs" />
     <Compile Include="Assets\Triangle\Topology\DCEL\DcelMesh.cs" />
+    <Compile Include="Assets\Scripts\Terrain\TerrainManager.cs" />
     <Compile Include="Assets\Triangle.Rendering\ColorManager.cs" />
     <Compile Include="Assets\Triangle\Tools\VertexSorter.cs" />
     <Compile Include="Assets\Triangle.Rendering\IRenderControl.cs" />
@@ -217,7 +218,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Scripts\WaveformVisualizer_checkpoint.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>

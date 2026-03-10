@@ -158,8 +158,8 @@ public class CameraControllerMouse : MonoBehaviour
             Vector3 mouseDelta = Input.mousePosition - lastMousePosition;
 
             // Rotate the camera around the Y-axis (horizontal rotation) and X-axis (vertical rotation)
-            float yaw = mouseDelta.x * speedScale * rotationSpeed * Time.deltaTime;
-            float pitch = -mouseDelta.y *speedScale * rotationSpeed * Time.deltaTime;
+            float yaw = mouseDelta.x * speedScale * 0.1f * rotationSpeed * Time.deltaTime;
+            float pitch = -mouseDelta.y * speedScale * 0.1f * rotationSpeed * Time.deltaTime;
 
             transform.RotateAround(transform.position, Vector3.up, yaw);   // Horizontal rotation
             transform.RotateAround(transform.position, transform.right, pitch); // Vertical rotation
@@ -189,8 +189,8 @@ public class CameraControllerMouse : MonoBehaviour
             }
 
             // Rotate the camera around the Y-axis (horizontal rotation) and X-axis (vertical rotation)
-            float yaw = horizontalRotation * rotationSpeed * 0.5f*speedScale * Time.deltaTime;
-            float pitch = verticalRotation * rotationSpeed * 0.5f*speedScale * Time.deltaTime;
+            float yaw = horizontalRotation * rotationSpeed * 0.5f *speedScale * Time.deltaTime;
+            float pitch = verticalRotation * rotationSpeed * 0.5f *speedScale * Time.deltaTime;
 
             transform.RotateAround(transform.position, Vector3.up, yaw);   // Horizontal rotation
             transform.RotateAround(transform.position, transform.right, pitch);   // Vertical rotation
