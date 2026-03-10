@@ -40,7 +40,6 @@ public class MetaController : MonoBehaviour
             float dist = Vector2.Distance(cameraPos, objPos);
             bool inView = dist < maxRenderDistance * Params.SCALE;
 
-
             obj.GetComponent<Renderer>().enabled = inView;
         }
     }

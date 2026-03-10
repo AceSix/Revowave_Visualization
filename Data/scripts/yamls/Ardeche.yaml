@@ -3,7 +3,8 @@
 debug_mode: False
 
 input:
-  pkl_file: '../pkls/registered_D007.pkl'
+  footprint_file: '../pkls/registered_D007.pkl'
+  cluster_file: '../pkls/hierarchy_spatial_cluster.pkl'
 
 processing:
   adaptive_threshold: 0
@@ -14,4 +15,4 @@ processing:
 
 output:
   path: '../../Unity/GEDI_Visualization/Assets/Data/'
-  base_filename: 'mapia_partial'
+  base_filename: 'Ardeche'

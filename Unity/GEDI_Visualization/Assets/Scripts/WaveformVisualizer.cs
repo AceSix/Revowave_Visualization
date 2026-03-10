@@ -9,18 +9,28 @@ using TriangleNet.Topology;
 using TriangleNet.Meshing;
 using System.Collections;
 
-using  GEDIGlobals; // loading global params and structs
+using  GEDIGlobals;
+using Unity.VisualScripting; // loading global params and structs
 
 
 
 public class WaveformVisualizer : MonoBehaviour
 {
     [Header("Data and Material")]
-    public CSVParser csvParser;
+    public BinaryParser dataParser;
+    public BinaryParser clusterParser;
+    public BinaryParser subclusterParser;
     public Material waveformMaterial; // Material for waveform cylinders
     public Material terrainMaterial;  // Material for ground terrain
     public Material wireframeMaterial;
 
+    [Header("Controller")]
+    public Button ToggleDataScale;
+    private int gediVizState = 0; // 0 = footprints, 1 = subclusters, 2 = clusters
+    private const int VIZ_STATE_FOOTPRINT = 0;
+    private const int VIZ_STATE_SUBCLUSTER = 1;
+    private const int VIZ_STATE_CLUSTER = 2;
+    private const int VIZ_NUM_STATES = 3; // Total number of states
     private Dictionary<Vector2Int, Vector3> gridPositions = new Dictionary<Vector2Int, Vector3>();
 
     [Header("Filtering Options")]
@@ -68,26 +78,22 @@ public class WaveformVisualizer : MonoBehaviour
         referenceLatitude = (geoBounds.z + geoBounds.w)/2f;
         referenceElevation = 50f;  // placeholder
 
-        if (csvParser != null)
+        if (dataParser != null && clusterParser != null && subclusterParser != null)
         {
-            if (csvParser.getDataPoints() == null || csvParser.getDataPoints().Count == 0)
-            {
-                csvParser.loadCSV();
-            }
+            if (dataParser.GetDataPoints() == null || dataParser.GetDataPoints().Count == 0) dataParser.Load();
+            if (subclusterParser.GetDataPoints() == null || subclusterParser.GetDataPoints().Count == 0) subclusterParser.Load();
+            if (clusterParser.GetDataPoints() == null || clusterParser.GetDataPoints().Count == 0) clusterParser.Load();
 
-            List<CSVParser.GEDIDataPoint> dataPoints = csvParser.getDataPoints();
-            if (dataPoints != null && dataPoints.Count > 0)
-            {
-                VisualizeData(dataPoints);
-            }
-            else
-            {
-                Debug.LogError("Data points are null or empty.");
-            }
+            List<Footprint> dataPoints = dataParser.GetDataPoints();
+            List<Footprint> subclusters = subclusterParser.GetDataPoints();
+            List<Footprint> clusters = clusterParser.GetDataPoints();
+            if (dataPoints != null && dataPoints.Count > 0) VisualizeData(dataPoints, subclusters, clusters);
+
+            ToggleDataScale.onClick.AddListener(ToggleVizScale);
         }
         else
         {
-            Debug.LogError("CSVParser is not assigned.");
+            Debug.LogError("Data Parser is not assigned.");
         }
     }
 
@@ -106,99 +112,80 @@ public class WaveformVisualizer : MonoBehaviour
         float z = latInMeters * Params.SCALE;
 
         // EXTREME ELEVATION
-        return new Vector3(x, y, z);
+        return new Vector3(x, y, z);  // All in meters and w/ regard to reference centers
         // return new Vector3(x, elevation*0.75f, z);
     }
 
-
-    private void CreateCylinder(Vector3 position, CSVParser.GEDIDataPoint dataPoint)
+    public int GetVizScale()
     {
-        // Check if any values are above threshold
-        // bool hasSignificantValues = false;
-        // for (int i = 0; i < dataPoint.rawWaveformValues.Length; i++)
-        // {
-        //     if (dataPoint.rawWaveformValues[i] >= waveformEnergyThreshold)
-        //     {
-        //         hasSignificantValues = true;
-        //         break;
-        //     }
-        // }
+        return this.gediVizState;
+    }
 
-        // if (!hasSignificantValues)
-        // {
-        //     Debug.Log("No portion of the waveform found above threshold. Skipping.");
-        //     return;
-        // }
-
+    private void CreateCylinder(Vector3 position, Footprint dataPoint, string tagname, float local_scale=1f)
+    {
         GameObject waveformObject = new GameObject("WaveformCylinder");
         waveformObject.transform.position = position;
-        waveformObject.tag = "footprint";
+        waveformObject.tag = tagname;
 
         MeshFilter meshFilter = waveformObject.AddComponent<MeshFilter>();
         MeshRenderer meshRenderer = waveformObject.AddComponent<MeshRenderer>();
         meshRenderer.material = waveformMaterial;
 
-        // Normalize the waveform values
-        float[] normalizedValues = new float[dataPoint.rawWaveformValues.Length];
-        Array.Copy(dataPoint.rawWaveformValues, normalizedValues, dataPoint.rawWaveformValues.Length);
-        // WaveformTools.NormalizeWaveform(normalizedValues, cylinderSum);
-
         // calc direction from ground to ISS
         Vector3 slantDirection = WaveformTools.CalculateISSDirection(dataPoint);
         
         // cylinder mesh with slant
-        Mesh mesh = WaveformTools.GenerateCylinderMesh(normalizedValues, dataPoint.rawWaveformLengths, dataPoint.rawWaveformPositions, slantDirection);
+        Mesh mesh = WaveformTools.GenerateCylinderMesh(dataPoint.rawWaveformValues, dataPoint.rawWaveformPositions, slantDirection);
         meshFilter.mesh = mesh;
         waveformObject.GetComponent<Renderer>().enabled = false;
 
         // float bottomOffset = 0.1172f * 76.8f * Params.SCALE; // CHECK
-        Vector3 bottomPosition = new Vector3(
-            position.x,
-            position.y,
-            // position.y - bottomOffset, // adjust Y to be at true bottom
-            position.z
-        );
-
-        Vector2Int gridKey = new Vector2Int(
-            Mathf.RoundToInt(position.x * 1000),
-            Mathf.RoundToInt(position.z * 1000)
-        );
-        
-
-        terrainPoints[gridKey] = new TerrainPoint(
-            bottomPosition,         // unity pos
-            dataPoint.latitude,
-            dataPoint.longitude,
-            dataPoint.elevation
-        );
+        waveformObject.transform.localScale = new Vector3(local_scale, local_scale, local_scale);
     }
 
 
 
-    public void VisualizeData(List<CSVParser.GEDIDataPoint> dataPoints)
+    public void VisualizeData(List<Footprint> footprints, List<Footprint> subclusters, List<Footprint> clusters)
     {
-        if (dataPoints == null || dataPoints.Count == 0)
-        {
-            Debug.LogWarning("No data points to visualize.");
-            return;
-        }
 
         terrainPoints.Clear();
-        int validCount = 0;
-        int totalCount = dataPoints.Count;
-
-        // Debug.Log($"Processing {dataPoints.Count} total waveforms...");
-
-        foreach (var point in dataPoints)
+        foreach (var point in footprints)
         {
             Vector3 position = LatLong2Unity(point.latitude, point.longitude, point.elevation);
-            CreateCylinder(position, point);
-            validCount++;
+            CreateCylinder(position, point, "footprint");
+
+            Vector3 bottomPosition = new Vector3(
+                position.x,
+                position.y,
+                position.z
+            );
+
+            Vector2Int gridKey = new Vector2Int(
+                Mathf.RoundToInt(position.x * 1000),
+                Mathf.RoundToInt(position.z * 1000)
+            );
+
+            terrainPoints[gridKey] = new TerrainPoint(
+                bottomPosition,         // unity pos
+                point.latitude,
+                point.longitude,
+                point.elevation
+            );
         }
 
-        // Debug.Log($"Created {validCount} waveforms out of {totalCount} total points.");
         CreateTerrainMeshDELNET(terrainPoints);
-        // Debug.Log($"Reference coordinates - Lat: {referenceLatitude}, Long: {referenceLongitude}");
+
+        foreach (var point in subclusters)
+        {
+            Vector3 position = LatLong2Unity(point.latitude, point.longitude, point.elevation);
+            CreateCylinder(position, point, "subcluster", 10);
+        }
+
+        foreach (var point in clusters)
+        {
+            Vector3 position = LatLong2Unity(point.latitude, point.longitude, point.elevation);
+            CreateCylinder(position, point, "cluster", 30);
+        }
     }
 
     
@@ -225,16 +212,6 @@ public class WaveformVisualizer : MonoBehaviour
             id++;
         }
         
-        // create mesh with quality constraints
-        // IMesh mesh = polygon.Triangulate();
-        
-        // create Unity mesh
-        // calculate geographic bounds for UV mapping
-        // float minLat = pointList.Min(p => p.latitude);
-        // float maxLat = pointList.Max(p => p.latitude);
-        // float minLon = pointList.Min(p => p.longitude);
-        // float maxLon = pointList.Max(p => p.longitude);
-        
         // Debug.Log($"Geographic bounds - Lat: {minLat} to {maxLat}, Lon: {minLon} to {maxLon}");
 
         // save both solid and wireframe as member variables
@@ -257,6 +234,36 @@ public class WaveformVisualizer : MonoBehaviour
 
         
         WireframeToggleGEDITerrain.onClick.AddListener(ToggleWireframeGEDI);
+    }
+
+    void ToggleVizScale()
+    {
+        // Cycle through states: 0 -> 1 -> 2 -> 0
+        gediVizState = (gediVizState + 1) % VIZ_NUM_STATES;
+        Text buttonText = ToggleDataScale.GetComponentInChildren<Text>();
+        
+        
+        switch (gediVizState)
+        {
+            case VIZ_STATE_FOOTPRINT: // State 0: Footprints
+                buttonText.text = "Footprints";
+                GameObject[] subclusters = GameObject.FindGameObjectsWithTag("subcluster");
+                foreach (GameObject obj in subclusters) obj.GetComponent<Renderer>().enabled = false;
+                break;
+
+            case VIZ_STATE_SUBCLUSTER: // State 1: Sub-Clusters
+                buttonText.text = "Clusters";
+                GameObject[] footprints = GameObject.FindGameObjectsWithTag("footprint");
+                foreach (GameObject obj in footprints) obj.GetComponent<Renderer>().enabled = false;
+                break;
+
+            case VIZ_STATE_CLUSTER: // State 2: Clusters
+                buttonText.text = "Sub-Clusters";
+                GameObject[] clusters = GameObject.FindGameObjectsWithTag("cluster");
+                foreach (GameObject obj in clusters) obj.GetComponent<Renderer>().enabled = false;
+                break;
+        }
+
     }
 
     void ToggleWireframeGEDI()

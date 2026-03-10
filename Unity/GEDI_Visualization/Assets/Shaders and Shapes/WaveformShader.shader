@@ -496,10 +496,10 @@ Shader "Custom/WaveformShaderWithText"
                 float currentHeight = physicalHeightRatio * totalHeightMeters;
                 
                 // height boundaries in real meters
-                float height1 = 5.0; 
-                float height2 = 15.0;
-                float height3 = 30.0;
-                float height4 = 50.0;
+                float height1 = 0.0; 
+                float height2 = 6.0;
+                float height3 = 12.0;
+                float height4 = 18.0;
 
                 // colors
                 fixed3 color1 = fixed3(1.0, 0.0, 0.0);        // Red

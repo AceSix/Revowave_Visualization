@@ -86,6 +86,7 @@
     <Compile Include="Assets\Triangle\Topology\DCEL\Vertex.cs" />
     <Compile Include="Assets\Triangle\Topology\Otri.cs" />
     <Compile Include="Assets\Triangle.Rendering\Text\FormattingStreamWriter.cs" />
+    <Compile Include="Assets\Scripts\BinaryParser.cs" />
     <Compile Include="Assets\Triangle.Rendering\RenderContext.cs" />
     <Compile Include="Assets\Triangle\Tools\CuthillMcKee.cs" />
     <Compile Include="Assets\Triangle\IO\FileProcessor.cs" />
