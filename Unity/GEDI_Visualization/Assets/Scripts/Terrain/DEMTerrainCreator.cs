@@ -30,6 +30,7 @@ public class DEMTerrainCreator
                 float world_v = (v * (geoBounds.w - geoBounds.z) + geoBounds.z - textureBounds.z ) / (textureBounds.w - textureBounds.z);
 
                 float demValue = demSrc.GetPixelBilinear(world_u, world_v).r * Params.TerrainScale;
+                Debug.Log(demSrc.GetPixelBilinear(world_u, world_v));
                 // Debug.Log(demValue);
 
                 vertices.Add(new Vector3(u, demValue, v));

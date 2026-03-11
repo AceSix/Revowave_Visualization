@@ -4,7 +4,15 @@ using System.Collections.Generic;
 
 namespace GEDIGlobals
 {
-
+    [System.Serializable]
+    public class AppConfig
+    {
+        public string footprints_bin;
+        public string subclusters_bin;
+        public string clusters_bin;
+        public string terrain_texture;
+        public string dem_file;
+    }
     public class Params
     {
         public const float SCALE = 0.015f;

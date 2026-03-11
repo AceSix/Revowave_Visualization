@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Required for UI elements
+using System.IO;
+
 
 using GEDIGlobals;
-
 
 
 public class WaveformVisualizer : MonoBehaviour
@@ -23,24 +24,43 @@ public class WaveformVisualizer : MonoBehaviour
     public float waveformEnergyThreshold = 5f; // Only render parts of the waveform above this energy
 
 
-
     void Start()
     {
-        dataManager.LoadData();
+        AppConfig config = LoadConfig();
+
+        dataManager.LoadData(config.footprints_bin,
+                             config.subclusters_bin,
+                             config.clusters_bin);
 
         VisualizeData(this.dataManager.GetFootprints(), 
                       this.dataManager.GetSubclusters(), 
                       this.dataManager.GetClusters());
 
+        terrainManager.LoadTexture(config.terrain_texture);
+        terrainManager.LoadTandemX(config.dem_file);
         terrainManager.CreateTerrainTandemX();
         terrainManager.CreateTerrainMeshDELNET(this.dataManager.GetFootprints());
 
-        Camera mainCamera = Camera.main;
 
+        Camera mainCamera = Camera.main;
         mainCamera.clearFlags = CameraClearFlags.SolidColor;
         mainCamera.backgroundColor = Color.black;
     }
 
+    private AppConfig LoadConfig()
+    {
+        string configPath = Path.Combine(Application.dataPath, "..", "config.json");
+        configPath = Path.GetFullPath(configPath);
+
+        if (!File.Exists(configPath))
+        {
+            Debug.LogError("Config file not found: " + configPath);
+            return null;
+        }
+
+        string json = File.ReadAllText(configPath);
+        return JsonUtility.FromJson<AppConfig>(json);
+    }
 
     public void VisualizeData(List<Footprint> footprints, List<Footprint> subclusters, List<Footprint> clusters)
     {

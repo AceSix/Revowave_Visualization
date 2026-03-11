@@ -5,29 +5,29 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638826948023669182
-    m_Hash: 3997301737
+      ticks: 639087987797707098
+    m_Hash: 3283738087
   m_LockFileStatus:
     m_FilePath: C:/Brown/Research/VR/NASA-GEDI/Unity/GEDI_Visualization/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638826948023714337
-    m_Hash: 336274943
+      ticks: 639087987797796504
+    m_Hash: 2057427216
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Brown/Research/VR/NASA-GEDI/Unity/GEDI_Visualization/Packages
-m_EditorVersion: 6000.0.23f1 (1c4764c07fb4)
+m_EditorVersion: 6000.3.10f1 (e35f0c77bd8e)
 m_ResolvedPackages:
-- packageId: com.meta.xr.sdk.interaction.ovr@76.0.0
+- packageId: com.meta.xr.sdk.interaction.ovr@85.0.0
   testable: 0
   isDirectDependency: 1
-  version: 76.0.0
+  version: 85.0.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.meta.xr.sdk.interaction.ovr
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.meta.xr.sdk.interaction.ovr@964224d78bc9
   assetPath: Packages/com.meta.xr.sdk.interaction.ovr
   name: com.meta.xr.sdk.interaction.ovr
   displayName: "Meta XR Interaction \u200BSDK"
@@ -64,6 +64,15 @@ m_ResolvedPackages:
     - 74.0.2
     - 74.0.3
     - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
@@ -87,18 +96,27 @@ m_ResolvedPackages:
     - 74.0.2
     - 74.0.3
     - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
     recommended: 
     deprecated: []
   dependencies:
   - name: com.meta.xr.sdk.core
-    version: 76.0.0
+    version: 85.0.0
   - name: com.meta.xr.sdk.interaction
-    version: 76.0.0
+    version: 85.0.0
   resolvedDependencies:
   - name: com.meta.xr.sdk.core
-    version: 76.0.0
+    version: 85.0.0
   - name: com.meta.xr.sdk.interaction
-    version: 76.0.0
+    version: 85.0.0
   - name: com.unity.ugui
     version: 2.0.0
   - name: com.unity.modules.ui
@@ -108,14 +126,14 @@ m_ResolvedPackages:
   - name: com.unity.textmeshpro
     version: 5.0.0
   keywords:
+  - OVR
+  - Interaction
+  - Samples
+  - XR
+  - Quest
+  - Oculus
   - SDK
   - Meta
-  - XR
-  - Samples
-  - Oculus
-  - Interaction
-  - OVR
-  - Quest
   registry:
     id: main
     name: 
@@ -124,11 +142,14 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 2
   isAssetStorePackage: 1
-  datePublishedTicks: 638816282788690000
+  datePublishedTicks: 639065796138240000
   documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
   hasRepository: 0
   repository:
@@ -142,28 +163,46 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: assetstore
+      entitlementKeys: []
+      ownerOrgName: Meta
+      ownerOrgId: 9071023003857
+      publisherName: Meta
+    errorCode: 
   assetStore:
     productId: 265014
-  fingerprint: 2779997900e577684e9084705b89b26cc09c13f6
+  fingerprint: 964224d78bc96d4bfda7484c91359234725da08f
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 56.0.0-preview
     minimumUnityVersion: 2022.3.15f1
-- packageId: com.unity.collab-proxy@2.5.2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.collab-proxy@2.11.4
   testable: 0
   isDirectDependency: 1
-  version: 2.5.2
+  version: 2.11.4
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.collab-proxy
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
-  displayName: Version Control
+  displayName: Unity Version Control
   author:
     name: 
     email: 
@@ -255,13 +294,19 @@ m_ResolvedPackages:
     - 2.7.1
     - 2.8.1
     - 2.8.2
+    - 2.9.1
+    - 2.9.2
+    - 2.9.3
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.11.2
+    - 2.11.3
+    - 2.11.4
     compatible:
-    - 2.5.2
-    - 2.6.0
-    - 2.7.1
-    - 2.8.1
-    - 2.8.2
-    recommended: 2.5.2
+    - 2.11.3
+    - 2.11.4
+    recommended: 2.11.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -280,6 +325,7 @@ m_ResolvedPackages:
   - teams
   - version
   - vcs
+  - uvcs
   registry:
     id: main
     name: 
@@ -288,44 +334,65 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638630364536670000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.5/manual/index.html
+  datePublishedTicks: 639076172810380000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.11/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: c402e6396d3ea20ecb2d59eac908e7e0a30cd7e6
+    revision: 164a710206077e1184a134f18801dae560fdf28a
     path: 
   unityLifecycle:
-    version: 2.5.2
+    version: 2.11.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fix token renewal issue: Can''t obtain
-    a new token (Message: Invalid Refresh Token., Code: 132.104)"}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed deprecated instanceID API usages
+    for Unity 6.5."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: da7e55b87e08569f31766e7cabc37bc033c9c7f9
+  fingerprint: a5329f833fa805a96ac8b0a1eb09dc64c076b032
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.5.2
-    minimumUnityVersion: 2020.3.48f1
+    minimumPackageVersion: 2.11.3
+    minimumUnityVersion: 2021.3.0f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.feature.development@1.0.2
   testable: 0
   isDirectDependency: 1
   version: 1.0.2
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.feature.development
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.feature.development@767aadbc6eb7
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -362,9 +429,9 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.22
+    version: 2.0.26
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -372,15 +439,15 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.31
+    version: 3.0.39
   - name: com.unity.editorcoroutines
-    version: 1.0.0
+    version: 1.0.1
   - name: com.unity.performance.profile-analyzer
-    version: 1.2.2
+    version: 1.3.1
   - name: com.unity.testtools.codecoverage
-    version: 1.2.6
+    version: 1.3.0
   - name: com.unity.settings-manager
-    version: 2.0.1
+    version: 2.1.1
   keywords: []
   registry:
     id: main
@@ -390,6 +457,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -408,25 +478,43 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"quickstart":"https://docs.unity3d.com/2021.2/Documentation/Manual/DeveloperToolsFeature.html"}'
+  upmReserved: '{"quickstart":"https://docs.unity3d.com/Documentation/Manual/DeveloperToolsFeature.html"}'
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: c770b6a36a30949b030c5ec02d835f771b975cbb
+  fingerprint: 767aadbc6eb72681a4ca807c8fa248e0230a0cef
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.2
     minimumUnityVersion: 
-- packageId: com.unity.multiplayer.center@1.0.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.multiplayer.center@1.0.1
   testable: 0
   isDirectDependency: 1
-  version: 1.0.0
+  version: 1.0.1
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.multiplayer.center
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -442,16 +530,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 0.2.1
-    - 0.3.0
-    - 0.4.0
-    - 1.0.0-pre.1
-    - 1.0.0-pre.2
-    - 1.0.0-pre.3
-    - 1.0.0
+    - 1.0.1
     compatible:
-    - 1.0.0
-    recommended: 1.0.0
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies:
   - name: com.unity.modules.uielements
@@ -467,6 +549,8 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
     version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
   keywords:
   - Multiplayer
   - Netcode
@@ -480,6 +564,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -493,33 +580,51 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 1.0.0
+    version: 1.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: b27203cbee4b0eb1910981fa8a1f299c8134b318
+  fingerprint: f01f4ba8d00afa4e957bddf0fcd1612a564401ff
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.render-pipelines.universal@17.0.3
+    minimumPackageVersion: 1.0.1
+    minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.render-pipelines.universal@17.3.0
   testable: 0
   isDirectDependency: 1
-  version: 17.0.3
+  version: 17.3.0
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.render-pipelines.universal
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.render-pipelines.universal@37e0d4fc2503
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
-  displayName: Universal RP
+  displayName: Universal Render Pipeline
   author:
     name: 
     email: 
@@ -533,70 +638,25 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 7.0.0
-    - 7.0.1
-    - 7.1.1
-    - 7.1.2
-    - 7.1.5
-    - 7.1.6
-    - 7.1.7
-    - 7.1.8
-    - 7.2.0
-    - 7.2.1
-    - 7.3.1
-    - 7.4.1
-    - 7.4.2
-    - 7.4.3
-    - 7.5.1
-    - 7.5.2
-    - 7.5.3
-    - 7.6.0
-    - 7.7.0
-    - 7.7.1
-    - 8.0.1
-    - 8.1.0
-    - 8.2.0
-    - 8.3.1
-    - 9.0.0-preview.14
-    - 9.0.0-preview.35
-    - 9.0.0-preview.55
-    - 9.0.0-preview.72
-    - 10.0.0-preview.26
-    - 10.1.0
-    - 10.2.0
-    - 10.2.1
-    - 10.2.2
-    - 10.3.1
-    - 10.3.2
-    - 10.4.0
-    - 10.5.0
-    - 10.5.1
-    - 10.6.0
-    - 10.7.0
-    - 10.8.0
-    - 10.8.1
-    - 10.9.0
-    - 10.10.0
-    - 10.10.1
-    - 17.0.3
+    - 17.3.0
     compatible:
-    - 17.0.3
-    recommended: 17.0.3
+    - 17.3.0
+    recommended: 17.3.0
     deprecated: []
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.shadergraph
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.render-pipelines.universal-config
     version: 17.0.3
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.28
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ugui
@@ -606,25 +666,23 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.5.1
+    version: 2.6.2
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
+    version: 1.11.6
   - name: com.unity.test-framework.performance
-    version: 3.0.3
+    version: 3.2.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
-  - name: com.unity.rendering.light-transport
-    version: 1.0.1
   - name: com.unity.shadergraph
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.searcher
-    version: 4.9.2
+    version: 4.9.4
   - name: com.unity.render-pipelines.universal-config
     version: 17.0.3
   keywords:
@@ -642,6 +700,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -655,30 +716,48 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.0.3
+    version: 17.3.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 3790fbb7d51b3abf69e319c264be0b677c3d9ec8
+  fingerprint: 37e0d4fc2503d8d875c76879f8437f0d80a0e17d
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.0.3
-    minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.timeline@1.8.8
+    minimumPackageVersion: 17.3.0
+    minimumUnityVersion: 6000.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.timeline@1.8.10
   testable: 0
   isDirectDependency: 1
-  version: 1.8.8
+  version: 1.8.10
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.timeline
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.timeline@7f8b2fb101b6
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -781,10 +860,13 @@ m_ResolvedPackages:
     - 1.8.6
     - 1.8.7
     - 1.8.8
+    - 1.8.9
+    - 1.8.10
+    - 1.8.11
     compatible:
-    - 1.8.7
-    - 1.8.8
-    recommended: 1.8.8
+    - 1.8.10
+    - 1.8.11
+    recommended: 1.8.11
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -818,76 +900,86 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638739338167810000
+  datePublishedTicks: 639010941520280000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: b01f8fc6766a468476830dec57fdf694f16104e6
+    revision: a83681b24217526a0f539d70ddca4abf270a5ada
     path: 
   unityLifecycle:
-    version: 1.8.7
+    version: 1.8.10
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed bug where the first property,
-    when it is a collection of objects, of a TrackAsset would not be properly displayed
-    in the inspector.\n- TimelineAsset.EditorSettings.SetStandardFrameRate would
-    incorrectly throw an ArgumentException if given a valid StandardFrameRates, this
-    has been corrected.\n- Clip blends will now be computed when using the API to
-    add clips to tracks - IN-66759\n- Improved performance when evaluating Timeline
-    Playables with a large number of clip based Animation Tracks (TB-259)\n- Updated
-    the Gameplay Sequence sample to show materials when using the Universal and HD
-    Render Pipelines."}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fix compilation error for version 2023.2
+    of the editor (TB-352)\n- Fixed an issue where it was possible for 2 clips to
+    have a micro overlap that was not detected as a blend, resulting in both clips
+    playing at the same time with a weight of one. (TB-345)"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: fa3a0bab2b909389f8e6c20d5ff275c9e15ae0a2
+  fingerprint: 7f8b2fb101b6053cc7472330401e94ff0c17b204
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.8.7
-    minimumUnityVersion: 2021.3.0a1
+    minimumPackageVersion: 1.8.10
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.ugui@2.0.0
   testable: 0
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ugui
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ugui@bb329a87fcdc
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
-  displayName: Unity UI
+  displayName: uGUI
   author:
     name: 
     email: 
     url: 
   category: 
   type: 
-  description: "Unity UI is a set of tools for developing user interfaces for games
-    and applications. It is a GameObject-based UI system that uses Components and
-    the Game View to arrange, position, and style user interfaces. \u200B You cannot
-    use Unity UI to create or change user interfaces in the Unity Editor."
+  description: "uGUI (Unity UI) is a set of tools for developing user interfaces
+    for games and applications. It is a GameObject-based UI system that uses Components
+    and the Game View to arrange, position, and style user interfaces. \u200B You
+    cannot use Unity UI to create or change user interfaces in the Unity Editor."
   errors: []
   versions:
     all:
     - 2.0.0
-    - 3.0.0-exp.1
-    - 3.0.0-exp.3
-    - 3.0.0-exp.4
     compatible:
     - 2.0.0
-    - 3.0.0-exp.1
-    - 3.0.0-exp.3
-    - 3.0.0-exp.4
     recommended: 2.0.0
     deprecated: []
   dependencies:
@@ -918,6 +1010,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -936,25 +1031,43 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 8f98c6a1c75e66adfac0fb4351d51a0b4d92c018
+  fingerprint: bb329a87fcdc5d55e815f3d804764d676674047e
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
-    minimumUnityVersion: 2019.2.0a1
-- packageId: com.unity.visualscripting@1.9.4
+    minimumUnityVersion: 2019.2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.visualscripting@1.9.9
   testable: 0
   isDirectDependency: 1
-  version: 1.9.4
+  version: 1.9.9
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.visualscripting
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1002,11 +1115,14 @@ m_ResolvedPackages:
     - 1.9.4
     - 1.9.5
     - 1.9.6
+    - 1.9.7
+    - 1.9.8
+    - 1.9.9
+    - 1.9.10
     compatible:
-    - 1.9.4
-    - 1.9.5
-    - 1.9.6
-    recommended: 1.9.6
+    - 1.9.9
+    - 1.9.10
+    recommended: 1.9.10
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -1032,44 +1148,66 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638488567680000000
+  datePublishedTicks: 638965671307960000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 41aac2b7038c2b1259c546329890d3736ce2394e
+    revision: 2bb93a09becf00b2343d1c670afbf3836f170f55
     path: 
   unityLifecycle:
-    version: 1.9.4
+    version: 1.9.9
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed sqlite dll changes not being recognized
-    correctly by the 2022.3 Unity Editor"}'
+  upmReserved: '{"changelog":"### Fixed\n- Fixed broken links to example codes in
+    API documentation.\n\n### Changed\n- Adds alt texts to images in documentation
+    to increase accessibility for screen readers."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 0920df93f9574f857a55af27bd38fdd9230a3f51
+  fingerprint: 191c0d7e3b69bc0df1b6fed3a997c4c3a765ef6a
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.9.4
-    minimumUnityVersion: 2021.3.0a1
-- packageId: com.unity.xr.arfoundation@6.0.5
+    minimumPackageVersion: 1.9.9
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.arfoundation@6.4.1
   testable: 0
   isDirectDependency: 1
-  version: 6.0.5
+  version: 6.4.1
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.arfoundation
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.arfoundation@ad22dea2a3eb
   assetPath: Packages/com.unity.xr.arfoundation
   name: com.unity.xr.arfoundation
   displayName: AR Foundation
@@ -1202,6 +1340,7 @@ m_ResolvedPackages:
     - 5.1.5
     - 5.1.6
     - 5.2.0
+    - 5.2.2
     - 6.0.0-pre.3
     - 6.0.0-pre.4
     - 6.0.0-pre.5
@@ -1213,31 +1352,39 @@ m_ResolvedPackages:
     - 6.0.3
     - 6.0.4
     - 6.0.5
+    - 6.0.6
     - 6.1.0-pre.1
     - 6.1.0-pre.2
     - 6.1.0-pre.3
     - 6.1.0-pre.4
     - 6.1.0-pre.5
     - 6.1.0
+    - 6.1.1
     - 6.2.0-pre.1
     - 6.2.0-pre.2
     - 6.2.0-pre.3
     - 6.2.0-pre.4
+    - 6.2.0
+    - 6.2.1
+    - 6.3.0-pre.1
+    - 6.3.0-pre.2
+    - 6.3.0
+    - 6.3.1
+    - 6.3.2
+    - 6.3.3
+    - 6.4.0-pre.1
+    - 6.4.0
+    - 6.4.1
+    - 6.5.0-pre.1
+    - 6.5.0-pre.2
     compatible:
-    - 6.0.3
-    - 6.0.4
-    - 6.0.5
-    - 6.1.0-pre.1
-    - 6.1.0-pre.2
-    - 6.1.0-pre.3
-    - 6.1.0-pre.4
-    - 6.1.0-pre.5
-    - 6.1.0
-    - 6.2.0-pre.1
-    - 6.2.0-pre.2
-    - 6.2.0-pre.3
-    - 6.2.0-pre.4
-    recommended: 6.0.5
+    - 6.3.3
+    - 6.4.0-pre.1
+    - 6.4.0
+    - 6.4.1
+    - 6.5.0-pre.1
+    - 6.5.0-pre.2
+    recommended: 6.3.3
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -1249,7 +1396,7 @@ m_ResolvedPackages:
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.xr.core-utils
-    version: 2.3.0
+    version: 2.5.1
   - name: com.unity.xr.management
     version: 4.4.0
   - name: com.unity.editorcoroutines
@@ -1268,31 +1415,31 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.inputsystem
-    version: 1.11.1
+    version: 1.18.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
     version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.3.2
-  - name: com.unity.xr.core-utils
-    version: 2.3.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
   - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.3.3
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
     version: 1.0.0
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.management
-    version: 4.5.0
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.13
   - name: com.unity.modules.vr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.11
   - name: com.unity.editorcoroutines
-    version: 1.0.0
+    version: 1.0.1
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   - name: com.unity.modules.unityanalytics
@@ -1319,48 +1466,66 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638733631271970000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.0/manual/index.html
+  datePublishedTicks: 639017014344090000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.4/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-    revision: 3aa900e00a22660ff50271b927726aaec2e2b407
+    revision: 6498d718637514e9d6e1f780d2bd6fd0e7e06d3b
     path: 
   unityLifecycle:
-    version: 6.0.3
-    nextVersion: 6.1.0-pre.1
+    version: 6.3.3
+    nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed the `SimulationEnvironmentProbeSubsystem`
-    so that [automatic placement](xref:arfoundation-environment-probes#automatic-placement)
-    of environment probes can be enabled or disabled, as is possible on other AR
-    platforms.\n- Fixed the AR Environment Probe Manager component so that it can
-    no longer throw an `ArgumentNullException` when you unload a scene containing
-    one or more environment probes."}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed `XRAnchorSubsystemDescriptor.Cinfo`
+    so that it still considers deprecated field values when computing equality or
+    its hash code."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: b18f5959dab1098961480eeff6b97f7b68c2bc8c
+  fingerprint: ad22dea2a3ebb19e6725a6666be46c642c52cf40
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 6.0.3
-    minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.xr.meta-openxr@2.0.1
+    minimumPackageVersion: 6.3.3
+    minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.meta-openxr@2.4.0
   testable: 0
   isDirectDependency: 1
-  version: 2.0.1
+  version: 2.4.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.meta-openxr
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.meta-openxr@8727a9e3eafa
   assetPath: Packages/com.unity.xr.meta-openxr
   name: com.unity.xr.meta-openxr
   displayName: Unity OpenXR Meta
@@ -1369,7 +1534,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Enables you to build mixed reality apps for Meta Quest devices by
     implementing support for Meta's OpenXR extensions.
   errors: []
@@ -1386,30 +1551,41 @@ m_ResolvedPackages:
     - 2.0.0-pre.1
     - 2.0.0
     - 2.0.1
+    - 2.0.2
     - 2.1.0-pre.1
     - 2.1.0
+    - 2.1.1
     - 2.2.0-pre.1
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-pre.2
+    - 2.3.0
+    - 2.4.0-pre.1
+    - 2.4.0
+    - 2.5.0-pre.1
     compatible:
-    - 2.0.1
-    - 2.1.0-pre.1
-    - 2.1.0
-    - 2.2.0-pre.1
-    recommended: 2.1.0
+    - 2.3.0
+    - 2.4.0-pre.1
+    - 2.4.0
+    - 2.5.0-pre.1
+    recommended: 2.4.0
     deprecated: []
   dependencies:
   - name: com.unity.xr.openxr
-    version: 1.10.0
+    version: 1.15.1
   - name: com.unity.xr.core-utils
-    version: 2.3.0
+    version: 2.5.1
   - name: com.unity.xr.management
     version: 4.4.0
   - name: com.unity.xr.arfoundation
-    version: 6.0.1
+    version: 6.4.0
+  - name: com.unity.xr.compositionlayers
+    version: 2.2.0
   resolvedDependencies:
   - name: com.unity.xr.openxr
-    version: 1.12.1
+    version: 1.16.1
   - name: com.unity.inputsystem
-    version: 1.11.1
+    version: 1.18.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -1420,35 +1596,40 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
     version: 1.0.0
-  - name: com.unity.xr.core-utils
-    version: 2.3.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
   - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
     version: 1.0.0
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.management
-    version: 4.5.0
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.13
   - name: com.unity.modules.vr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.11
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
   - name: com.unity.xr.arfoundation
-    version: 6.0.5
+    version: 6.4.1
   - name: com.unity.ugui
     version: 2.0.0
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.editorcoroutines
-    version: 1.0.0
+    version: 1.0.1
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   - name: com.unity.modules.unityanalytics
     version: 1.0.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
+  - name: com.unity.xr.compositionlayers
+    version: 2.3.0
   keywords:
+  - xreditorsubsystem
   - openxr
   - meta
   - oculus
@@ -1468,56 +1649,72 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638578508440000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.meta-openxr@2.0/manual/index.html
+  datePublishedTicks: 639010912673680000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.meta-openxr@2.4/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/xr.sdk.meta-openxr.git
-    revision: f1114e177c6bf63c8e67d6a5fbd25ec785788a72
+    revision: 387dc480f70f2133c1da03df10ede1cdde5901d2
     path: 
   unityLifecycle:
-    version: 2.0.1
+    version: 2.3.0
     nextVersion: 
-    recommendedVersion: 2.1.0
+    recommendedVersion: 2.4.0
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n\n- Added Scene setup documentation to clarify
-    best practices for requesting Android system permissions.\n\n### Changed\n\n-
-    Changed the **Meta Quest: Bounding boxes**, **Meta Quest: Anchors**, **Meta Quest:
-    Meshing**, and **Meta Quest: Planes** features implementation to replace the
-    use of `XR_FB_spatial_entity_query` and `XR_FB_spatial_entity_storage` with newer
-    OpenXR extensions from Meta. This is a backwards-compatible change with no effect
-    on your code.\n\n### Fixed\n\n- Fixed an issue with [BoundedPlane.nativePtr](xref:UnityEngine.XR.ARSubsystems.BoundedPlane.nativePtr),
-    [XRBoundingBox.nativePtr](xref:UnityEngine.XR.ARSubsystems.XRBoundingBox.nativePtr),
-    and [XRAnchor.nativePtr](xref:UnityEngine.XR.ARSubsystems.XRAnchor.nativePtr)
-    so they now return a pointer to a struct with a version number and a pointer
-    to the `XrSpace` handle of their respective trackable type. Refer to [Plane native
-    pointer](xref:meta-openxr-planes#Native-pointer), [Bounding box native pointer](xref:meta-openxr-bounding-boxes#Native-pointer),
-    and [Anchor native pointer](xref:meta-openxr-anchors#Native-pointer) for more
-    information."}'
+  upmReserved: '{"changelog":"### Added\n\n- Added provider-specific [Raycast methods](xref:UnityEngine.XR.OpenXR.Features.Meta.MetaOpenXRRaycastSubsystem.Raycast(UnityEngine.XR.OpenXR.Features.Meta.EnvironmentRaycastHit,UnityEngine.Ray,UnityEngine.XR.ARSubsystems.TrackableType,Unity.Collections.Allocator))
+    for getting information about the [EnvironmentRaycastHitStatus](xref:UnityEngine.XR.OpenXR.Features.Meta.EnvironmentRaycastHitStatus)
+    along with the XRRaycastHit.\n\n### Changed\n\n- Changed the minimum dependency
+    version of the XR Composition Layers package from 2.1.1 to 2.2.0, which fixes
+    a compile error in Unity 6.4 due to the removal of URP compatibility mode in
+    that Editor version.\n- Changed AR Foundation dependency version from 6.4.0-pre.1
+    to 6.4.0.\n\n### Fixed\n\n- Fixed the `MetaOpenXRCameraSubsystem` so that it
+    destroys and recreates the passthrough composition layer when the subsystem is
+    stopped and started within the same frame."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 93371bdf089852b62baf4c08a3064568f1fec5c7
+  fingerprint: 8727a9e3eafaaf69e99ec5ad0a2ed09b38cce3ba
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.0.1
-    minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.xr.openxr@1.12.1
+    minimumPackageVersion: 2.3.0
+    minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.openxr@1.16.1
   testable: 0
   isDirectDependency: 1
-  version: 1.12.1
+  version: 1.16.1
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.openxr
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.openxr@ef0033a586bf
   assetPath: Packages/com.unity.xr.openxr
   name: com.unity.xr.openxr
   displayName: OpenXR Plugin
@@ -1573,30 +1770,33 @@ m_ResolvedPackages:
     - 1.14.2
     - 1.14.3
     - 1.15.0-pre.1
+    - 1.15.0-pre.2
+    - 1.15.0
+    - 1.15.1
+    - 1.16.0-pre.1
+    - 1.16.0-pre.2
+    - 1.16.0
+    - 1.16.1
+    - 1.17.0-pre.1
     compatible:
-    - 1.12.1
-    - 1.13.0
-    - 1.13.1
-    - 1.13.2
-    - 1.14.0
-    - 1.14.1
-    - 1.14.2
-    - 1.14.3
-    - 1.15.0-pre.1
-    recommended: 1.12.1
+    - 1.16.1
+    - 1.17.0-pre.1
+    recommended: 1.16.1
     deprecated: []
   dependencies:
   - name: com.unity.inputsystem
     version: 1.6.3
   - name: com.unity.xr.core-utils
-    version: 2.1.1
+    version: 2.3.0
   - name: com.unity.xr.management
     version: 4.4.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
   - name: com.unity.xr.legacyinputhelpers
     version: 2.1.2
   resolvedDependencies:
   - name: com.unity.inputsystem
-    version: 1.11.1
+    version: 1.18.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -1607,20 +1807,22 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
     version: 1.0.0
-  - name: com.unity.xr.core-utils
-    version: 2.3.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
   - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
     version: 1.0.0
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.management
-    version: 4.5.0
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.13
   - name: com.unity.modules.vr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.11
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
   keywords:
   - openxr
   - xr
@@ -1634,39 +1836,77 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638621648414390000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.12/manual/index.html
+  datePublishedTicks: 639009873933310000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.16/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
-    revision: 80d54b74e54bc9121b87503e8e4840bfbcdb50f7
+    revision: c7a9defb4d388418b78bd9f86b5ecc62397d6288
     path: 
   unityLifecycle:
-    version: 1.12.1
+    version: 1.16.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"* Fixed rendering bug when rendering viewport scale
-    < 1. \n* Fixed issue where the Editor would hang when renaming and then viewing
-    OpenXR Settings."}'
+  upmReserved: '{"changelog":"### Changed\n\n* Changed wording of validation rule
+    that checks for symmetric projection when using the Multiview Render Regions
+    Optimizations Mode.\n* Changed OpenXR loader version to 1.1.53.\n* Changed the
+    visibility mask to not create an occlusion mesh when using a 2022.3 editor to
+    reduce memory footprint.\n\n### Removed\n\n* Removed an unit test `PluginVersion`
+    which was used internally to validate package version.\n\n### Fixed\n\n * Fixed
+    the OpenXR test \"DuplicateSettingAssetTest\" to communicate with asset database
+    when swapping asset files.\n * Fixed an issue in OpenXR Runtime Debugger window
+    to show correctly sized buttons. ([OXRB-682](https://issuetracker.unity3d.com/issues/folder-button-in-openxr-runtime-debugger-window-is-oversized))\n
+    * Fixed a dependency issue by including AndroidJNI as a dependency. ([OXRB-696](https://jira.unity3d.com/browse/OXRB-696))\n
+    * Fixed a crash when using eye tracked foveated rendering and sleeping/waking
+    device by making sure primary swapchain reference was reset before applying foveation
+    profile.\n * Fixed unreliable writing of `xr-meta-enabled` to boot.config by
+    ensuring it is always set based on the actual feature state.\n * Fixed Bluetooth
+    permissions being removed when building apps using the Meta Quest Feature. The
+    permissions are now kept when required by Unity APIs or a plugin''s manifest.
+    For more information on Android permissions in Unity, refer to [Android App Manifest](https://docs.unity3d.com/6000.2/Documentation/Manual/android-manifest.html).\n
+    * Fixed issue where project settings window would fail to render if an OpenXR
+    Feature was removed while the editor was running. ([OXRB-715](https://jira.unity3d.com/browse/OXRB-715))\n
+    * Fixed an error in Project Validation related to EntityId''s in Unity 6000.4+."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: c14fb15b587c841ef74b5923c52f7f42c3440303
+  fingerprint: ef0033a586bf33cb236bfe77cb661fe1b2882748
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.12.1
-    minimumUnityVersion: 2021.3.0a1
+    minimumPackageVersion: 1.16.1
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.accessibility@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1682,8 +1922,8 @@ m_ResolvedPackages:
     url: 
   category: 
   type: module
-  description: 'The Accessibility module includes utilities to facilitate the development
-    of accessible user experiences in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AccessibilityModule.html'
+  description: 'The Accessibility module includes APIs and tools that facilitate
+    the development of accessible user experiences in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AccessibilityModule.html'
   errors: []
   versions:
     all:
@@ -1703,6 +1943,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -1721,12 +1964,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -1734,6 +1989,106 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.modules.adaptiveperformance@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.modules.adaptiveperformance
+  assetPath: Packages/com.unity.modules.adaptiveperformance
+  name: com.unity.modules.adaptiveperformance
+  displayName: Adaptive Performance
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: module
+  description: 'Adaptive Performance is a built-in module that allows users to adjust
+    settings based on performance metrics. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AdaptivePerformanceModule.html'
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1770,6 +2125,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -1788,12 +2146,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -1801,6 +2171,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1836,6 +2212,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -1854,12 +2233,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -1867,6 +2258,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1903,6 +2300,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -1921,12 +2321,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -1934,6 +2346,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1970,6 +2388,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -1988,12 +2409,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2001,6 +2434,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2037,6 +2476,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2055,12 +2497,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2068,6 +2522,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2108,6 +2568,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2126,12 +2589,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2139,6 +2614,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2183,6 +2664,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2201,12 +2685,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2214,6 +2710,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2250,6 +2752,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2268,12 +2773,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2281,6 +2798,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2317,6 +2840,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2335,12 +2861,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2348,6 +2886,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2384,6 +2928,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2402,12 +2949,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2415,6 +2974,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2451,6 +3016,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2469,12 +3037,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2482,6 +3062,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2518,6 +3104,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2536,12 +3125,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2549,6 +3150,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2585,6 +3192,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2603,12 +3213,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2616,6 +3238,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2656,6 +3284,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2674,12 +3305,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2687,6 +3330,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2723,6 +3372,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2741,12 +3393,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2754,6 +3418,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2798,6 +3468,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2816,12 +3489,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2829,6 +3514,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2868,6 +3559,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2886,12 +3580,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2899,6 +3605,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2935,6 +3647,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -2953,12 +3668,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -2966,6 +3693,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3000,6 +3733,8 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
     version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -3008,6 +3743,8 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
     version: 1.0.0
   keywords: []
   registry:
@@ -3018,6 +3755,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3036,12 +3776,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3049,6 +3801,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3085,6 +3843,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3103,12 +3864,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3116,6 +3889,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3159,6 +3938,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3177,12 +3959,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3190,6 +3984,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3226,6 +4026,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3244,12 +4047,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3257,6 +4072,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3301,6 +4122,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3319,12 +4143,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3332,6 +4168,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3376,6 +4218,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3394,12 +4239,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3407,6 +4264,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3451,6 +4314,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3469,12 +4335,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3482,6 +4360,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3542,6 +4426,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3560,12 +4447,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3573,6 +4472,119 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.modules.vectorgraphics@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.modules.vectorgraphics
+  assetPath: Packages/com.unity.modules.vectorgraphics
+  name: com.unity.modules.vectorgraphics
+  displayName: Vector Graphics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: module
+  description: 
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3613,6 +4625,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3631,12 +4646,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3644,6 +4671,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3692,6 +4725,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3710,12 +4746,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3723,6 +4771,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3739,7 +4793,8 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
-    Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
+    (This module is obsolete, please use UnityEngine.XRModule instead) Scripting
+    API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
   errors: []
   versions:
     all:
@@ -3773,6 +4828,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3791,12 +4849,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3804,6 +4874,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3840,6 +4916,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3858,12 +4937,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3871,6 +4962,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3919,6 +5016,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -3937,12 +5037,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -3950,6 +5062,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -3990,6 +5108,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -4008,12 +5129,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -4021,6 +5154,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.modules.hierarchycore@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -4057,6 +5196,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -4075,12 +5217,24 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 
@@ -4088,12 +5242,18 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
-- packageId: com.unity.inputsystem@1.11.1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.inputsystem@1.18.0
   testable: 0
   isDirectDependency: 0
-  version: 1.11.1
+  version: 1.18.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.inputsystem
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.inputsystem@57d0e36f6123
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -4163,14 +5323,17 @@ m_ResolvedPackages:
     - 1.13.0
     - 1.13.1
     - 1.14.0
+    - 1.14.1
+    - 1.14.2
+    - 1.15.0
+    - 1.16.0
+    - 1.17.0
+    - 1.18.0
+    - 1.19.0
     compatible:
-    - 1.11.1
-    - 1.11.2
-    - 1.12.0
-    - 1.13.0
-    - 1.13.1
-    - 1.14.0
-    recommended: 1.11.2
+    - 1.18.0
+    - 1.19.0
+    recommended: 1.18.0
     deprecated: []
   dependencies:
   - name: com.unity.modules.uielements
@@ -4185,6 +5348,8 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
     version: 1.0.0
   keywords:
   - input
@@ -4203,60 +5368,73 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638632824854080000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/index.html
+  datePublishedTicks: 639039807602510000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.18/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: 684a2848f24f4d45ffdf14900025ae9bb98c7dd8
+    revision: c0d61169c3ccce912ce6a8dec13a30e6e35fdeb8
     path: 
   unityLifecycle:
-    version: 1.11.1
+    version: 1.18.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed Multiple interactions could breaks
-    on Composite Binding. [ISXB-619](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-619)\n-
-    Fixed memory leak when the OnScreenStick component was destroyed [ISXB-1070](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1070).
-    Contribution by [LukeUnityDev](https://github.com/LukeUnityDev).\n- Fixed Action
-    Maps contextual menu in Action Editor UI that occasionally displays unrelated
-    items.\n- Fixed \"MissingReferenceException\" errors when closing an in-game
-    dropdown field [ISXB-1081](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1081).\n-
-    Fixed potential crash on Mac when using stale references to deleted InputDevice
-    objects [ISXB-606](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-606).\n-
-    Fixed conditional compilation for non-editor analytics on platforms not enabling
-    analytics.\n\n### Changed\n- Renamed editor Resources directories to PackageResources
-    to fix package validation warnings.\n- Changed representation of GamepadButton
-    enum values in Inspector to display aliased enum values as a single item to avoid
-    confusion around selection and aliased value display when multiple enum items
-    map to the same numerical value. [ISXB-543](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-543)\n-
-    PlayerInput component now warns if the system cannot find matching control scheme,
-    which can occur if all control schemes already paired (e.g. to other game objects
-    with PlayerInput components) [ISXB-1020](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1020)"}'
+  upmReserved: '{"changelog":"### Changed\n\n- Updated documentation to reflect that
+    the OnMouse MonoBehaviour events are now supported in Unity 6.4 and above.\n-
+    Updated the supported devices documentation to clarify that touchscreens are
+    supported on Linux.\n- Updated documentation to reflect PS5 controller support
+    on Linux.\n\n### Fixed\n\n- Fixed add buttons use add icon in input actions window
+    (ISX-2340)\n- Fixed warnings being generated on Unity 6.4 and 6.5. (ISX-2395).\n-
+    Fixed extra empty lines being displayed in the control binding list when mouse
+    buttons are pressed [ISXB-1677](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1677)\n-
+    Fixed InputActionReference not being set when attempting to set it on a Prefab
+    or ScriptableObject [ISXB-1787](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1787)"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: f32e50d372b38a6a40f5382ad8ab0d11ac27b67d
+  fingerprint: 57d0e36f61231bc5a2579f37d81bf6fa02f40adc
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.11.1
-    minimumUnityVersion: 2019.4.0a1
-- packageId: com.unity.xr.core-utils@2.3.0
+    minimumPackageVersion: 1.18.0
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.core-utils@2.5.3
   testable: 0
   isDirectDependency: 0
-  version: 2.3.0
+  version: 2.5.3
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.core-utils
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.core-utils@f0450cbac8d6
   assetPath: Packages/com.unity.xr.core-utils
   name: com.unity.xr.core-utils
   displayName: XR Core Utilities
@@ -4265,7 +5443,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: "Common utility classes for XR projects\nRefer to API documentation
     for details. Some particularly useful utilities include:\n\u25AA Geometry Utilities\n 
     \u25AA Point of closest approach\n  \u25AA Closest edge of a polygon\n  \u25AA
@@ -4302,16 +5480,12 @@ m_ResolvedPackages:
     - 2.5.0
     - 2.5.1
     - 2.5.2
+    - 2.5.3
+    - 2.6.0-pre.1
     compatible:
-    - 2.3.0
-    - 2.4.0-exp.1
-    - 2.4.0-exp.2
-    - 2.4.0-exp.3
-    - 2.4.0
-    - 2.5.0
-    - 2.5.1
-    - 2.5.2
-    recommended: 2.3.0
+    - 2.5.3
+    - 2.6.0-pre.1
+    recommended: 2.5.3
     deprecated: []
   dependencies:
   - name: com.unity.modules.xr
@@ -4341,46 +5515,65 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638411351550000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.3/manual/index.html
+  datePublishedTicks: 638924605331920000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.5/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.core-utils.git
-    revision: ca388cb73dfca7c7e8c46caba82f4d8adfbc82d0
+    revision: 086a50c8cec1477b45e7e5c90669cf2f5a9818dc
     path: 
   unityLifecycle:
-    version: 2.3.0
+    version: 2.5.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n\n- Added a new collection [ReadOnlyList\\<T\\>](xref:Unity.XR.CoreUtils.ReadOnlyList`1)
-    as a more performant alternative to `ReadOnlyCollection`. `ReadOnlyList` improves
-    upon `ReadOnlyCollection` by removing the heap allocations associated with `GetEnumerator()`.\n\n###
-    Fixed\n\n- Fixed the XmlDocs issues for API documentation."}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed potential `NullReferenceException`
+    in internal analytics code when getting the package version."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: f4116c6290594e2609ede158fccdad4a54a17081
+  fingerprint: f0450cbac8d66beb614cb1b4241eae977ee9990e
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.3.0
-    minimumUnityVersion: 2019.4.0f1
-- packageId: com.unity.xr.management@4.5.0
+    minimumPackageVersion: 2.5.3
+    minimumUnityVersion: 2021.3.0f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.management@4.5.4
   testable: 0
   isDirectDependency: 0
-  version: 4.5.0
+  version: 4.5.4
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.management
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.management@e3a3882b360a
   assetPath: Packages/com.unity.xr.management
   name: com.unity.xr.management
   displayName: XR Plugin Management
@@ -4389,7 +5582,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Package that provides simple management of XR plug-ins. Manages and
     offers help with loading, initialization, settings, and build support for XR
     plug-ins.
@@ -4451,33 +5644,37 @@ m_ResolvedPackages:
     - 4.4.1
     - 4.5.0
     - 4.5.1
+    - 4.5.2
+    - 4.5.3
+    - 4.5.4
     compatible:
-    - 4.5.0
-    - 4.5.1
-    recommended: 4.5.1
+    - 4.5.4
+    recommended: 4.5.4
     deprecated: []
   dependencies:
-  - name: com.unity.modules.vr
-    version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.7
-  resolvedDependencies:
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.legacyinputhelpers
     version: 2.1.11
+  resolvedDependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.13
+  - name: com.unity.modules.vr
+    version: 1.0.0
   keywords:
   - xr
   - sdk
@@ -4494,47 +5691,65 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638560264920000000
+  datePublishedTicks: 639017809809290000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.management@4.5/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/xr.sdk.management.git
-    revision: fa86b200cd8cd1b75a57534d44d41cc7b6b7f58d
+    revision: bc4c0079c6af1f1261e7ff475df4eda9875a72a0
     path: 
   unityLifecycle:
-    version: 4.5.0
+    version: 4.5.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed compile errors on Unity versions
-    [2023.1.0f1 - 2023.2.6f1] caused by missing `BuildTargetGroup.VisionOS` enum
-    value.\n\n### Added\n- Added Android manifest support for applications that use
-    Game Activity entry point. Note that Game Activities are only supported in projects
-    made with Unity versions 2023.1 onwards."}'
+  upmReserved: '{"changelog":"### Removed\n\n- Removed `com.unity.openxr` as an available
+    package for Universal Windows Platform on 6000.4 and above."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 3126858600e621b17ff9bfda920ebf34b9f2414c
+  fingerprint: e3a3882b360a930851150ee50076985f763c9b3f
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 4.5.0
-    minimumUnityVersion: 2020.3.15f1
-- packageId: com.unity.xr.legacyinputhelpers@2.1.11
+    minimumPackageVersion: 4.5.4
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.legacyinputhelpers@2.1.13
   testable: 0
   isDirectDependency: 0
-  version: 2.1.11
+  version: 2.1.13
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.legacyinputhelpers
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.legacyinputhelpers@9535ff2c27ac
   assetPath: Packages/com.unity.xr.legacyinputhelpers
   name: com.unity.xr.legacyinputhelpers
   displayName: XR Legacy Input Helpers
@@ -4580,10 +5795,14 @@ m_ResolvedPackages:
     - 2.1.10
     - 2.1.11
     - 2.1.12
+    - 2.1.13
+    - 3.0.0
+    - 3.0.1
     compatible:
-    - 2.1.11
-    - 2.1.12
-    recommended: 2.1.12
+    - 2.1.13
+    - 3.0.0
+    - 3.0.1
+    recommended: 2.1.13
     deprecated: []
   dependencies:
   - name: com.unity.modules.vr
@@ -4615,44 +5834,200 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638627703211970000
+  datePublishedTicks: 638971745191110000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
-    revision: 43a3dc5e306cc961f9f0121a31ec3bd1285cf1a7
+    revision: 7750ba101d791f0c673ae87cd654d1ac84f87f24
     path: 
   unityLifecycle:
-    version: 2.1.11
+    version: 2.1.13
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Removed an empty script file and corresponding
-    meta file."}'
+  upmReserved: '{"changelog":"### Fixed\n- Fixed camera projection type when converting
+    an existing camera to an **XR Rig** to ensure resulting camera is not set to
+    orthographic ([XRLIH-5](https://issuetracker.unity3d.com/product/unity/issues/guid/XRLIH-5))."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: a3936666e06871a5fd0461a69a4d99efb31a21c1
+  fingerprint: 9535ff2c27ac3e8dfb63877c36641a1cc1a48c14
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.1.11
-    minimumUnityVersion: 2019.4.0a1
-- packageId: com.unity.mathematics@1.3.2
+    minimumPackageVersion: 2.1.13
+    minimumUnityVersion: 2019.4
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.xr.compositionlayers@2.3.0
   testable: 0
   isDirectDependency: 0
-  version: 1.3.2
+  version: 2.3.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.mathematics
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.xr.compositionlayers@d683872db661
+  assetPath: Packages/com.unity.xr.compositionlayers
+  name: com.unity.xr.compositionlayers
+  displayName: XR Composition Layers
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Support for Provider based XR SDK Composition Layers.
+  errors: []
+  versions:
+    all:
+    - 0.5.0
+    - 0.6.0
+    - 1.0.0
+    - 2.0.0
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0
+    - 2.3.0
+    compatible:
+    - 2.3.0
+    recommended: 2.3.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.inputsystem
+    version: 1.6.3
+  - name: com.unity.xr.core-utils
+    version: 2.2.2
+  - name: com.unity.xr.management
+    version: 4.0.1
+  resolvedDependencies:
+  - name: com.unity.inputsystem
+    version: 1.18.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.3
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.13
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  keywords:
+  - xr
+  - composition
+  - layers
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639017802597860000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.compositionlayers@2.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.compositionlayers.git
+    revision: 2845d806027b95a377e0d95a6a68887ce3c93610
+    path: 
+  unityLifecycle:
+    version: 2.3.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Added\n* Added Background Type option to the Composition
+    Layer Splash Screen settings to allow using Passthrough as the background.\n\n###
+    Fixed\n* Fixed `DefaultLayerData` so it no longer logs a warning related to the
+    `SerializeReferenceAttribute` when you install this package for the first time.\n*
+    Fixed internal code so that inspecting a `CompositionLayersRuntimeSettings` object
+    soon after package import no longer causes a warning to be logged to the console."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: d683872db6618c9db277420f7f70f857ab2716a9
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.3.0
+    minimumUnityVersion: 2022.3.11f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.mathematics@1.3.3
+  testable: 0
+  isDirectDependency: 0
+  version: 1.3.3
+  source: 1
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -4661,7 +6036,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Unity's C# SIMD math library providing vector types and math functions
     with a shader like syntax.
   errors: []
@@ -4686,9 +6061,10 @@ m_ResolvedPackages:
     - 1.2.6
     - 1.3.1
     - 1.3.2
+    - 1.3.3
     compatible:
-    - 1.3.2
-    recommended: 1.3.2
+    - 1.3.3
+    recommended: 1.3.3
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -4702,11 +6078,14 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638409134840000000
+  datePublishedTicks: 638950052122000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.mathematics@1.3/manual/index.html
   hasRepository: 1
   repository:
@@ -4715,11 +6094,12 @@ m_ResolvedPackages:
     revision: 1695a8503482a3131be78cc26308a93f82c05b04
     path: 
   unityLifecycle:
-    version: 1.3.2
+    version: 1.3.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
@@ -4729,19 +6109,36 @@ m_ResolvedPackages:
     builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI`
     and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n*
     Updated minimum editor version to 2021.3"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 8017b507cc74bf0a1dd14b18aa860569f807314d
+  fingerprint: 19a9377c4ffa59370edad3e6a34e4445529badde
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.3.2
-    minimumUnityVersion: 2021.3.0a1
-- packageId: com.unity.editorcoroutines@1.0.0
+    minimumPackageVersion: 1.3.3
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.editorcoroutines@1.0.1
   testable: 0
   isDirectDependency: 0
-  version: 1.0.0
+  version: 1.0.1
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.editorcoroutines
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.editorcoroutines@54394ed3283c
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -4750,7 +6147,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
@@ -4764,9 +6161,10 @@ m_ResolvedPackages:
     - 0.1.0-preview.1
     - 0.1.0-preview.2
     - 1.0.0
+    - 1.0.1
     compatible:
-    - 1.0.0
-    recommended: 1.0.0
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -4782,11 +6180,14 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637232611380000000
+  datePublishedTicks: 638929288706330000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -4795,33 +6196,51 @@ m_ResolvedPackages:
     revision: f67fc9992bbc7a553b17375de53a8b2db136528e
     path: 
   unityLifecycle:
-    version: 1.0.0
+    version: 1.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca
+  fingerprint: 54394ed3283c1d492d6a80602b05b04bd0863f8b
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 2018.1.0a1
-- packageId: com.unity.render-pipelines.core@17.0.3
+    minimumPackageVersion: 1.0.1
+    minimumUnityVersion: 2018.1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.render-pipelines.core@17.3.0
   testable: 0
   isDirectDependency: 0
-  version: 17.0.3
+  version: 17.3.0
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.render-pipelines.core
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.render-pipelines.core@04ab0eefa0c3
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
-  displayName: Core RP Library
+  displayName: Scriptable Render Pipeline Core
   author:
     name: 
     email: 
@@ -4838,108 +6257,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 0.1.21
-    - 0.1.27
-    - 0.1.28
-    - 1.0.0-beta
-    - 1.0.1-beta
-    - 1.1.1-preview
-    - 1.1.2-preview
-    - 1.1.4-preview
-    - 1.1.5-preview
-    - 1.1.8-preview
-    - 1.1.10-preview
-    - 1.1.11-preview
-    - 2.0.1-preview
-    - 2.0.3-preview
-    - 2.0.4-preview
-    - 2.0.4-preview.1
-    - 2.0.5-preview
-    - 2.0.6-preview
-    - 2.0.7-preview
-    - 2.0.8-preview
-    - 3.0.0-preview
-    - 3.1.0-preview
-    - 3.3.0-preview
-    - 4.0.0-preview
-    - 4.0.1-preview
-    - 4.1.0-preview
-    - 4.2.0-preview
-    - 4.3.0-preview
-    - 4.6.0-preview
-    - 4.8.0-preview
-    - 4.9.0-preview
-    - 4.10.0-preview
-    - 5.0.0-preview
-    - 5.1.0
-    - 5.2.0
-    - 5.2.1
-    - 5.2.2
-    - 5.2.3
-    - 5.3.1
-    - 5.6.1
-    - 5.7.2
-    - 5.8.2
-    - 5.9.0
-    - 5.10.0
-    - 5.13.0
-    - 5.16.1
-    - 6.5.2
-    - 6.5.3
-    - 6.7.1
-    - 6.9.0
-    - 6.9.1
-    - 6.9.2
-    - 7.0.0
-    - 7.0.1
-    - 7.1.1
-    - 7.1.2
-    - 7.1.5
-    - 7.1.6
-    - 7.1.7
-    - 7.1.8
-    - 7.2.0
-    - 7.2.1
-    - 7.3.1
-    - 7.4.1
-    - 7.4.2
-    - 7.4.3
-    - 7.5.1
-    - 7.5.2
-    - 7.5.3
-    - 7.6.0
-    - 7.7.0
-    - 7.7.1
-    - 8.0.1
-    - 8.1.0
-    - 8.2.0
-    - 8.3.1
-    - 9.0.0-preview.13
-    - 9.0.0-preview.35
-    - 9.0.0-preview.38
-    - 9.0.0-preview.60
-    - 9.0.0-preview.77
-    - 10.0.0-preview.30
-    - 10.1.0
-    - 10.2.0
-    - 10.2.1
-    - 10.2.2
-    - 10.3.1
-    - 10.3.2
-    - 10.4.0
-    - 10.5.0
-    - 10.5.1
-    - 10.6.0
-    - 10.7.0
-    - 10.8.0
-    - 10.8.1
-    - 10.9.0
-    - 10.10.0
-    - 10.10.1
-    - 17.0.3
+    - 17.3.0
     compatible:
-    - 17.0.3
-    recommended: 17.0.3
+    - 17.3.0
+    recommended: 17.3.0
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -4956,13 +6277,11 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  - name: com.unity.rendering.light-transport
-    version: 1.0.1
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.28
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ugui
@@ -4972,21 +6291,19 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.5.1
+    version: 2.6.2
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
+    version: 1.11.6
   - name: com.unity.test-framework.performance
-    version: 3.0.3
+    version: 3.2.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
-  - name: com.unity.rendering.light-transport
-    version: 1.0.1
   keywords: []
   registry:
     id: main
@@ -4996,6 +6313,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -5009,30 +6329,48 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.0.3
+    version: 17.3.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 28d7f949d0896383b566b044ba7ef07c3466da59
+  fingerprint: 04ab0eefa0c333fd1eebb81cdd292c9409489de7
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.0.3
-    minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.shadergraph@17.0.3
+    minimumPackageVersion: 17.3.0
+    minimumUnityVersion: 6000.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.shadergraph@17.3.0
   testable: 0
   isDirectDependency: 0
-  version: 17.0.3
+  version: 17.3.0
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.shadergraph
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.shadergraph@c8830f61858d
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -5050,120 +6388,23 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 0.1.8
-    - 0.1.9
-    - 0.1.17
-    - 1.0.0-beta
-    - 1.1.1-preview
-    - 1.1.2-preview
-    - 1.1.3-preview
-    - 1.1.4-preview
-    - 1.1.5-preview
-    - 1.1.6-preview
-    - 1.1.8-preview
-    - 1.1.9-preview
-    - 2.0.1-preview
-    - 2.0.3-preview
-    - 2.0.4-preview
-    - 2.0.4-preview.1
-    - 2.0.5-preview
-    - 2.0.6-preview
-    - 2.0.7-preview
-    - 2.0.8-preview
-    - 3.0.0-preview
-    - 3.1.0-preview
-    - 3.3.0-preview
-    - 4.0.0-preview
-    - 4.0.1-preview
-    - 4.1.0-preview
-    - 4.2.0-preview
-    - 4.3.0-preview
-    - 4.6.0-preview
-    - 4.8.0-preview
-    - 4.9.0-preview
-    - 4.10.0-preview
-    - 5.0.0-preview
-    - 5.1.0
-    - 5.2.0
-    - 5.2.1
-    - 5.2.2
-    - 5.2.3
-    - 5.3.1
-    - 5.6.1
-    - 5.7.2
-    - 5.8.2
-    - 5.9.0
-    - 5.10.0
-    - 5.13.0
-    - 5.16.1
-    - 6.5.2
-    - 6.5.3
-    - 6.7.1
-    - 6.9.0
-    - 6.9.1
-    - 6.9.2
-    - 7.0.0
-    - 7.0.1
-    - 7.1.1
-    - 7.1.2
-    - 7.1.5
-    - 7.1.6
-    - 7.1.7
-    - 7.1.8
-    - 7.2.0
-    - 7.2.1
-    - 7.3.1
-    - 7.4.1
-    - 7.4.2
-    - 7.4.3
-    - 7.5.1
-    - 7.5.2
-    - 7.5.3
-    - 7.6.0
-    - 7.7.0
-    - 7.7.1
-    - 8.0.1
-    - 8.1.0
-    - 8.2.0
-    - 8.3.1
-    - 9.0.0-preview.14
-    - 9.0.0-preview.34
-    - 9.0.0-preview.55
-    - 9.0.0-preview.72
-    - 10.0.0-preview.27
-    - 10.1.0
-    - 10.2.0
-    - 10.2.1
-    - 10.2.2
-    - 10.3.1
-    - 10.3.2
-    - 10.4.0
-    - 10.5.0
-    - 10.5.1
-    - 10.6.0
-    - 10.7.0
-    - 10.8.0
-    - 10.8.1
-    - 10.9.0
-    - 10.10.0
-    - 10.10.1
-    - 17.0.3
+    - 17.3.0
     compatible:
-    - 17.0.3
-    recommended: 17.0.3
+    - 17.3.0
+    recommended: 17.3.0
     deprecated: []
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.searcher
-    version: 4.9.2
+    version: 4.9.3
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.28
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ugui
@@ -5173,23 +6414,21 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.5.1
+    version: 2.6.2
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
+    version: 1.11.6
   - name: com.unity.test-framework.performance
-    version: 3.0.3
+    version: 3.2.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
-  - name: com.unity.rendering.light-transport
-    version: 1.0.1
   - name: com.unity.searcher
-    version: 4.9.2
+    version: 4.9.4
   keywords: []
   registry:
     id: main
@@ -5199,6 +6438,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -5212,33 +6454,51 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.0.3
+    version: 17.3.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 6bda0de118dc458be6a05a6bd2eb217ec5cd3ded
+  fingerprint: c8830f61858dade31ff36b4ded6b422f8100d290
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.0.3
-    minimumUnityVersion: 6000.0.0a1
+    minimumPackageVersion: 17.3.0
+    minimumUnityVersion: 6000.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.render-pipelines.universal-config@17.0.3
   testable: 0
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.render-pipelines.universal-config
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
-  displayName: Universal RP Config
+  displayName: Universal Render Pipeline Config
   author:
     name: 
     email: 
@@ -5259,11 +6519,11 @@ m_ResolvedPackages:
     version: 17.0.3
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.0.3
+    version: 17.3.0
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.28
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ugui
@@ -5273,21 +6533,19 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.5.1
+    version: 2.6.2
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
+    version: 1.11.6
   - name: com.unity.test-framework.performance
-    version: 3.0.3
+    version: 3.2.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
-  - name: com.unity.rendering.light-transport
-    version: 1.0.1
   keywords: []
   registry:
     id: main
@@ -5297,6 +6555,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -5315,25 +6576,43 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: fa63c96d3e1af317d84d171cd6c0e0658ab159df
+  fingerprint: 8dc1aab4af1d718781689a36ed5231a35ad1a524
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.3
-    minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.ide.visualstudio@2.0.22
+    minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.ide.visualstudio@2.0.26
   testable: 0
   isDirectDependency: 0
-  version: 2.0.22
+  version: 2.0.26
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ide.visualstudio
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -5342,7 +6621,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -5374,17 +6653,20 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     - 2.0.23
+    - 2.0.25
+    - 2.0.26
+    - 2.0.27
     compatible:
-    - 2.0.22
-    - 2.0.23
-    recommended: 2.0.23
+    - 2.0.26
+    - 2.0.27
+    recommended: 2.0.27
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
-    version: 1.1.9
+    version: 1.1.33
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -5400,48 +6682,66 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638326061910000000
+  datePublishedTicks: 639014773899080000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 700b44077345e97d37d464ff25507638983aed64
+    revision: a52ff32ff9e8cf43be6597597939ef63126ab463
     path: 
   unityLifecycle:
-    version: 2.0.22
+    version: 2.0.26
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Add support for `XDG_DATA_DIRS` and
-    `.desktop` files on Linux for `VS Code` discovery.\n- Use compile-time platform-specifics
-    instead of using runtime conditions.\n\nProject generation:\n\n- Suppress `USG0001`
-    warnings.\n- Mark referenced assemblies as private (to not copy extra files to
-    output directory when building).\n- Add Unity capability to SDK-Style projects.\n-
-    Prevent circular dependency errors with SDK-Style projects."}'
+  upmReserved: '{"changelog":"Integration:\n\n- Fix handling of asset-pipeline refresh-mode
+    setting.\n\nProject generation:\n\n- Add `EnableOnDemandExcludedFolderLoading`
+    capability when generating SDK-Style project."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 8140e851d83e922ca2021b04a89519de94ebe38c
+  fingerprint: a99d56dec63ffb3a911a5a9bce9b77ba862a601c
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.0.22
-    minimumUnityVersion: 2019.4.25f1
-- packageId: com.unity.ide.rider@3.0.31
+    minimumPackageVersion: 2.0.26
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.ide.rider@3.0.39
   testable: 0
   isDirectDependency: 0
-  version: 3.0.31
+  version: 3.0.39
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ide.rider
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ide.rider@4504839d03f7
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -5450,7 +6750,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
@@ -5503,13 +6803,14 @@ m_ResolvedPackages:
     - 3.0.34
     - 3.0.35
     - 3.0.36
+    - 3.0.37
+    - 3.0.38
+    - 3.0.39
     compatible:
-    - 3.0.31
-    - 3.0.34
-    - 3.0.35
-    - 3.0.36
-    recommended: 3.0.36
-    deprecated: []
+    - 3.0.39
+    recommended: 3.0.39
+    deprecated:
+    - 3.0.37
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -5525,46 +6826,65 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638548308080000000
+  datePublishedTicks: 639045875071620000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: ccd778a2275ff09f1a83bc924cfb2fb4d5b63566
+    revision: 4da98b83c4f1de974829959526a470c26a8fa9f4
     path: 
   unityLifecycle:
-    version: 3.0.31
+    version: 3.0.39
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"fix RIDER-104519 Rider is reporting errors in scripts
-    that work fine in Unity when utilizing DOTS - when Player project, by generating
-    projects for all assemblies in \"com.unity.entities\", \"com.unity.collections\"\nfix
-    RIDER-111622 Unity Rider package is not compatible with Rider Dev builds"}'
+  upmReserved: '{"changelog":"- fix the indent of the LinkButton\n- fix project generation
+    to avoid attempts to restore NuGet packages (with some of the MSBuild versions)"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 7921be93db40ec070fcb01ed82d1c3df1bbdddcd
+  fingerprint: 4504839d03f7a5a4495357084a0ffd6e439892cf
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 3.0.31
-    minimumUnityVersion: 2019.2.6f1
-- packageId: com.unity.performance.profile-analyzer@1.2.2
+    minimumPackageVersion: 3.0.39
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.performance.profile-analyzer@1.3.1
   testable: 0
   isDirectDependency: 0
-  version: 1.2.2
+  version: 1.3.1
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.performance.profile-analyzer
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.performance.profile-analyzer@311968ce4be7
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -5573,7 +6893,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: "The Profile Analyzer tool supports the standard Unity Profiler. You
     can use it to analyze multiple frames and multiple data sets of the CPU data
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
@@ -5597,10 +6917,16 @@ m_ResolvedPackages:
     - 1.1.1
     - 1.2.2
     - 1.2.3
+    - 1.2.4
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
     compatible:
-    - 1.2.2
-    - 1.2.3
-    recommended: 1.2.3
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    recommended: 1.3.3
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -5613,44 +6939,64 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638108624620000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
+  datePublishedTicks: 639044511012190000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
-    revision: 2c63f931588caa60a1fef33b1b250b20d952dc58
+    revision: 248e5ebe5686d9a3df7dd7cc9acbd49808730fe5
     path: 
   unityLifecycle:
-    version: 1.2.2
+    version: 1.3.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n* Fixed exception thrown when removing
-    marker."}'
+  upmReserved: '{"changelog":"### Fixed\n* Fixed documentation error"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: fe7acfd2717a98ded6ddc33be6b2ebe4459a2add
+  fingerprint: 311968ce4be7b8c45e37a6c865e744fb1b7a7b3e
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.2.2
-    minimumUnityVersion: 2020.3.0a1
-- packageId: com.unity.test-framework@1.4.5
+    minimumPackageVersion: 1.3.1
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.test-framework@1.6.0
   testable: 0
   isDirectDependency: 0
-  version: 1.4.5
-  source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.test-framework
+  version: 1.6.0
+  source: 2
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -5659,73 +7005,15 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: assets
+  type: 
   description: Test framework for running Edit mode and Play mode tests in Unity.
   errors: []
   versions:
     all:
-    - 0.0.4-preview
-    - 0.0.29-preview
-    - 1.0.0
-    - 1.0.7
-    - 1.0.9
-    - 1.0.11
-    - 1.0.12
-    - 1.0.13
-    - 1.0.14
-    - 1.0.16
-    - 1.0.17
-    - 1.0.18
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    - 1.1.3
-    - 1.1.5
-    - 1.1.8
-    - 1.1.9
-    - 1.1.11
-    - 1.1.13
-    - 1.1.14
-    - 1.1.16
-    - 1.1.18
-    - 1.1.19
-    - 1.1.20
-    - 1.1.22
-    - 1.1.24
-    - 1.1.26
-    - 1.1.27
-    - 1.1.29
-    - 1.1.30
-    - 1.1.31
-    - 1.1.33
-    - 1.3.0
-    - 1.3.1
-    - 1.3.2
-    - 1.3.3
-    - 1.3.4
-    - 1.3.5
-    - 1.3.7
-    - 1.3.8
-    - 1.3.9
-    - 1.4.0
-    - 1.4.1
-    - 1.4.2
-    - 1.4.3
-    - 1.4.4
-    - 1.4.5
-    - 1.4.6
-    - 2.0.1-exp.1
-    - 2.0.1-exp.2
-    - 2.0.1-pre.12
-    - 2.0.1-pre.18
+    - 1.6.0
     compatible:
-    - 1.4.5
-    - 1.4.6
-    - 2.0.1-exp.1
-    - 2.0.1-exp.2
-    - 2.0.1-pre.12
-    - 2.0.1-pre.18
-    recommended: 1.4.6
+    - 1.6.0
+    recommended: 1.6.0
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -5752,70 +7040,64 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 1
+    licensingModel: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638575054880000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index.html
-  hasRepository: 1
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
   repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: e50747c90fb18ab9f4f350b60d0fcdcae19bdebc
+    type: 
+    url: 
+    revision: 
     path: 
   unityLifecycle:
-    version: 1.4.5
+    version: 1.6.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"- Fixed an issue where batchmode test runs would never
-    finish if a test yielded WaitForEndOfFrame (DSTR-1009).\n- Fixed an issue where
-    the location prompt was required when using the Install all tests in ''build''
-    folder option during test builds.\n- Canceling a PlayMode test run now correctly
-    restores the scene setup, instead of leaving the editor in the test scene.\n-
-    Fixed an issue where UnitySetUp did not fail when nested coroutines threw an
-    exception (DSTR-1007).\n- When selecting multiple tests and running them, the
-    test runner now correctly updates the details of the first selected test (UTF-602).\n-
-    The interaction mode and application idle time settings is now being changes
-    when running tests, resulting in faster test runs if not already in use (applies
-    to 2020.3 and later) (DSTR-690).\n- Fixed an issue where some NUnit attributes
-    caused errors and stopped async test runs (DSTR-1040).\n- Added support for the
-    MaxTime attribute on async and UnityTest methods (DSTR-1040).\n- Fixed a memory
-    leak issue where a large number of domain reloads within the same test could
-    crash the editor (DSTR-1023).\n- Changed to use a progress bar inside the test
-    runner window when running tests. This ensures that the progress bar is not fighting
-    to display when e.g. compiling scripts and also makes it easier to cancel a run.
-    This progress bar is displayed for all types of runs (EditMode, PlayMode and
-    Player). (UTF-596).\n- Fixed an issue where ignored tests with an attributes
-    did not display the ignore reason in the test runner UI.\n- Having multiple tests
-    with the same unique id no longer gives a error with ''An item with the same
-    key has already been added'', but instead logs an warning about the duplicate
-    id.\n- The result icons for test suites should no longer flicker when running
-    tests.\n- Ensured that test results ignored in the editor but run on a player
-    are not overwritten with ignore status when shown in the UI (DSTR-1042).\n- Fixed
-    an issue where the RunStarted event was not invoked correctly during a test run
-    (DSTR-1046).\n- Fixed an issue where TestStarted and TestFinished events were
-    repeated for ignored test fixtures after a domain reload (DSTR-986)."}'
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 0a21eb82d95cd331643a1e0ce4e8e9a5f18954c8
+  fingerprint: 0b7a23ab2e1d74441a5afdffa63f417929756957
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.4.5
-    minimumUnityVersion: 2019.4.0a10
-- packageId: com.unity.testtools.codecoverage@1.2.6
+    minimumPackageVersion: 1.6.0
+    minimumUnityVersion: 6000.0.44f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.testtools.codecoverage@1.3.0
   testable: 0
   isDirectDependency: 0
-  version: 1.2.6
+  version: 1.3.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.testtools.codecoverage
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.testtools.codecoverage@19a841221620
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -5824,7 +7106,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Use this package to export code coverage data and reports from your
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
@@ -5864,18 +7146,20 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     - 1.2.6
+    - 1.2.7
+    - 1.3.0
     compatible:
-    - 1.2.6
-    recommended: 1.2.6
+    - 1.3.0
+    recommended: 1.3.0
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
-    version: 1.0.16
+    version: 1.4.5
   - name: com.unity.settings-manager
-    version: 1.0.1
+    version: 2.0.0
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -5883,7 +7167,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.settings-manager
-    version: 2.0.1
+    version: 2.1.1
   keywords:
   - test
   - coverage
@@ -5897,55 +7181,94 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638575857900000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
+  datePublishedTicks: 639045470066020000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: 959db8ff97eedf9b211ad5cf320b87ac01f1e90f
+    revision: f588d79b844a1f4a1cead85842bdf64782dd741a
     path: 
   unityLifecycle:
-    version: 1.2.6
+    version: 1.3.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixes\n- Documentation: Fixed formatting in [Using
-    Code Coverage in batchmode](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/CoverageBatchmode.html)
-    page (case [COV-40](https://issuetracker.unity3d.com/issues/docs-formatting-in-using-code-coverage-in-batchmode-docs-page-is-incorrect)).\n-
-    Removed the references to the deprecated FindObjectOfType method in the *Asteroids
-    sample project* (case [COV-42](https://issuetracker.unity3d.com/issues/sample-project-is-using-obsolete-findobjectoftype-method-which-causes-multiple-warnings-in-console-when-it-is-imported)).\n-
-    Added missing logs for the ReportGenerator (case [COV-46](https://issuetracker.unity3d.com/issues/code-coverage-package-does-not-report-some-of-the-internal-reportgenerator-errors))."}'
+  upmReserved: '{"changelog":"### Fixes\n\n- Fixed the filtering and reporting of
+    package''s paths that were reported relative to the current project instead of
+    absolute.\n- Fixed a NullReferenceException that could occur while computing
+    cyclomatic complexity.\n- Fixed references to the deprecated EditorAnalytics
+    methods for release streams from 6000.0 or newer (case [COV-44](https://issuetracker.unity3d.com/issues/sample-editoranalytics-warning-when-enabilg-code-coverage-in-the-sample-project))\n-
+    Fixed playmode tests failing in the _Asteroids sample project_ (case [COV-54](https://issuetracker.unity3d.com/issues/multiple-tests-are-failing-in-the-code-coverage-sample-asteroids-project))\n-
+    Fixed pink materials to be rendered for URP in _Asteroids sample project_\n-
+    Updated the Input System in _Asteroids sample project_ to use the new Input System
+    package instead of the legacy one (case [COV-52](https://issuetracker.unity3d.com/issues/asteroids-sample-project-is-not-updated-for-the-new-unity-streams))\n-
+    Fixed _assembliesInclude_/_assembliesExclude_ parsing in `filtersFromFile` when
+    running in the command line in `non-batchmode`\n\n### Changes\n\n- Raised the
+    minimum supported Unity version for the Code Coverage package to 2021.3 and updated
+    the codebase to align with this new dependency.\n- Updated dependency packages
+    versions: `com.unity.test-framework` to v1.4.5 and `com.unity.settings-manager`
+    to v2.0.0.\n- The entries in the `pathFilters` option in _-coverageOptions_ are
+    now processed in order so a subset path can be included even if the parent path
+    is excluded. Previously all exclusions were processed before any inclusions.\n-
+    Removed the `CoverageFormat` class, as there are currently no plans to support
+    any other raw coverage formats other than OpenCover.\n\n### Improvements\n\n-
+    Reduced the needed time to apply path filtering during the report generation.\n-
+    Migrated Mono APIs to CoreCLR-compatible APIs.\n- Documentation: Added a note
+    about the Input System package dependency in the [Code Coverage tutorial](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.3/manual/Quickstart.html)
+    page.\n- Documentation: Fixed broken links in the [Code Coverage tutorial](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.3/manual/Quickstart.html)
+    page."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 205a02cbcb39584f20b51c49b853047aceb3a3a7
+  fingerprint: 19a8412216200955baa50132d98cb9fe4770e401
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.2.6
-    minimumUnityVersion: 2019.3.0a1
-- packageId: com.meta.xr.sdk.core@76.0.0
+    minimumPackageVersion: 1.3.0
+    minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.meta.xr.sdk.core@85.0.0
   testable: 0
   isDirectDependency: 0
-  version: 76.0.0
+  version: 85.0.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.meta.xr.sdk.core
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.meta.xr.sdk.core@f8b4cfb2789f
   assetPath: Packages/com.meta.xr.sdk.core
   name: com.meta.xr.sdk.core
   displayName: Meta XR Core SDK
   author:
     name: Meta Platforms, Inc.
     email: 
-    url: https://developer.oculus.com/
+    url: https://developers.meta.com/horizon/
   category: 
   type: 
   description: Meta XR Core SDK package provides the latest features to create immersive
@@ -5973,6 +7296,15 @@ m_ResolvedPackages:
     - 74.0.1
     - 74.0.2
     - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
     compatible:
     - 59.0.0
     - 60.0.0
@@ -5994,17 +7326,26 @@ m_ResolvedPackages:
     - 74.0.1
     - 74.0.2
     - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
     recommended: 
     deprecated: []
   dependencies: []
   resolvedDependencies: []
   keywords:
-  - Quest
   - SDK
-  - Utilities
   - Meta
   - XR
   - Oculus
+  - Quest
+  - Utilities
   registry:
     id: main
     name: 
@@ -6013,11 +7354,14 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 2
   isAssetStorePackage: 1
-  datePublishedTicks: 638815676229650000
+  datePublishedTicks: 639065792000590000
   documentationUrl: https://developer.oculus.com/documentation/unity/
   hasRepository: 0
   repository:
@@ -6031,25 +7375,43 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: assetstore
+      entitlementKeys: []
+      ownerOrgName: Meta
+      ownerOrgId: 9071023003857
+      publisherName: Meta
+    errorCode: 
   assetStore:
     productId: 269169
-  fingerprint: fc2d39f84dd4b672d9dd6904ad3e688df5818ca5
+  fingerprint: f8b4cfb2789f06cb55ea30b9a379bf52c98d1af3
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 59.0.0
     minimumUnityVersion: 2022.3.15f1
-- packageId: com.meta.xr.sdk.interaction@76.0.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.meta.xr.sdk.interaction@85.0.0
   testable: 0
   isDirectDependency: 0
-  version: 76.0.0
+  version: 85.0.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.meta.xr.sdk.interaction
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.meta.xr.sdk.interaction@0a0b3efbe99d
   assetPath: Packages/com.meta.xr.sdk.interaction
   name: com.meta.xr.sdk.interaction
   displayName: Meta XR Interaction SDK Essentials
@@ -6085,6 +7447,14 @@ m_ResolvedPackages:
     - 74.0.1
     - 74.0.2
     - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.4
+    - 85.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
@@ -6107,6 +7477,14 @@ m_ResolvedPackages:
     - 74.0.1
     - 74.0.2
     - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.4
+    - 85.0.0
     recommended: 
     deprecated: []
   dependencies:
@@ -6124,12 +7502,12 @@ m_ResolvedPackages:
   - name: com.unity.textmeshpro
     version: 5.0.0
   keywords:
-  - Quest
-  - Oculus
   - Meta
-  - XR
-  - Interaction
   - SDK
+  - Interaction
+  - Quest
+  - XR
+  - Oculus
   registry:
     id: main
     name: 
@@ -6138,11 +7516,14 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 2
   isAssetStorePackage: 1
-  datePublishedTicks: 638815689227220000
+  datePublishedTicks: 639065795831350000
   documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
   hasRepository: 0
   repository:
@@ -6156,25 +7537,43 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: assetstore
+      entitlementKeys: []
+      ownerOrgName: Meta
+      ownerOrgId: 9071023003857
+      publisherName: Meta
+    errorCode: 
   assetStore:
     productId: 264559
-  fingerprint: de75e6da706dc3a9e63ed824e88bd0781f2c1037
+  fingerprint: 0a0b3efbe99d88502b6218894e19a1faf173b34d
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 56.0.0-preview
     minimumUnityVersion: 2022.3.15f1
-- packageId: com.unity.searcher@4.9.2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.searcher@4.9.4
   testable: 0
   isDirectDependency: 0
-  version: 4.9.2
+  version: 4.9.4
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.searcher
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.searcher@d45a78918735
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -6183,7 +7582,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: General search window for use in the Editor. First target use is for
     GraphView node search.
   errors: []
@@ -6206,10 +7605,10 @@ m_ResolvedPackages:
     - 4.9.1
     - 4.9.2
     - 4.9.3
+    - 4.9.4
     compatible:
-    - 4.9.2
-    - 4.9.3
-    recommended: 4.9.3
+    - 4.9.4
+    recommended: 4.9.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -6224,43 +7623,65 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637831252240000000
-  documentationUrl: 
+  datePublishedTicks: 638965670878140000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.searcher@4.9/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
-    revision: 7f9f75b04e97cf09c8ddc3968d059e74d6a2460a
+    revision: 6fad693b6604ae7175b59ebb4990d9a0b6c1d012
     path: 
   unityLifecycle:
-    version: 4.9.2
+    version: 4.9.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"- Fixed a bug where spaces are removed when highlighted.\n-
+    Changed VisualSplitter to twoPaneSplitView and updated indentation"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 90d011a70418fd5b0f4b8e86df39444d2af228dd
+  fingerprint: d45a78918735dd5b1de2247c6e3567c60aa24115
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 4.9.2
-    minimumUnityVersion: 2019.1.0a1
-- packageId: com.unity.burst@1.8.18
+    minimumPackageVersion: 4.9.4
+    minimumUnityVersion: 2019.1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.burst@1.8.28
   testable: 0
   isDirectDependency: 0
-  version: 1.8.18
+  version: 1.8.28
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.burst
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.burst@07790c2d06d9
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -6411,12 +7832,16 @@ m_ResolvedPackages:
     - 1.8.19
     - 1.8.20
     - 1.8.21
+    - 1.8.22
+    - 1.8.23
+    - 1.8.24
+    - 1.8.25
+    - 1.8.26
+    - 1.8.27
+    - 1.8.28
     compatible:
-    - 1.8.18
-    - 1.8.19
-    - 1.8.20
-    - 1.8.21
-    recommended: 1.8.21
+    - 1.8.28
+    recommended: 1.8.28
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -6425,7 +7850,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   keywords: []
@@ -6437,54 +7862,72 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638622972693870000
+  datePublishedTicks: 639052730336850000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/burst.git
-    revision: 594a8d8794083be96fa510b2deea0954f971ecc9
+    revision: c95bc6caa3b1fff43bc88047ff7da12fb4899bcc
     path: 
   unityLifecycle:
-    version: 1.8.18
+    version: 1.8.28
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n- Added the `UNITY_BURST_DISABLE_COMPILATION`
-    environment variable as an alternative to the `--burst-disable-compilation` command-line
-    argument\n\n### Removed\n\n### Changed\n\n### Fixed\n- Static fields used in
-    static constructors were sometimes incorrectly set to read only, despite being
-    written.\n- Fixed a case of the editor getting stuck loading during a domain
-    reload if Burst was set to synchronous compilation\n- Fixed hashing bug that
-    could occur when method signatures differed only by generic parameter count\n-
-    Branches within if (cpufeaturesupported) blocks could cause the transform pass
-    to miss identify which blocks are supporting which features, leading to errors
-    at compile time about intrinsics not being in matching blocks.\n- Fixed ''cannot
-    open input file ucrt.lib'' error when building for Universal Windows Platform
-    and targeting SDK 10.0.26100.0\n\n### Known Issues"}'
+  upmReserved: '{"changelog":"### Added\n\n### Removed\n\n### Changed\n\n### Fixed\n-
+    User-reported copy-paste error `v128` -> `v256` in `v256` constructor description.\n-
+    User-reported typo in user manual, `paraeters` -> `parameters`.\n- Fixed that
+    Burst would miscompile arithmetic under very specific circumstances\n- Fixed
+    that conditionally formatted strings passed to a `[BurstDiscard]`''ed method
+    could lead to stack-overflow\n- Fixed that assert methods supported by Burst
+    wouldn''t throw the correct type\n- Fixed a crash that could happen when calling
+    `[DllImport(\"__Internal\")]` methods that have pointers in their signature\n\n###
+    Known Issues\n\n### Purpose"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 616862665d8c8ffe643d505aebb5de2ee73b0ab0
+  fingerprint: 07790c2d06d99e35fe39459bd582a965d07700c4
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.8.18
-    minimumUnityVersion: 2020.3.0a1
-- packageId: com.unity.collections@2.5.1
+    minimumPackageVersion: 1.8.28
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.collections@2.6.2
   testable: 0
   isDirectDependency: 0
-  version: 2.5.1
+  version: 2.6.2
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.collections
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.collections@aea9d3bd5e19
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -6574,40 +8017,47 @@ m_ResolvedPackages:
     - 2.5.3
     - 2.5.7
     - 2.6.0-exp.2
+    - 2.6.0-pre.3
+    - 2.6.0-pre.4
+    - 2.6.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
     compatible:
-    - 2.5.1
-    - 2.5.2
-    - 2.5.3
-    - 2.5.7
-    - 2.6.0-exp.2
-    recommended: 2.5.7
+    - 2.6.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    recommended: 2.6.5
     deprecated: []
   dependencies:
   - name: com.unity.burst
-    version: 1.8.17
+    version: 1.8.23
+  - name: com.unity.mathematics
+    version: 1.3.2
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
+    version: 1.11.5
   - name: com.unity.test-framework.performance
     version: 3.0.3
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.28
   - name: com.unity.mathematics
-    version: 1.3.2
+    version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
+    version: 1.11.6
   - name: com.unity.test-framework.performance
-    version: 3.0.3
+    version: 3.2.0
   keywords:
   - dots
   - collections
@@ -6620,142 +8070,65 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638621282722800000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.5/manual/index.html
+  datePublishedTicks: 638950336031850000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.6/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/dots.git
-    revision: 5b0dea6b455f5df005c19fa984ddfa237d6cd707
+    revision: 34a49c9a68f70872c0a108dbef6cdea306d6b593
     path: 
   unityLifecycle:
-    version: 2.5.1
+    version: 2.6.2
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n* Updated Burst dependency to version
-    1.8.17\n* Updated Unity Test Framework dependency to version 1.4.5\n* Updated
-    entities packages dependencies\n\n### Fixed\n* Certain cases would cause an ILPostProcessor
-    to fail, blocking compilation, but no more."}'
+  upmReserved: '{"changelog":"### Changed\n\n* Updated Burst dependency to version
+    1.8.23."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 56bff8827a7ef6d44fcee4f36e558a74da89c1a0
+  fingerprint: aea9d3bd5e19f2a90fc3a39919974a5f3613a159
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.5.1
-    minimumUnityVersion: 2022.3.11f1
-- packageId: com.unity.rendering.light-transport@1.0.1
+    minimumPackageVersion: 2.6.2
+    minimumUnityVersion: 2022.3.20f1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.settings-manager@2.1.1
   testable: 0
   isDirectDependency: 0
-  version: 1.0.1
-  source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.rendering.light-transport
-  assetPath: Packages/com.unity.rendering.light-transport
-  name: com.unity.rendering.light-transport
-  displayName: Unity Light Transport Library
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Unity Light Transport Library exposes reusable code for writing light
-    transport algorithms such as raytracing or pathtracing
-  errors: []
-  versions:
-    all:
-    - 1.0.1
-    compatible:
-    - 1.0.1
-    recommended: 1.0.1
-    deprecated: []
-  dependencies:
-  - name: com.unity.collections
-    version: 2.2.0
-  - name: com.unity.mathematics
-    version: 1.2.4
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.collections
-    version: 2.5.1
-  - name: com.unity.burst
-    version: 1.8.18
-  - name: com.unity.mathematics
-    version: 1.3.2
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.4.5
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
-  - name: com.unity.test-framework.performance
-    version: 3.0.3
-  - name: com.unity.modules.terrain
-    version: 1.0.0
-  keywords:
-  - raytracing
-  - pathtracing
-  - monte-carlo
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 1.0.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 8e780c06f5c1408ffa25004f2c90b6802481bbd8
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.1
-    minimumUnityVersion: 2023.3.0b1
-- packageId: com.unity.settings-manager@2.0.1
-  testable: 0
-  isDirectDependency: 0
-  version: 2.0.1
+  version: 2.1.1
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.settings-manager
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.settings-manager@0b8638c5ce86
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -6764,7 +8137,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
   errors: []
@@ -6779,10 +8152,10 @@ m_ResolvedPackages:
     - 2.0.0
     - 2.0.1
     - 2.1.0
+    - 2.1.1
     compatible:
-    - 2.0.1
-    - 2.1.0
-    recommended: 2.0.1
+    - 2.1.1
+    recommended: 2.1.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -6795,43 +8168,66 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637744099390000000
-  documentationUrl: 
+  datePublishedTicks: 638956174685890000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
+    revision: 6eb5ed85eaf3276cc09f0cc4fc3311c72f0fc196
     path: 
   unityLifecycle:
-    version: 2.0.1
+    version: 2.1.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"### Changes\n\n- Enable Auto Reference on main assembly.\n\n###
+    Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify
+    that context menu items are relevant only to the selected category."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 56a930affa1e4462d3595b5c19a1c2a4bf2015d2
+  fingerprint: 0b8638c5ce86009d785da17b17aaf629047f64ce
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.0.1
-    minimumUnityVersion: 2018.4.0a1
+    minimumPackageVersion: 2.1.1
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.ext.nunit@2.0.5
   testable: 0
   isDirectDependency: 0
   version: 2.0.5
-  source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ext.nunit
+  source: 2
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -6840,21 +8236,12 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: assets
+  type: 
   description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
     version 3.5 and works with all platforms, il2cpp and Mono AOT.
   errors: []
   versions:
     all:
-    - 0.1.5-preview
-    - 0.1.6-preview
-    - 0.1.9-preview
-    - 1.0.0
-    - 1.0.5
-    - 1.0.6
-    - 2.0.2
-    - 2.0.3
-    - 2.0.4
     - 2.0.5
     compatible:
     - 2.0.5
@@ -6874,17 +8261,20 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 1
+    licensingModel: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638236642220000000
+  datePublishedTicks: 0
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ext.nunit@2.0/manual/index.html
-  hasRepository: 1
+  hasRepository: 0
   repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
-    revision: 469fe0d46bfc26fbb32a53885ca4d12abcdae4ae
+    type: 
+    url: 
+    revision: 
     path: 
   unityLifecycle:
     version: 2.0.5
@@ -6892,25 +8282,43 @@ m_ResolvedPackages:
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"- Fixing bug for InstanceID as struct changes"}'
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: 60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092
+  fingerprint: d8c07649098d3936da4c8ab500960c1776b44592
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.5
-    minimumUnityVersion: 2019.4.0a1
-- packageId: com.unity.textmeshpro@3.0.6
+    minimumUnityVersion: 2019.4
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.textmeshpro@5.0.0
   testable: 0
   isDirectDependency: 0
   version: 5.0.0
   source: 2
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.textmeshpro
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.textmeshpro@53f43edfd2e0
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -6926,103 +8334,6 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 0.1.2
-    - 1.0.21
-    - 1.0.23
-    - 1.0.25
-    - 1.0.26
-    - 1.1.0
-    - 1.2.0
-    - 1.2.1
-    - 1.2.2
-    - 1.2.3
-    - 1.2.4
-    - 1.3.0-preview
-    - 1.3.0
-    - 1.4.0-preview.1b
-    - 1.4.0-preview.2a
-    - 1.4.0-preview.3a
-    - 1.4.0
-    - 1.4.1-preview.1
-    - 1.4.1
-    - 1.5.0-preview.1
-    - 1.5.0-preview.2
-    - 1.5.0-preview.3
-    - 1.5.0-preview.4
-    - 1.5.0-preview.5
-    - 1.5.0-preview.6
-    - 1.5.0-preview.7
-    - 1.5.0-preview.8
-    - 1.5.0-preview.10
-    - 1.5.0-preview.11
-    - 1.5.0-preview.12
-    - 1.5.0-preview.13
-    - 1.5.0-preview.14
-    - 1.5.0
-    - 1.5.1
-    - 1.5.3
-    - 1.5.4
-    - 1.5.5
-    - 1.5.6
-    - 1.6.0-preview.1
-    - 2.0.0
-    - 2.0.1-preview.1
-    - 2.0.1
-    - 2.1.0-preview.1
-    - 2.1.0-preview.2
-    - 2.1.0-preview.3
-    - 2.1.0-preview.4
-    - 2.1.0-preview.5
-    - 2.1.0-preview.7
-    - 2.1.0-preview.8
-    - 2.1.0-preview.10
-    - 2.1.0-preview.11
-    - 2.1.0-preview.12
-    - 2.1.0-preview.13
-    - 2.1.0-preview.14
-    - 2.1.0
-    - 2.1.1
-    - 2.1.3
-    - 2.1.4
-    - 2.1.5
-    - 2.1.6
-    - 2.2.0-preview.1
-    - 2.2.0-preview.2
-    - 2.2.0-preview.3
-    - 3.0.0-preview.1
-    - 3.0.0-preview.3
-    - 3.0.0-preview.4
-    - 3.0.0-preview.5
-    - 3.0.0-preview.7
-    - 3.0.0-preview.8
-    - 3.0.0-preview.10
-    - 3.0.0-preview.11
-    - 3.0.0-preview.12
-    - 3.0.0-preview.13
-    - 3.0.0-preview.14
-    - 3.0.0
-    - 3.0.1
-    - 3.0.3
-    - 3.0.4
-    - 3.0.5
-    - 3.0.6
-    - 3.0.7
-    - 3.0.8
-    - 3.0.9
-    - 3.2.0-pre.1
-    - 3.2.0-pre.2
-    - 3.2.0-pre.3
-    - 3.2.0-pre.4
-    - 3.2.0-pre.5
-    - 3.2.0-pre.6
-    - 3.2.0-pre.7
-    - 3.2.0-pre.8
-    - 3.2.0-pre.9
-    - 3.2.0-pre.10
-    - 3.2.0-pre.11
-    - 3.2.0-pre.12
-    - 4.0.0-pre.1
-    - 4.0.0-pre.2
     - 5.0.0
     compatible: []
     recommended: 
@@ -7046,6 +8357,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 0
@@ -7066,25 +8380,43 @@ m_ResolvedPackages:
     deprecationMessage: This package is no longer supported. TextMeshPro functionalities
       are now included in the com.unity.ugui package. To continue using them, consider
       adding it to your project dependencies.
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
   upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
   fingerprint: 53f43edfd2e0bf2438ca6e2038ba12107a181253
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 
-    minimumUnityVersion: 2023.2.0a1
-- packageId: com.unity.nuget.mono-cecil@1.11.4
+    minimumUnityVersion: 2023.2
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.nuget.mono-cecil@1.11.6
   testable: 0
   isDirectDependency: 0
-  version: 1.11.4
+  version: 1.11.6
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.nuget.mono-cecil
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -7093,16 +8425,16 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: library
+  type: 
   description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
 
 
     This
     package is intended for internal Unity use only. Most Unity users will be better
-    suite using the existing community tooling.
+    suited using the existing community tooling.
 
-    To avoid assembly clashes, please
-    use this package if you intend to use Mono.Cecil.'
+    To avoid assembly clashes,
+    please use this package if you intend to use Mono.Cecil.'
   errors: []
   versions:
     all:
@@ -7114,10 +8446,10 @@ m_ResolvedPackages:
     - 1.10.2
     - 1.11.4
     - 1.11.5
+    - 1.11.6
     compatible:
-    - 1.11.4
-    - 1.11.5
-    recommended: 1.11.5
+    - 1.11.6
+    recommended: 1.11.6
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -7130,43 +8462,66 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637852971930000000
-  documentationUrl: 
+  datePublishedTicks: 638950052256350000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.nuget.mono-cecil@1.11/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
-    revision: d0133ce672d724694b56bfd20672acf6f8737fec
+    revision: ab40507b5d82f57a4f34b6d0eacca1d6b170341d
     path: 
   unityLifecycle:
-    version: 1.11.4
+    version: 1.11.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 0
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"* This is a verified release of the com.unity.nuget.mono-cecil
+    with embedded dlls of mono-cecil\n* Updated Cecil to 0.11.5 with a grafted patch
+    from this bug fix PR (https://github.com/jbevain/cecil/pull/914)"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62
+  fingerprint: ecb9724e46fff855c46a4f37f0a3377a3cfffc06
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.11.4
-    minimumUnityVersion: 2018.4.0a1
-- packageId: com.unity.test-framework.performance@3.0.3
+    minimumPackageVersion: 1.11.6
+    minimumUnityVersion: 2019.4
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.test-framework.performance@3.2.0
   testable: 0
   isDirectDependency: 0
-  version: 3.0.3
+  version: 3.2.0
   source: 1
-  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.test-framework.performance
+  resolvedPath: C:\Brown\Research\VR\NASA-GEDI\Unity\GEDI_Visualization\Library\PackageCache\com.unity.test-framework.performance@0840f58e4562
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -7175,7 +8530,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Package that extends Unity Test Framework package. Adds performance
     testing capabilities and collects configuration metadata.
   errors: []
@@ -7233,19 +8588,19 @@ m_ResolvedPackages:
     - 3.0.2
     - 3.0.3
     - 3.1.0
+    - 3.2.0
     compatible:
-    - 3.0.3
-    - 3.1.0
-    recommended: 3.0.3
+    - 3.2.0
+    recommended: 3.2.0
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
-    version: 1.1.31
+    version: 1.1.33
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -7263,39 +8618,56 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
+    compliance:
+      status: 0
+      violations: []
   hideInEditor: 1
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638301960470000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.0/manual/index.html
+  datePublishedTicks: 638936561440790000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework.performance@3.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.test-framework.performance.git
-    revision: 10b82691b2d9f4e4aa8385c8d797c7e544bac548
+    revision: fe7ade132131103e7608be564921ab8de35fd8e4
     path: 
   unityLifecycle:
-    version: 3.0.3
+    version: 3.2.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 
+    isDiscoverable: 1
   isDeprecated: 0
   deprecationMessage: 
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"## Fixed \n- Fixed issue where exception in OnTestEnded
-    callback would result in EndTest method not finalising properly\n### Changed\n-
-    Temporarily removed \"Open Script\" from Performance Benchmark Window\n- Some
-    clarifications in documentation were added (\"Extension\" naming changed to \"Package\",
-    Package limitations clarified)"}'
+  upmReserved: '{"changelog":"### Added\n\n- Improved render threading mode reporting"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+    errorCode: 
   assetStore:
     productId: 
-  fingerprint: fb0dc592af8b524f1a06c50d7caf95552f1bcd2f
+  fingerprint: 0840f58e45624f7677679a0f8b6a5137689e607f
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 3.0.3
-    minimumUnityVersion: 2020.3.0a1
-m_BuiltInPackagesHash: 4f75c37d7db9cb7d9b9c9879cb839d8c6f4a1918
+    minimumPackageVersion: 3.2.0
+    minimumUnityVersion: 2020.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+m_BuiltInPackagesHash: 7eadf5d83ddf166884c0122071f22dfe987531e5

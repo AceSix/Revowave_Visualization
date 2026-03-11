@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq; // <--- Add this
 using UnityEngine;
@@ -14,7 +15,6 @@ public class TerrainManager : MonoBehaviour
 {
     [Header("Data and Texture")]
     public DataManager dataManager;
-    public Texture2D terrainTexture;
     public Material terrainMaterial;  // Material for ground terrain
     public Material wireframeMaterial;
 
@@ -25,13 +25,14 @@ public class TerrainManager : MonoBehaviour
     [Header("Tandem-X Terrain")]
     public int resolution = 256;
     public Button ToggleDemTerrain;
-    public Texture2D demSourceTandemX;
 
     private int gediTerrainDisplayState = 2; // 0 = Solid, 1 = Wireframe, 2 = Off
     private int tandemxTerrainDisplayState = 0; // 0 = Solid, 1 = Wireframe, 2 = Off
     private const int TERRAIN_NUM_STATES = 3; // Total number of states
 
 
+    private Texture2D terrainTexture;
+    private Texture2D demSourceTandemX;
     private GameObject terrainGEDI;
     private GameObject terrainTandemX;
     private Mesh terrainWireframeTandemX;
@@ -39,6 +40,19 @@ public class TerrainManager : MonoBehaviour
     private Mesh terrainWireframeGEDI;
     private Mesh terrainSolidGEDI;
 
+    public void LoadTexture(string texturePath)
+    {
+        byte[] bytes = File.ReadAllBytes(texturePath);
+        terrainTexture = new Texture2D(2,2);
+        terrainTexture.LoadImage(bytes);
+    }
+
+    public void LoadTandemX(string demPath)
+    {
+        byte[] bytes = File.ReadAllBytes(demPath);
+        demSourceTandemX = new Texture2D(2,2);
+        demSourceTandemX.LoadImage(bytes);
+    }
 
     public void CreateTerrainTandemX()
     {
