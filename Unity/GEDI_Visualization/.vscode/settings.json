@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "GEDI_Visualization.sln"
+    "dotnet.defaultSolution": "GEDI_Visualization.slnx"
 }

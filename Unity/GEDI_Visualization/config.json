@@ -1,0 +1,7 @@
+{
+  "footprints_bin": "C:/Brown/Research/VR/data/Ardeche/Ardeche.bin",
+  "subclusters_bin": "C:/Brown/Research/VR/data/Ardeche/Ardeche_subcluster.bin",
+  "clusters_bin": "C:/Brown/Research/VR/data/Ardeche/Ardeche_cluster.bin",
+  "terrain_texture": "C:/Brown/Research/VR/data/Ardeche/Ardeche_2022.png",
+  "dem_file": "C:/Brown/Research/VR/data/Ardeche/Ardeche_TandemX_90m.tif"
+}
