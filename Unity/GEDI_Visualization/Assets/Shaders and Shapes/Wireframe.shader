@@ -3,7 +3,7 @@ Shader "Custom/Wireframe"
     Properties
     {
         _WireColor ("Wire Color", Color) = (1, 1, 1, 1)
-        _WireThickness ("Wire Thickness", Range(0, 5)) = 1
+        _WireThickness ("Wire Thickness", Range(0, 5)) = 2
     }
     
     SubShader

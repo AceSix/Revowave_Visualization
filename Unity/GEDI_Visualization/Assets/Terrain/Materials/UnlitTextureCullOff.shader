@@ -45,7 +45,7 @@ Shader "Custom/UnlitTextureCullOff"
             fixed4 frag (v2f i) : SV_Target
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
+                fixed4 col = tex2D(_MainTex, i.uv)*0.4;
                 return col;
             }
             ENDCG

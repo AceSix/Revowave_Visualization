@@ -1,11 +1,13 @@
 {
-  "footprints_bin": "C:/Brown/Research/VR/data/Ardeche/Ardeche.bin",
-  "subclusters_bin": "C:/Brown/Research/VR/data/Ardeche/Ardeche_subcluster.bin",
-  "clusters_bin": "C:/Brown/Research/VR/data/Ardeche/Ardeche_cluster.bin",
-  "terrain_texture": "C:/Brown/Research/VR/data/Ardeche/Ardeche_Landsat.png",
-  "dem_file": "C:/Brown/Research/VR/data/Ardeche/Ardeche_dem.bin",
+  "footprints_bin": "C:/Brown/Research/VR/data/Aude/Aude.bin",
+  "subclusters_bin": "C:/Brown/Research/VR/data/Aude/Aude_subcluster.bin",
+  "clusters_bin": "C:/Brown/Research/VR/data/Aude/Aude_cluster.bin",
+  "terrain_texture": "C:/Brown/Research/VR/data/Aude/Aude_Landsat.png",
+  "dem_file": "C:/Brown/Research/VR/data/Aude/Aude_dem.bin",
   "SCALE": 0.015,
   "TerrainScale" : 0.02,
   "RadiusScale" : 0.2,
-  "RevolutionResolution" : 12
+  "RevolutionResolution" : 12,
+  "GeoBounds" : [1.6, 3.3, 42.6, 43.5],
+  "TextureBounds" : [1.6, 3.3, 42.6, 43.5]
 }

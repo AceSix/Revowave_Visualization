@@ -16,6 +16,8 @@ namespace GEDIGlobals
         public float TerrainScale;
         public float RadiusScale;
         public int RevolutionResolution;
+        public float[] GeoBounds;
+        public float[] TextureBounds;
     }
     public static class Params
     {

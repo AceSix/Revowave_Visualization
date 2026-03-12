@@ -18,24 +18,36 @@ public class DataManager : MonoBehaviour
     private List<Footprint> clusters;
     private List<Footprint> subclusters;
 
-    [Tooltip("Geographic bounds: [West, East, South, North]")]
-    public Vector4 geoBounds = new Vector4(-71.5f, -71.4f, -46.5f, -46.6f); // left, right, bottom, top
-    public Vector4 textureGeoBounds = new Vector4(-71.5f, -71.4f, -46.5f, -46.6f); // left, right, bottom, top
-                        // (lng>-71.5) & (lng<-71.4) & (lat>46.5) & (lat<46.6)
-
+    // [Tooltip("Geographic bounds: [West, East, South, North]")]
+    public Vector4 geoBounds;
+    public Vector4 textureGeoBounds;
     private Vector3 referenceCenter;
 
-    public void LoadData(string footprintPath, string subclusterPath, string clusterPath)
+    public void LoadData(AppConfig config)
     {
+        geoBounds = new Vector4(
+            config.GeoBounds[0],
+            config.GeoBounds[1],
+            config.GeoBounds[2],
+            config.GeoBounds[3]
+        ); 
+
+        textureGeoBounds = new Vector4(
+            config.TextureBounds[0],
+            config.TextureBounds[1],
+            config.TextureBounds[2],
+            config.TextureBounds[3]
+        ); 
+
         //// calculate scene center in real-world coordinate
         float referenceLongitude = (geoBounds.x + geoBounds.y)/2f;
         float referenceLatitude = (geoBounds.z + geoBounds.w)/2f;
         float referenceElevation = 50f;  // placeholder
         this.referenceCenter = new Vector3(referenceLongitude, referenceElevation, referenceLatitude);
         //// load data
-        this.footprints = BinaryParser.Load(footprintPath);
-        this.clusters = BinaryParser.Load(clusterPath);
-        this.subclusters = BinaryParser.Load(subclusterPath);
+        this.footprints = BinaryParser.Load(config.footprints_bin);
+        this.clusters = BinaryParser.Load(config.clusters_bin);
+        this.subclusters = BinaryParser.Load(config.subclusters_bin);
     }
 
     public Vector3 LatLong2Unity(float latitude, float longitude, float elevation)

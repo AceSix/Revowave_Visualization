@@ -32,9 +32,7 @@ public class WaveformVisualizer : MonoBehaviour
         Params.RadiusScale = appConfig.RadiusScale;
         Params.RevolutionResolution = appConfig.RevolutionResolution;
 
-        dataManager.LoadData(appConfig.footprints_bin,
-                             appConfig.subclusters_bin,
-                             appConfig.clusters_bin);
+        dataManager.LoadData(appConfig);
 
         VisualizeData(this.dataManager.GetFootprints(), 
                       this.dataManager.GetSubclusters(), 
