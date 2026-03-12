@@ -49,9 +49,22 @@ public class TerrainManager : MonoBehaviour
 
     public void LoadTandemX(string demPath)
     {
-        byte[] bytes = File.ReadAllBytes(demPath);
-        demSourceTandemX = new Texture2D(2,2);
-        demSourceTandemX.LoadImage(bytes);
+        using BinaryReader br = new BinaryReader(File.OpenRead(demPath));
+
+        int height = br.ReadInt32();
+        int width = br.ReadInt32();
+
+        float[] heights = new float[width * height];
+
+        for (int i = 0; i < heights.Length; i++)
+            heights[i] = br.ReadSingle();
+
+        demSourceTandemX = new Texture2D(width, height, TextureFormat.RFloat, false, true);
+
+        demSourceTandemX.SetPixelData(heights, 0);
+        demSourceTandemX.wrapMode = TextureWrapMode.Clamp;
+        demSourceTandemX.filterMode = FilterMode.Bilinear;
+        demSourceTandemX.Apply();
     }
 
     public void CreateTerrainTandemX()

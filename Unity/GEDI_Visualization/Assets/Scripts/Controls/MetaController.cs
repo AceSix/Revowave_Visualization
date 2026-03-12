@@ -13,6 +13,7 @@ public class MetaController : MonoBehaviour
     public float rotateSpeed = 0.6f; // Rotation speed for turning on the right joystick
     // Handle W, A, S, D movement
     private float speedFactor = 1f;
+    private AppConfig appConfig;
     void Update()
     {
         speedFactor = 1;
@@ -21,11 +22,16 @@ public class MetaController : MonoBehaviour
         HandleLeftJoystickMovement();
         HandleRightJoystickMovement();
         
-        if ((vrCamera.position - lastCameraPosition).sqrMagnitude > threshold * Params.SCALE)
+        if ((vrCamera.position - lastCameraPosition).sqrMagnitude > threshold * appConfig.SCALE)
         {
             lastCameraPosition = vrCamera.position;
             UpdateVisibleObjects();
         }
+    }
+
+    public void AddConfig(AppConfig config)
+    {
+        appConfig = config;
     }
     
     private void UpdateVisibleObjects()
@@ -38,7 +44,7 @@ public class MetaController : MonoBehaviour
             Vector2 objPos = new Vector2(obj.transform.position.x, obj.transform.position.z);
 
             float dist = Vector2.Distance(cameraPos, objPos);
-            bool inView = dist < maxRenderDistance * Params.SCALE;
+            bool inView = dist < maxRenderDistance * appConfig.SCALE;
 
             obj.GetComponent<Renderer>().enabled = inView;
         }

@@ -5,7 +5,7 @@ using GEDIGlobals;
 
 public class WaveformTools
 {
-    public static Mesh GenerateCylinderMesh(float[] rawWaveform, float[] rawPositions, Vector3 slantDirection)
+    public static Mesh GenerateCylinderMesh(float[] rawWaveform, float[] rawPositions, Vector3 slantDirection, AppConfig appConfig)
     {
         if (rawWaveform == null) throw new ArgumentNullException(nameof(rawWaveform));
         if (rawPositions == null) throw new ArgumentNullException(nameof(rawPositions));
@@ -22,11 +22,11 @@ public class WaveformTools
                 $"Need at least 2 waveform samples to build a cylinder, got {rawWaveform.Length}");
         }
 
-        int circleResolution = Params.RevolutionResolution;
+        int circleResolution = appConfig.RevolutionResolution;
         if (circleResolution < 3)
         {
             throw new ArgumentException(
-                $"Params.RevolutionResolution must be >= 3, got {circleResolution}");
+                $"appConfig.RevolutionResolution must be >= 3, got {circleResolution}");
         }
 
         List<Vector3> vertices = new List<Vector3>();
@@ -39,10 +39,10 @@ public class WaveformTools
         // Build rings
         for (int i = 0; i < rawWaveform.Length; i++)
         {
-            float y = rawPositions[i] * Params.TerrainScale;
+            float y = rawPositions[i] * appConfig.TerrainScale;
             Vector3 slantOffset = slantDirection * y;
 
-            float radius = rawWaveform[i] * Params.RadiusScale * 25.0f;
+            float radius = rawWaveform[i] * appConfig.RadiusScale * 25.0f;
 
             // Optional: clamp negative / invalid radii
             if (float.IsNaN(radius) || float.IsInfinity(radius))
@@ -100,7 +100,7 @@ public class WaveformTools
         // Real cap center vertices
         int bottomCenterIndex = vertices.Count;
         {
-            float y = rawPositions[0] * Params.TerrainScale;
+            float y = rawPositions[0] * appConfig.TerrainScale;
             Vector3 slantOffset = slantDirection * y;
             vertices.Add(new Vector3(slantOffset.x, y, slantOffset.z));
             uvs.Add(new Vector2(0.5f, 0.5f));
@@ -110,7 +110,7 @@ public class WaveformTools
         int topCenterIndex = vertices.Count;
         {
             int last = ringCount - 1;
-            float y = rawPositions[last] * Params.TerrainScale;
+            float y = rawPositions[last] * appConfig.TerrainScale;
             Vector3 slantOffset = slantDirection * y;
             vertices.Add(new Vector3(slantOffset.x, y, slantOffset.z));
             uvs.Add(new Vector2(0.5f, 0.5f));

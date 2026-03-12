@@ -22,22 +22,26 @@ public class WaveformVisualizer : MonoBehaviour
     [Header("Filtering Options")]
     public float waveformHeightThreshold = 5f; // Minimum height in meters for waveforms
     public float waveformEnergyThreshold = 5f; // Only render parts of the waveform above this energy
-
+    private AppConfig appConfig;
 
     void Start()
     {
-        AppConfig config = LoadConfig();
+        appConfig = LoadConfig();
+        Params.SCALE = appConfig.SCALE;
+        Params.TerrainScale = appConfig.TerrainScale;
+        Params.RadiusScale = appConfig.RadiusScale;
+        Params.RevolutionResolution = appConfig.RevolutionResolution;
 
-        dataManager.LoadData(config.footprints_bin,
-                             config.subclusters_bin,
-                             config.clusters_bin);
+        dataManager.LoadData(appConfig.footprints_bin,
+                             appConfig.subclusters_bin,
+                             appConfig.clusters_bin);
 
         VisualizeData(this.dataManager.GetFootprints(), 
                       this.dataManager.GetSubclusters(), 
                       this.dataManager.GetClusters());
 
-        terrainManager.LoadTexture(config.terrain_texture);
-        terrainManager.LoadTandemX(config.dem_file);
+        terrainManager.LoadTexture(appConfig.terrain_texture);
+        terrainManager.LoadTandemX(appConfig.dem_file);
         terrainManager.CreateTerrainTandemX();
         terrainManager.CreateTerrainMeshDELNET(this.dataManager.GetFootprints());
 
@@ -60,6 +64,11 @@ public class WaveformVisualizer : MonoBehaviour
 
         string json = File.ReadAllText(configPath);
         return JsonUtility.FromJson<AppConfig>(json);
+    }
+
+    public AppConfig GetConfig()
+    {
+        return appConfig;
     }
 
     public void VisualizeData(List<Footprint> footprints, List<Footprint> subclusters, List<Footprint> clusters)
@@ -101,7 +110,7 @@ public class WaveformVisualizer : MonoBehaviour
         Vector3 slantDirection = WaveformTools.CalculateISSDirection(dataPoint);
         
         // cylinder mesh with slant
-        Mesh mesh = WaveformTools.GenerateCylinderMesh(dataPoint.rawWaveformValues, dataPoint.rawWaveformPositions, slantDirection);
+        Mesh mesh = WaveformTools.GenerateCylinderMesh(dataPoint.rawWaveformValues, dataPoint.rawWaveformPositions, slantDirection, appConfig);
         meshFilter.mesh = mesh;
         waveformObject.GetComponent<Renderer>().enabled = false;
 

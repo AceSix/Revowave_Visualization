@@ -13,16 +13,10 @@ using GEDIGlobals;
 
 public class DataManager : MonoBehaviour
 {
-    [Header("Data and Material")]
-    
-    public string footprintPath = "Ardeche.bin";
-    public string clusterPath = "Ardeche_cluster.bin";
-    public string subclusterPath = "Ardeche_subcluster.bin";
 
     private List<Footprint> footprints;
     private List<Footprint> clusters;
     private List<Footprint> subclusters;
-
 
     [Tooltip("Geographic bounds: [West, East, South, North]")]
     public Vector4 geoBounds = new Vector4(-71.5f, -71.4f, -46.5f, -46.6f); // left, right, bottom, top

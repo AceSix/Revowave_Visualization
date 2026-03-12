@@ -12,14 +12,17 @@ namespace GEDIGlobals
         public string clusters_bin;
         public string terrain_texture;
         public string dem_file;
+        public float SCALE;
+        public float TerrainScale;
+        public float RadiusScale;
+        public int RevolutionResolution;
     }
-    public class Params
+    public static class Params
     {
-        public const float SCALE = 0.015f;
-        public const float TerrainScale = 0.015f;
-        public const float RadiusScale = 0.2f;
-        public const int RevolutionResolution = 12;
-
+        public static float SCALE = 0.015f;
+        public static float TerrainScale = 0.015f;
+        public static float RadiusScale = 0.2f;
+        public static int RevolutionResolution = 12;
     }
 
     public class TerrainPoint

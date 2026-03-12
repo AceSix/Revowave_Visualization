@@ -25,6 +25,7 @@ public class CameraControllerMouse : MonoBehaviour
         speedSlider.onValueChanged.AddListener(SetScale);
     }
 
+
     private void SetScale(float scale)
     {
         speedScale = (0.1f + 0.9f * scale) * 10f;
