@@ -43,8 +43,10 @@ public class TerrainManager : MonoBehaviour
     public void LoadTexture(string texturePath)
     {
         byte[] bytes = File.ReadAllBytes(texturePath);
-        terrainTexture = new Texture2D(2,2);
+        terrainTexture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
         terrainTexture.LoadImage(bytes);
+        terrainTexture.filterMode = FilterMode.Bilinear;
+        terrainTexture.wrapMode = TextureWrapMode.Clamp;
     }
 
     public void LoadTandemX(string demPath)

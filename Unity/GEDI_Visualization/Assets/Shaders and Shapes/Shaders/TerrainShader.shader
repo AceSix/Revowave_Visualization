@@ -1,15 +1,22 @@
-Shader "Custom/UnlitTextureCullOff"
+Shader "Custom/TerrainShader"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
     }
+
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags
+        {
+            "RenderType"="Transparent"
+            "Queue"="Transparent"
+        }
         LOD 100
 
         Cull Off
+        ZWrite On
+        Blend SrcAlpha OneMinusSrcAlpha
 
         Pass
         {
@@ -37,15 +44,15 @@ Shader "Custom/UnlitTextureCullOff"
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                // Apply texture tiling and offset
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv)*0.4;
+                fixed4 col = tex2D(_MainTex, i.uv);
+                col = col*0.4;
+                col.a = 0.8;
                 return col;
             }
             ENDCG

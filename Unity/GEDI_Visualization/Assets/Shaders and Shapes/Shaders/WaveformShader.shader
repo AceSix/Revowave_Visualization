@@ -15,8 +15,8 @@ Shader "Custom/WaveformShaderWithText"
         _StripeFrequency ("Stripe Frequency", Range(0.0, 300)) = 100.0
         _StripeMin("Stripe Min Brightness", Range(0.0, 1)) = 0.65
         _StripeMax("Stripe Max Brightness", Range(0.0, 1)) = 0.85
-        _AmbientLight("Ambient Light", Float) = 1
-        _DiffuseLight("Diffuse Strength", Float) = 0
+        _AmbientLight("Ambient Light", Float) = 0.9
+        _DiffuseLight("Diffuse Strength", Float) = 0.3
         _Shininess("Diffuse Exponent", Float) = 8
         
         // Text properties
@@ -184,7 +184,7 @@ Shader "Custom/WaveformShaderWithText"
                 float diffuse = _DiffuseLight*pow(NdotL, _Shininess);
 
                 fixed3 litColor = finalColor * (ambient + diffuse);
-                fixed3 emission = finalColor * 0.3;   // adjustable
+                fixed3 emission = finalColor * 0.7;   // adjustable
                 finalColor = litColor + emission;
 
                 float rim = 1.0 - saturate(dot(V, N));
