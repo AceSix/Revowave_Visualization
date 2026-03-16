@@ -9,7 +9,7 @@ Shader "Custom/WaveformShaderWithText"
 
         _NoiseTex2 ("Noise Texture 2", 2D) = "black" {}
         _NoiseIntensity2 ("Noise Intensity 2", Range(0, 2)) = 1.0
-        _NoiseScale2 ("Noise Scale 2", Range(0.05, 0.5)) = 0.2
+        _NoiseScale2 ("Noise Scale 2", Range(0.05, 2)) = 0.2
         _NoiseOffset2 ("Noise Offset 2", Vector) = (0,0,0,0)
 
         _StripeFrequency ("Stripe Frequency", Range(0.0, 300)) = 100.0
@@ -160,11 +160,14 @@ Shader "Custom/WaveformShaderWithText"
                 float stripe = fmod(stripePhase, 2.0) < 1.0 ? _StripeMax : _StripeMin;
 
                 // More deterministic noise sampling by using fixed offsets
-                float2 noiseUV1 = i.localPosXZ * _NoiseScale + _NoiseOffset.xy;
+                float2 p = i.localPosXZ;
+                float u = atan2(p.y, p.x) / (2 * UNITY_PI) + 0.5; // [0,1]
+
+                float2 noiseUV1 = float2(u, physicalHeightRatio) * _NoiseScale + _NoiseOffset.xy;
                 float noiseValue1 = tex2D(_NoiseTex, noiseUV1).r;
                 float noise1 = noiseValue1 * _NoiseIntensity;
 
-                float2 noiseUV2 = i.localPosXZ * _NoiseScale2 + _NoiseOffset2.xy;
+                float2 noiseUV2 = float2(u, physicalHeightRatio) * _NoiseScale2 + _NoiseOffset2.xy;
                 float noiseValue2 = tex2D(_NoiseTex2, noiseUV2).r;
                 float noise2 = noiseValue2 * _NoiseIntensity2;
 
