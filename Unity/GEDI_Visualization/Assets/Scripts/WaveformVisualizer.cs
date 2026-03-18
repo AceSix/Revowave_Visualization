@@ -52,6 +52,12 @@ public class WaveformVisualizer : MonoBehaviour
     private AppConfig LoadConfig()
     {
         string configPath = Path.Combine(Application.dataPath, "..", "config.json");
+        #if UNITY_STANDALONE_OSX && !UNITY_EDITOR
+        configPath = Path.Combine(Directory.GetParent(Application.dataPath).Parent.FullName, "config.json");
+        #else
+        configPath = Path.Combine(Directory.GetParent(Application.dataPath).FullName, "config.json");
+        #endif
+
         configPath = Path.GetFullPath(configPath);
 
         if (!File.Exists(configPath))
