@@ -120,6 +120,7 @@ Shader "Custom/WaveformShaderWithText"
                 float height2 = 7.0;
                 float height3 = 14.0;
                 float height4 = 21.0;
+                float height5 = 28.0;
 
                 // colors
                 fixed3 color1 = fixed3(1.0, 0.0, 0.0);        // Red
@@ -149,10 +150,14 @@ Shader "Custom/WaveformShaderWithText"
                     float t = (currentHeight - height3) / (height4 - height3);
                     baseColor = lerp(color3, color4, t);
                 }
+                else if (currentHeight < height5)
+                {
+                    float t = (currentHeight - height4) / (height5 - height4);
+                    baseColor = lerp(color4, color5, t);
+                }
                 else
                 {
-                    float t = (currentHeight - height4) / (height4 - height3);
-                    baseColor = lerp(color4, color5, t);
+                    baseColor = color5;
                 }
 
                 // Calculate stripe based on absolute height

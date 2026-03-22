@@ -26,8 +26,8 @@ public class TerrainManager : MonoBehaviour
     public int resolution = 256;
     public Button ToggleDemTerrain;
 
-    private int gediTerrainDisplayState = 2; // 0 = Solid, 1 = Wireframe, 2 = Off
-    private int tandemxTerrainDisplayState = 0; // 0 = Solid, 1 = Wireframe, 2 = Off
+    private int gediTerrainDisplayState = 0; // 0 = Solid, 1 = Wireframe, 2 = Off
+    private int tandemxTerrainDisplayState = 2; // 0 = Solid, 1 = Wireframe, 2 = Off
     private const int TERRAIN_NUM_STATES = 3; // Total number of states
 
 
@@ -96,7 +96,7 @@ public class TerrainManager : MonoBehaviour
         float translateZ = (dataManager.geoBounds.z - referenceCenter.z) * 111000f * Params.SCALE;            // lat shift
         terrainTandemX.transform.Translate(translateX, translateY, translateZ, Space.World);
 
-        tandemxTerrainDisplayState = 2;
+        tandemxTerrainDisplayState = 1;
         ChangeTerrainStateTandemX();
         ToggleDemTerrain.onClick.AddListener(ChangeTerrainStateTandemX);
     }
@@ -206,7 +206,7 @@ public class TerrainManager : MonoBehaviour
         meshFilter.mesh = terrainSolidGEDI;
         meshRenderer.material = terrainMaterial;
 
-        gediTerrainDisplayState = 1;
+        gediTerrainDisplayState = 2;
         ChangeTerrainStateGEDI();
         ToggleGEDITerrain.onClick.AddListener(ChangeTerrainStateGEDI);
     }

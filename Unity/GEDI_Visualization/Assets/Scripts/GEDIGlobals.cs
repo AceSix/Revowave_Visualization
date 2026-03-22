@@ -13,6 +13,8 @@ namespace GEDIGlobals
         public string terrain_texture;
         public string dem_file;
         public float SCALE;
+        public float VerticalSCALE;
+        
         public float TerrainScale;
         public float RadiusScale;
         public int RevolutionResolution;

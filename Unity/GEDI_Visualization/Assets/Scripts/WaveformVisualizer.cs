@@ -26,6 +26,8 @@ public class WaveformVisualizer : MonoBehaviour
 
     void Start()
     {
+        ScalableBufferManager.ResizeBuffers(0.75f, 0.75f);
+        
         appConfig = LoadConfig();
         Params.SCALE = appConfig.SCALE;
         Params.TerrainScale = appConfig.TerrainScale;

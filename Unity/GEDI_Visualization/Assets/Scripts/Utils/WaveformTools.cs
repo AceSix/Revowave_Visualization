@@ -39,7 +39,7 @@ public class WaveformTools
         // Build rings
         for (int i = 0; i < rawWaveform.Length; i++)
         {
-            float y = rawPositions[i] * appConfig.TerrainScale;
+            float y = rawPositions[i] * appConfig.VerticalSCALE;
             Vector3 slantOffset = slantDirection * y;
 
             float radius = rawWaveform[i] * appConfig.RadiusScale * 25.0f;
@@ -100,7 +100,7 @@ public class WaveformTools
         // Real cap center vertices
         int bottomCenterIndex = vertices.Count;
         {
-            float y = rawPositions[0] * appConfig.TerrainScale;
+            float y = rawPositions[0] * appConfig.VerticalSCALE;
             Vector3 slantOffset = slantDirection * y;
             vertices.Add(new Vector3(slantOffset.x, y, slantOffset.z));
             uvs.Add(new Vector2(0.5f, 0.5f));
@@ -110,7 +110,7 @@ public class WaveformTools
         int topCenterIndex = vertices.Count;
         {
             int last = ringCount - 1;
-            float y = rawPositions[last] * appConfig.TerrainScale;
+            float y = rawPositions[last] * appConfig.VerticalSCALE;
             Vector3 slantOffset = slantDirection * y;
             vertices.Add(new Vector3(slantOffset.x, y, slantOffset.z));
             uvs.Add(new Vector2(0.5f, 0.5f));
