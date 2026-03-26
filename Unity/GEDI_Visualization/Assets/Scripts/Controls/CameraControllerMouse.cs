@@ -10,6 +10,7 @@ public class CameraControllerMouse : MonoBehaviour
     public Slider speedSlider; // Assign in the inspector
 
     public WaveformVisualizer visualizer;
+    public Text positionText;
 
     private float speedScale = 1f;
     private Vector3 cameraOffset;        // Camera offset from the target point
@@ -41,6 +42,16 @@ public class CameraControllerMouse : MonoBehaviour
             lastCameraPosition = transform.position;
             UpdateVisibleObjects();
         }
+    }
+
+    private void UpdateUICoordinates()
+    {
+        if ( positionText == null) return;
+
+        Vector3 p_u = transform.position;
+        Vector3 p = visualizer.Unity2LatLong(p_u);
+        
+        positionText.text = "(" + p.x.ToString("F2") + ", " + p.y.ToString("F2") + ")" ;
     }
 
     private void UpdateVisibleObjects()

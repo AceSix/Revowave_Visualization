@@ -5,6 +5,7 @@ using System.IO;
 
 
 using GEDIGlobals;
+// using System.Numerics;
 
 
 public class WaveformVisualizer : MonoBehaviour
@@ -75,6 +76,12 @@ public class WaveformVisualizer : MonoBehaviour
     public AppConfig GetConfig()
     {
         return appConfig;
+    }
+
+
+    public Vector3 Unity2LatLong(Vector3 unity_pos)
+    {
+        return dataManager.Unity2LatLong(unity_pos);
     }
 
     public void VisualizeData(List<Footprint> footprints, List<Footprint> subclusters, List<Footprint> clusters)
