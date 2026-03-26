@@ -1,14 +1,14 @@
 {
-  "footprints_bin": "C:/Brown/Research/VR/data/Aude/Aude.bin",
-  "subclusters_bin": "C:/Brown/Research/VR/data/Aude/Aude_subcluster.bin",
-  "clusters_bin": "C:/Brown/Research/VR/data/Aude/Aude_cluster.bin",
-  "terrain_texture": "C:/Brown/Research/VR/data/Aude/Aude_TFV.png",
-  "dem_file": "C:/Brown/Research/VR/data/Aude/Aude_dem.bin",
+  "footprints_bin": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe.bin",
+  "subclusters_bin": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_subcluster.bin",
+  "clusters_bin": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_cluster.bin",
+  "terrain_texture": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_Landsat.png",
+  "dem_file": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_dem.bin",
   "SCALE": 0.015,
-  "VerticalSCALE": 0.1,
   "TerrainScale" : 0.015,
-  "RadiusScale" : 0.5,
+  "VerticalSCALE" : 0.15,
+  "RadiusScale" : 0.2,
   "RevolutionResolution" : 12,
-  "GeoBounds" : [1.8, 2.6, 42.6, 43.4],
-  "TextureBounds" : [1.8, 2.6, 42.6, 43.4]
+  "GeoBounds" : [-121.3, -120.5, 41.2, 42],
+  "TextureBounds" : [-121.3, -120.5, 41.2, 42]
 }

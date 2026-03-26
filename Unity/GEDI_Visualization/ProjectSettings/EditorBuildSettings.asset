@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/VRScene.unity
     guid: 6a4bfec75471aeb468daed64f9730b69
   - enabled: 1
-    path: Assets/Scenes/Ardeche_Scene.unity
+    path: Assets/Scenes/DesktopScene.unity
     guid: 7f4281fc9dbcacc479da6c2b3a1f7b64
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e25ee91a59ba4d74799a1f8c93d7ca2a, type: 2}
