@@ -36,6 +36,7 @@ public class CameraControllerMouse : MonoBehaviour
     {
         HandleMovement();
         HandleRotation();
+        UpdateUICoordinates();
         
         if ((transform.position - lastCameraPosition).sqrMagnitude > threshold * threshold * Params.SCALE * Params.SCALE)
         {
@@ -51,7 +52,7 @@ public class CameraControllerMouse : MonoBehaviour
         Vector3 p_u = transform.position;
         Vector3 p = visualizer.Unity2LatLong(p_u);
         
-        positionText.text = "(" + p.x.ToString("F2") + ", " + p.y.ToString("F2") + ")" ;
+        positionText.text = "(" + p.x.ToString("F4") + ", " + p.y.ToString("F4") + ")" ;
     }
 
     private void UpdateVisibleObjects()
