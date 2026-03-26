@@ -865,10 +865,12 @@ m_ResolvedPackages:
     - 1.8.9
     - 1.8.10
     - 1.8.11
+    - 1.8.12
     compatible:
     - 1.8.10
     - 1.8.11
-    recommended: 1.8.11
+    - 1.8.12
+    recommended: 1.8.12
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -1376,19 +1378,25 @@ m_ResolvedPackages:
     - 6.3.1
     - 6.3.2
     - 6.3.3
+    - 6.3.4
     - 6.4.0-pre.1
     - 6.4.0
     - 6.4.1
+    - 6.4.2
     - 6.5.0-pre.1
     - 6.5.0-pre.2
+    - 6.5.0-pre.3
     compatible:
     - 6.3.3
+    - 6.3.4
     - 6.4.0-pre.1
     - 6.4.0
     - 6.4.1
+    - 6.4.2
     - 6.5.0-pre.1
     - 6.5.0-pre.2
-    recommended: 6.3.3
+    - 6.5.0-pre.3
+    recommended: 6.3.4
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -1564,11 +1572,13 @@ m_ResolvedPackages:
     - 2.2.1
     - 2.3.0-pre.2
     - 2.3.0
+    - 2.3.1
     - 2.4.0-pre.1
     - 2.4.0
     - 2.5.0-pre.1
     compatible:
     - 2.3.0
+    - 2.3.1
     - 2.4.0-pre.1
     - 2.4.0
     - 2.5.0-pre.1
@@ -8601,10 +8611,12 @@ m_ResolvedPackages:
     - 3.2.0
     - 3.2.1
     - 3.3.0
+    - 3.4.0
     compatible:
     - 3.2.0
     - 3.2.1
     - 3.3.0
+    - 3.4.0
     recommended: 3.2.1
     deprecated: []
   dependencies:

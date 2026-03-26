@@ -6,34 +6,28 @@ public class MetaController : MonoBehaviour
     public Transform vrCamera;
     public Transform eye;
     private Vector3 lastCameraPosition = Vector3.up * 1000f; 
-    private float threshold = 100f; // update if movement is larger than 100 meters
+    public float threshold = 300f; // update if movement is larger than 100 meters
     public float maxRenderDistance = 3000f; // only objects within 50000 meters are visible
     public float moveSpeed = 1f;  // Speed for movement on the left joystick
     public float riseSpeed = 0.6f;  // Speed for rise/descent on the right joystick
     public float rotateSpeed = 0.6f; // Rotation speed for turning on the right joystick
     // Handle W, A, S, D movement
     private float speedFactor = 1f;
-    private AppConfig appConfig;
     void Update()
     {
         speedFactor = 1;
-        if (OVRInput.Get(OVRInput.RawButton.LIndexTrigger) || OVRInput.Get(OVRInput.RawButton.RIndexTrigger)) speedFactor = 5.0f;
+        if (OVRInput.Get(OVRInput.RawButton.LHandTrigger) || OVRInput.Get(OVRInput.RawButton.LHandTrigger)) speedFactor = 5.0f;
         
         HandleLeftJoystickMovement();
         HandleRightJoystickMovement();
         
-        if ((vrCamera.position - lastCameraPosition).sqrMagnitude > threshold * appConfig.SCALE)
+        if ((vrCamera.position - lastCameraPosition).sqrMagnitude > threshold * Params.SCALE)
         {
             lastCameraPosition = vrCamera.position;
             UpdateVisibleObjects();
         }
     }
 
-    public void AddConfig(AppConfig config)
-    {
-        appConfig = config;
-    }
-    
     private void UpdateVisibleObjects()
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("footprint");
@@ -44,7 +38,7 @@ public class MetaController : MonoBehaviour
             Vector2 objPos = new Vector2(obj.transform.position.x, obj.transform.position.z);
 
             float dist = Vector2.Distance(cameraPos, objPos);
-            bool inView = dist < maxRenderDistance * appConfig.SCALE;
+            bool inView = dist < maxRenderDistance * Params.SCALE;
 
             obj.GetComponent<Renderer>().enabled = inView;
         }

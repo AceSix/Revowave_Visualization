@@ -1,14 +1,14 @@
 {
-  "footprints_bin": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe.bin",
-  "subclusters_bin": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_subcluster.bin",
-  "clusters_bin": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_cluster.bin",
-  "terrain_texture": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_Landsat.png",
-  "dem_file": "C:/Brown/Research/VR/data/Userstudy_Joe/Userstudy_Joe_dem.bin",
+  "footprints_bin": "C:/Brown/Research/VR/data/Userstudy_Parker/Userstudy_Parker.bin",
+  "subclusters_bin": "C:/Brown/Research/VR/data/Userstudy_Parker/Userstudy_Parker_subcluster.bin",
+  "clusters_bin": "C:/Brown/Research/VR/data/Userstudy_Parker/Userstudy_Parker_cluster.bin",
+  "terrain_texture": "C:/Brown/Research/VR/data/Userstudy_Parker/Userstudy_Parker_Landsat.png",
+  "dem_file": "C:/Brown/Research/VR/data/Userstudy_Parker/Userstudy_Parker_dem.bin",
   "SCALE": 0.015,
   "TerrainScale" : 0.015,
   "VerticalSCALE" : 0.15,
   "RadiusScale" : 0.2,
   "RevolutionResolution" : 12,
-  "GeoBounds" : [-121.3, -120.5, 41.2, 42],
-  "TextureBounds" : [-121.3, -120.5, 41.2, 42]
+  "GeoBounds" : [-90.1, -89.5, 17.8, 18.4],
+  "TextureBounds" : [-90.1, -89.5, 17.8, 18.4]
 }
