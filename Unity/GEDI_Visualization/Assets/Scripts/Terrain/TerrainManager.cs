@@ -75,10 +75,9 @@ public class TerrainManager : MonoBehaviour
         MeshFilter meshFilter = terrainTandemX.AddComponent<MeshFilter>();
         MeshRenderer meshRenderer = terrainTandemX.AddComponent<MeshRenderer>();
 
-        Vector3 referenceCenter = dataManager.GetReferenceCenter();
 
         float height = (dataManager.geoBounds.w - dataManager.geoBounds.z) * 111000f * Params.SCALE;
-        float cosLat = Mathf.Cos(referenceCenter.z * Mathf.Deg2Rad);
+        float cosLat = Mathf.Cos(Params.referenceCenter.z * Mathf.Deg2Rad);
         float width = (dataManager.geoBounds.y - dataManager.geoBounds.x) * 111000f * cosLat * Params.SCALE;
 
         terrainMaterial.mainTexture = terrainTexture;
@@ -91,9 +90,9 @@ public class TerrainManager : MonoBehaviour
         terrainTandemX.transform.localScale = new Vector3(width, 1, height);
 
         // Align with same degree→meter conversion for both axes
-        float translateX = (dataManager.geoBounds.x - referenceCenter.x) * 111000f * cosLat * Params.SCALE; // lon shift
-        float translateY = -referenceCenter.y * Params.TerrainScale;
-        float translateZ = (dataManager.geoBounds.z - referenceCenter.z) * 111000f * Params.SCALE;            // lat shift
+        float translateX = (dataManager.geoBounds.x - Params.referenceCenter.x) * 111000f * cosLat * Params.SCALE; // lon shift
+        float translateY = - Params.referenceCenter.y * Params.TerrainScale;
+        float translateZ = (dataManager.geoBounds.z - Params.referenceCenter.z) * 111000f * Params.SCALE;            // lat shift
         terrainTandemX.transform.Translate(translateX, translateY, translateZ, Space.World);
 
         tandemxTerrainDisplayState = 1;
@@ -146,7 +145,7 @@ public class TerrainManager : MonoBehaviour
 
         foreach (var point in footprints)
         {
-            Vector3 position = dataManager.LatLong2Unity(point.latitude, point.longitude, point.elevation);
+            Vector3 position = Params.LatLong2Unity(point.latitude, point.longitude, point.elevation);
 
             Vector3 bottomPosition = new Vector3(
                 position.x,

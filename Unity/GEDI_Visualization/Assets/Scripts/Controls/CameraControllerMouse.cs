@@ -50,7 +50,7 @@ public class CameraControllerMouse : MonoBehaviour
         if ( positionText == null) return;
 
         Vector3 p_u = transform.position;
-        Vector3 p = visualizer.Unity2LatLong(p_u);
+        Vector3 p = Params.Unity2LatLong(p_u);
         
         positionText.text = "(" + p.x.ToString("F4") + ", " + p.y.ToString("F4") + ")" ;
     }

@@ -21,7 +21,6 @@ public class DataManager : MonoBehaviour
     // [Tooltip("Geographic bounds: [West, East, South, North]")]
     public Vector4 geoBounds;
     public Vector4 textureGeoBounds;
-    private Vector3 referenceCenter;
 
     public void LoadData(AppConfig config)
     {
@@ -43,43 +42,19 @@ public class DataManager : MonoBehaviour
         float referenceLongitude = (geoBounds.x + geoBounds.y)/2f;
         float referenceLatitude = (geoBounds.z + geoBounds.w)/2f;
         float referenceElevation = 50f;  // placeholder
-        this.referenceCenter = new Vector3(referenceLongitude, referenceElevation, referenceLatitude);
+
+        Params.referenceCenter.x = referenceLongitude;
+        Params.referenceCenter.y = referenceElevation;
+        Params.referenceCenter.z = referenceLatitude;
+
         //// load data
         this.footprints = BinaryParser.Load(config.footprints_bin);
         this.clusters = BinaryParser.Load(config.clusters_bin);
         this.subclusters = BinaryParser.Load(config.subclusters_bin);
     }
 
-    public Vector3 Unity2LatLong(Vector3 unity_pos)
-    {
-        float cosLat = Mathf.Cos(referenceCenter.z * Mathf.Deg2Rad);
-        float lon = unity_pos.x/Params.SCALE/111000f;
-        float lat = unity_pos.y/Params.SCALE/111000f/cosLat;
-        lon = lon + referenceCenter.x;
-        lat = lat + referenceCenter.z;
 
-        return new Vector3(lon, lat, 0);
-    }
-    public Vector3 LatLong2Unity(float latitude, float longitude, float elevation)
-    {
-        float latDiff = latitude - referenceCenter.z;
-        float lonDiff = longitude - referenceCenter.x;
-        float elevDiff = elevation - referenceCenter.y;
 
-        float latInMeters = latDiff * 111000f;
-        float cosLat = Mathf.Cos(referenceCenter.z * Mathf.Deg2Rad);
-        float lonInMeters = lonDiff * 111000f * cosLat;
-
-        float x = lonInMeters * Params.SCALE;
-        float y = elevDiff * Params.TerrainScale;
-        float z = latInMeters * Params.SCALE;
-
-        // EXTREME ELEVATION
-        return new Vector3(x, y, z);  // All in meters and w/ regard to reference centers
-        // return new Vector3(x, elevation*0.75f, z);
-    }
-
-    public Vector3 GetReferenceCenter() {return this.referenceCenter;}
     public List<Footprint> GetFootprints() {return this.footprints;}
     public List<Footprint> GetClusters() {return this.clusters;}
     public List<Footprint> GetSubclusters() {return this.subclusters;}

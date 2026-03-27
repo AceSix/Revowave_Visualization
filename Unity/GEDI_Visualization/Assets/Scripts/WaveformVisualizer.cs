@@ -1,14 +1,14 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Required for UI elements
-using System.IO;
 
+using System;
+using System.IO;
+using System.Collections.Generic;
 
 using GEDIGlobals;
-// using System.Numerics;
 
 
-public class WaveformVisualizer : MonoBehaviour
+public partial class WaveformVisualizer : MonoBehaviour
 {
     [Header("Data and Material")]
     public DataManager dataManager;
@@ -28,28 +28,38 @@ public class WaveformVisualizer : MonoBehaviour
     void Start()
     {
         ScalableBufferManager.ResizeBuffers(0.75f, 0.75f);
-        
-        appConfig = LoadConfig();
-        Params.SCALE = appConfig.SCALE;
-        Params.TerrainScale = appConfig.TerrainScale;
-        Params.RadiusScale = appConfig.RadiusScale;
-        Params.RevolutionResolution = appConfig.RevolutionResolution;
 
-        dataManager.LoadData(appConfig);
+        try
+        {
+            appConfig = LoadConfigFromChosenFolder();
 
-        VisualizeData(this.dataManager.GetFootprints(), 
-                      this.dataManager.GetSubclusters(), 
-                      this.dataManager.GetClusters());
+            Params.SCALE = appConfig.SCALE;
+            Params.TerrainScale = appConfig.TerrainScale;
+            Params.RadiusScale = appConfig.RadiusScale;
+            Params.RevolutionResolution = appConfig.RevolutionResolution;
 
-        terrainManager.LoadTexture(appConfig.terrain_texture);
-        terrainManager.LoadTandemX(appConfig.dem_file);
-        terrainManager.CreateTerrainTandemX();
-        terrainManager.CreateTerrainMeshDELNET(this.dataManager.GetFootprints());
+            dataManager.LoadData(appConfig);
 
+            VisualizeData(this.dataManager.GetFootprints(),
+                          this.dataManager.GetSubclusters(),
+                          this.dataManager.GetClusters());
 
-        Camera mainCamera = Camera.main;
-        mainCamera.clearFlags = CameraClearFlags.SolidColor;
-        mainCamera.backgroundColor = Color.black;
+            terrainManager.LoadTexture(appConfig.terrain_texture);
+            terrainManager.LoadTandemX(appConfig.dem_file);
+            terrainManager.CreateTerrainTandemX();
+            terrainManager.CreateTerrainMeshDELNET(this.dataManager.GetFootprints());
+
+            Camera mainCamera = Camera.main;
+            if (mainCamera != null)
+            {
+                mainCamera.clearFlags = CameraClearFlags.SolidColor;
+                mainCamera.backgroundColor = Color.black;
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Startup failed: " + e.Message);
+        }
     }
 
     private AppConfig LoadConfig()
@@ -79,29 +89,24 @@ public class WaveformVisualizer : MonoBehaviour
     }
 
 
-    public Vector3 Unity2LatLong(Vector3 unity_pos)
-    {
-        return dataManager.Unity2LatLong(unity_pos);
-    }
-
     public void VisualizeData(List<Footprint> footprints, List<Footprint> subclusters, List<Footprint> clusters)
     {
 
         foreach (var point in footprints)
         {
-            Vector3 position = dataManager.LatLong2Unity(point.latitude, point.longitude, point.elevation);
+            Vector3 position = Params.LatLong2Unity(point.latitude, point.longitude, point.elevation);
             CreateCylinder(position, point, "footprint");
         }
 
         foreach (var point in subclusters)
         {
-            Vector3 position = dataManager.LatLong2Unity(point.latitude, point.longitude, point.elevation);
+            Vector3 position = Params.LatLong2Unity(point.latitude, point.longitude, point.elevation);
             CreateCylinder(position, point, "subcluster", 10);
         }
 
         foreach (var point in clusters)
         {
-            Vector3 position = dataManager.LatLong2Unity(point.latitude, point.longitude, point.elevation);
+            Vector3 position = Params.LatLong2Unity(point.latitude, point.longitude, point.elevation);
             CreateCylinder(position, point, "cluster", 30);
         }
 

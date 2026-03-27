@@ -27,7 +27,42 @@ namespace GEDIGlobals
         public static float TerrainScale = 0.015f;
         public static float RadiusScale = 0.2f;
         public static int RevolutionResolution = 12;
+        public static Vector3 referenceCenter = new Vector3(0f, 0f, 0f);    
+
+
+        public static Vector3 Unity2LatLong(Vector3 unity_pos)
+        {
+            float cosLat = Mathf.Cos(referenceCenter.z * Mathf.Deg2Rad);
+            float lon = unity_pos.x/SCALE/111000f;
+            float lat = unity_pos.z/SCALE/111000f/cosLat;
+            lon = lon + referenceCenter.x;
+            lat = lat + referenceCenter.z;
+
+            return new Vector3(lon, lat, 0);
+        }
+
+        public static Vector3 LatLong2Unity(float latitude, float longitude, float elevation)
+        {
+            float latDiff = latitude - referenceCenter.z;
+            float lonDiff = longitude - referenceCenter.x;
+            float elevDiff = elevation - referenceCenter.y;
+
+            float latInMeters = latDiff * 111000f;
+            float cosLat = Mathf.Cos(referenceCenter.z * Mathf.Deg2Rad);
+            float lonInMeters = lonDiff * 111000f * cosLat;
+
+            float x = lonInMeters * SCALE;
+            float y = elevDiff * TerrainScale;
+            float z = latInMeters * SCALE;
+
+            // EXTREME ELEVATION
+            return new Vector3(x, y, z);  // All in meters and w/ regard to reference centers
+            // return new Vector3(x, elevation*0.75f, z);
+        }
     }
+    
+
+
 
     public class TerrainPoint
     {
