@@ -20,6 +20,7 @@ namespace GEDIGlobals
         public int RevolutionResolution;
         public float[] GeoBounds;
         public float[] TextureBounds;
+        public float maxRenderDistance;
     }
     public static class Params
     {
@@ -28,7 +29,7 @@ namespace GEDIGlobals
         public static float RadiusScale = 0.2f;
         public static int RevolutionResolution = 12;
         public static Vector3 referenceCenter = new Vector3(0f, 0f, 0f);    
-
+        public static float maxRenderDistance = 2500f;
 
         public static Vector3 Unity2LatLong(Vector3 unity_pos)
         {

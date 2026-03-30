@@ -37,6 +37,7 @@ public partial class WaveformVisualizer : MonoBehaviour
             Params.TerrainScale = appConfig.TerrainScale;
             Params.RadiusScale = appConfig.RadiusScale;
             Params.RevolutionResolution = appConfig.RevolutionResolution;
+            Params.maxRenderDistance = appConfig.maxRenderDistance;
 
             dataManager.LoadData(appConfig);
 
@@ -60,27 +61,6 @@ public partial class WaveformVisualizer : MonoBehaviour
         {
             Debug.LogError("Startup failed: " + e.Message);
         }
-    }
-
-    private AppConfig LoadConfig()
-    {
-        string configPath = Path.Combine(Application.dataPath, "..", "config.json");
-        #if UNITY_STANDALONE_OSX && !UNITY_EDITOR
-        configPath = Path.Combine(Directory.GetParent(Application.dataPath).Parent.FullName, "config.json");
-        #else
-        configPath = Path.Combine(Directory.GetParent(Application.dataPath).FullName, "config.json");
-        #endif
-
-        configPath = Path.GetFullPath(configPath);
-
-        if (!File.Exists(configPath))
-        {
-            Debug.LogError("Config file not found: " + configPath);
-            return null;
-        }
-
-        string json = File.ReadAllText(configPath);
-        return JsonUtility.FromJson<AppConfig>(json);
     }
 
     public AppConfig GetConfig()
@@ -154,24 +134,77 @@ public partial class WaveformVisualizer : MonoBehaviour
                 buttonText.text = "Footprints";
                 GameObject[] subclusters = GameObject.FindGameObjectsWithTag("subcluster");
                 foreach (GameObject obj in subclusters) obj.GetComponent<Renderer>().enabled = false;
+                UpdateVisibleObjects();
                 break;
 
             case 1: // State 1: Sub-Clusters
                 buttonText.text = "Clusters";
                 GameObject[] footprints = GameObject.FindGameObjectsWithTag("footprint");
                 foreach (GameObject obj in footprints) obj.GetComponent<Renderer>().enabled = false;
+                UpdateVisibleObjects();
                 break;
 
             case 2: // State 2: Clusters
                 buttonText.text = "Sub-Clusters";
                 GameObject[] clusters = GameObject.FindGameObjectsWithTag("cluster");
                 foreach (GameObject obj in clusters) obj.GetComponent<Renderer>().enabled = false;
+                UpdateVisibleObjects();
                 break;
         }
 
     }
 
+    public void UpdateVisibleObjects()
+    {
+        Vector3 mainCameraPosition = Camera.main.transform.position;
+
+        GameObject[] footprints = GameObject.FindGameObjectsWithTag("footprint");
+        GameObject[] subclusters = GameObject.FindGameObjectsWithTag("subcluster");
+        GameObject[] clusters = GameObject.FindGameObjectsWithTag("cluster");
+
+        Vector2 cameraPos = new Vector2(mainCameraPosition.x, mainCameraPosition.z);
+        float maxRenderDistanceSq = Params.SCALE * Params.maxRenderDistance * Params.maxRenderDistance;
+
+        if (gediVizState==0)
+        {
+            foreach (GameObject obj in footprints)
+            {
+                Vector3 p = obj.transform.position;
+                float dx = cameraPos.x - p.x;
+                float dz = cameraPos.y - p.z;
+                bool inView = (dx * dx + dz * dz) < maxRenderDistanceSq;
+                if (obj.GetComponent<Renderer>().enabled != inView)
+                    obj.GetComponent<Renderer>().enabled = inView;
+            }    
+        }
+        
+        if (gediVizState==1)
+        {
+            foreach (GameObject obj in clusters)
+            {
+                Vector3 p = obj.transform.position;
+                float dx = cameraPos.x - p.x;
+                float dz = cameraPos.y - p.z;
+                bool inView = (dx * dx + dz * dz) < maxRenderDistanceSq*100;
+                if (obj.GetComponent<Renderer>().enabled != inView)
+                    obj.GetComponent<Renderer>().enabled = inView;
+            }
+        }
+
+        if (gediVizState==2)
+        {
+            foreach (GameObject obj in subclusters)
+            {
+                Vector3 p = obj.transform.position;
+                float dx = cameraPos.x - p.x;
+                float dz = cameraPos.y - p.z;
+                bool inView = (dx * dx + dz * dz) < maxRenderDistanceSq*10;
+                if (obj.GetComponent<Renderer>().enabled != inView)
+                    obj.GetComponent<Renderer>().enabled = inView;
+            }
+        }
     
+    }
 
 
 
