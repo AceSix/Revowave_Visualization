@@ -22,6 +22,13 @@ namespace GEDIGlobals
         public float[] TextureBounds;
         public float maxRenderDistance;
     }
+
+    [Serializable]
+    public class PathConfig
+    {
+        public string dataFolder;
+    }
+
     public static class Params
     {
         public static float SCALE = 0.015f;

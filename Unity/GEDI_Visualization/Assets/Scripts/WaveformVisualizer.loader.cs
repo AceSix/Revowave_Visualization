@@ -5,7 +5,6 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-using SFB;
 
 using GEDIGlobals;
 
@@ -15,7 +14,7 @@ public partial class WaveformVisualizer : MonoBehaviour
     private string dataFolder;
     private AppConfig LoadConfigFromChosenFolder()
     {
-        this.dataFolder = AskUserForDataFolder();
+        this.dataFolder = LoadDataFolderFromPathJson();
 
         string configPath = Path.Combine(dataFolder, "config.json");
         if (!File.Exists(configPath))
@@ -43,21 +42,24 @@ public partial class WaveformVisualizer : MonoBehaviour
         return cfg;
     }
 
-    private string AskUserForDataFolder()
+    private string LoadDataFolderFromPathJson()
     {
-        var paths = StandaloneFileBrowser.OpenFolderPanel(
-            "Select the data folder containing config.json",
-            "",
-            false
-        );
-    
-        if (paths == null || paths.Length == 0)
-            return null;
-    
-        return paths[0];
+        string path = Path.Combine(Application.streamingAssetsPath, "path.json");
+
+        if (!File.Exists(path))
+            throw new FileNotFoundException("Missing path.json: " + path);
+
+        string json = File.ReadAllText(path);
+        PathConfig cfg = JsonUtility.FromJson<PathConfig>(json);
+
+        if (cfg == null || string.IsNullOrEmpty(cfg.dataFolder))
+            throw new Exception("Invalid path.json");
+
+        if (!Directory.Exists(cfg.dataFolder))
+            throw new Exception("Data folder does not exist: " + cfg.dataFolder);
+
+        return cfg.dataFolder;
     }
-
-
     private void ValidateRequiredFiles(AppConfig cfg)
     {
         CheckFile(cfg.footprints_bin, "footprints_bin");

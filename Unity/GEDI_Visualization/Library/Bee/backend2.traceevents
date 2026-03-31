@@ -1,546 +1,241 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1774922828902018, "dur":68, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828902116, "dur":47649, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828949781, "dur":892, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828950734, "dur":183, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1774922828950921, "dur":1220, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828952561, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json" }}
-,{ "pid":12345, "tid":0, "ts":1774922828953353, "dur":94, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.Design.dll" }}
-,{ "pid":12345, "tid":0, "ts":1774922828953706, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":0, "ts":1774922828955908, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1774922828956683, "dur":56, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Oculus.Interaction.UnityXR-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":0, "ts":1774922828958160, "dur":56, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/Unity.RenderPipeline.Universal.ShaderLibrary-FeaturesChecked.txt_65z3.info" }}
-,{ "pid":12345, "tid":0, "ts":1774922828961977, "dur":67, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":0, "ts":1774922828962224, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VFXModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":0, "ts":1774922828952165, "dur":10971, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828963146, "dur":16535, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828979682, "dur":497, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828980419, "dur":3757, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1774922828951492, "dur":11664, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1774922828964213, "dur":227, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"../../../../../../Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Tools/BuildPipeline" }}
-,{ "pid":12345, "tid":1, "ts":1774922828964441, "dur":108, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Assets/StreamingAssets" }}
-,{ "pid":12345, "tid":1, "ts":1774922828964549, "dur":745, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/il2cpp/build/deploy" }}
-,{ "pid":12345, "tid":1, "ts":1774922828965294, "dur":4765, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/il2cpp/libil2cpp" }}
-,{ "pid":12345, "tid":1, "ts":1774922828970060, "dur":130, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport" }}
-,{ "pid":12345, "tid":1, "ts":1774922828970190, "dur":871, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono" }}
-,{ "pid":12345, "tid":1, "ts":1774922828971102, "dur":145, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Tools/BuildPipeline" }}
-,{ "pid":12345, "tid":1, "ts":1774922828971247, "dur":81, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Library/PlayerDataCache/Win642/Data" }}
-,{ "pid":12345, "tid":1, "ts":1774922828971341, "dur":99, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Temp/StagingArea/Data/UnitySubsystems" }}
-,{ "pid":12345, "tid":1, "ts":1774922828963162, "dur":8351, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1774922828972198, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteResponseFile Library/Bee/artifacts/rsp/16600083745298274111.rsp" }}
-,{ "pid":12345, "tid":1, "ts":1774922828972500, "dur":623, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker C:/Brown/Research/VR/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
-,{ "pid":12345, "tid":1, "ts":1774922828973123, "dur":2231, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1774922828977154, "dur":1795, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":1, "ts":1774922828978949, "dur":378, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828951546, "dur":11629, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828963179, "dur":680, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828963859, "dur":369, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828964228, "dur":389, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828964617, "dur":7132, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828971750, "dur":453, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828972325, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828972385, "dur":4232, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828976649, "dur":518, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828977167, "dur":894, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.RenderAs2DModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1774922828978080, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828978371, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1774922828978533, "dur":61, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1774922828978595, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.OpenXR.dll" }}
-,{ "pid":12345, "tid":2, "ts":1774922828978689, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GraphicsStateCollectionSerializerModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":2, "ts":1774922828978872, "dur":219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Web-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":2, "ts":1774922828979173, "dur":509, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828951540, "dur":11626, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828963170, "dur":860, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828964031, "dur":403, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828964434, "dur":614, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828965048, "dur":6856, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828972183, "dur":76, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1774922828972362, "dur":4222, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1774922828976585, "dur":2180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.ARSubsystems-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":3, "ts":1774922828978871, "dur":60, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.CompositionLayers.UIInteraction.dll" }}
-,{ "pid":12345, "tid":3, "ts":1774922828979148, "dur":530, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828951616, "dur":11568, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828963189, "dur":697, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828964234, "dur":820, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\netstandard.dll" }}
-,{ "pid":12345, "tid":4, "ts":1774922828963886, "dur":1326, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828965212, "dur":6833, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828972047, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828972186, "dur":210, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1774922828972397, "dur":4181, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828976580, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Novell.Directory.Ldap-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":4, "ts":1774922828976871, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AssetBundleModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":4, "ts":1774922828977166, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextCoreTextEngineModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":4, "ts":1774922828977442, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.CoreUtils.dll" }}
-,{ "pid":12345, "tid":4, "ts":1774922828977534, "dur":183, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.CoreUtils.dll" }}
-,{ "pid":12345, "tid":4, "ts":1774922828977723, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828977892, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VideoModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":4, "ts":1774922828978108, "dur":747, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1774922828979134, "dur":551, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828952496, "dur":11757, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828964260, "dur":1019, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828965280, "dur":6709, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828971992, "dur":476, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828972472, "dur":4130, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828976608, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.ARFoundation.VisualScripting-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":5, "ts":1774922828976789, "dur":411, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.ARFoundation.VisualScripting-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":5, "ts":1774922828977360, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Antlr3.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":5, "ts":1774922828977573, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Oculus.Interaction.Samples-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":5, "ts":1774922828977688, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828977866, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AudioModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":5, "ts":1774922828978108, "dur":730, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828978839, "dur":88, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll" }}
-,{ "pid":12345, "tid":5, "ts":1774922828978928, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Ookii.Dialogs-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":5, "ts":1774922828978998, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828979129, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1774922828979197, "dur":514, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828951722, "dur":11482, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828963210, "dur":478, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828963851, "dur":1007, "ph":"X", "name": "File",  "args": { "detail":"..\\..\\..\\..\\..\\..\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Toolchain.VisualStudio.dll" }}
-,{ "pid":12345, "tid":6, "ts":1774922828963689, "dur":1720, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828965409, "dur":6724, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828972135, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1774922828972382, "dur":4417, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828976887, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.OpenXR.Features.ConformanceAutomation-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":6, "ts":1774922828977028, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828977159, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextCoreFontEngineModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":6, "ts":1774922828977242, "dur":548, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828977860, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UmbraModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":6, "ts":1774922828978017, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.State-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":6, "ts":1774922828978176, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828978413, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1774922828978563, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestAudioModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":6, "ts":1774922828979182, "dur":519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828952064, "dur":11501, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828963611, "dur":1070, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.BinLog.xml" }}
-,{ "pid":12345, "tid":7, "ts":1774922828963568, "dur":1853, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828965421, "dur":6396, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828972105, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1774922828972200, "dur":123, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1774922828972327, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828972391, "dur":4233, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828976625, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Meta.XR.EnvironmentDepth-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":7, "ts":1774922828976883, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.IdentifiersModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":7, "ts":1774922828977082, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.RenderAs2DModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":7, "ts":1774922828977266, "dur":555, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828977957, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828978101, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.Web.dll" }}
-,{ "pid":12345, "tid":7, "ts":1774922828978170, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828978328, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828978382, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TerrainPhysicsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":7, "ts":1774922828978743, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.JSONSerializeModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":7, "ts":1774922828978856, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1774922828979011, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipeline.Universal.ShaderLibrary-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":7, "ts":1774922828979188, "dur":530, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828951821, "dur":11508, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828963335, "dur":1102, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828964438, "dur":918, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828965356, "dur":6190, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828971563, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828971626, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828972191, "dur":220, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1774922828972412, "dur":4174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828976586, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VFXModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":8, "ts":1774922828976654, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828976865, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ContentLoadModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":8, "ts":1774922828977234, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1774922828977572, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.CompositionLayers-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":8, "ts":1774922828977697, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828978151, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828978265, "dur":65, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":8, "ts":1774922828978331, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VirtualTexturingModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":8, "ts":1774922828978564, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828978757, "dur":295, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.ComponentModel.Composition-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":8, "ts":1774922828979053, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1774922828979293, "dur":419, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828951785, "dur":11502, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828963695, "dur":554, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.Requests.dll" }}
-,{ "pid":12345, "tid":9, "ts":1774922828963293, "dur":1264, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828964557, "dur":607, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828965164, "dur":6485, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828971702, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828971776, "dur":448, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828972388, "dur":4406, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828976795, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":9, "ts":1774922828976906, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":9, "ts":1774922828977009, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1774922828977418, "dur":304, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.LocalizationModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":9, "ts":1774922828977723, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978220, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Oculus.Interaction.OVR.Samples-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978297, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978458, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978528, "dur":91, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978622, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978694, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978814, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.CoreUtils-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":9, "ts":1774922828978941, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1774922828979115, "dur":63, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.CoreUtils-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":9, "ts":1774922828979269, "dur":440, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828951663, "dur":11534, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828963202, "dur":890, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828964210, "dur":558, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Runtime.Serialization.Xml.dll" }}
-,{ "pid":12345, "tid":10, "ts":1774922828964093, "dur":1292, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828965385, "dur":6138, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828971872, "dur":583, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828972459, "dur":4135, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828976607, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AMDModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828976784, "dur":597, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AMDModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828977441, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClusterInputModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828977672, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Assembly-CSharp-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828977872, "dur":174, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.IO.Hashing.dll" }}
-,{ "pid":12345, "tid":10, "ts":1774922828978047, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828978191, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1774922828978377, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.CrashReportingModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828978679, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Transactions-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828978942, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828979116, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestAssetBundleModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":10, "ts":1774922828979303, "dur":386, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828952354, "dur":11405, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828963766, "dur":798, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828964564, "dur":6968, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828971549, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828971606, "dur":196, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/Oculus.Interaction.OVR-FeaturesChecked.txt_yks4.info" }}
-,{ "pid":12345, "tid":11, "ts":1774922828972118, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":11, "ts":1774922828972379, "dur":4457, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828976915, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.OpenXR.Features.OculusQuestSupport-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":11, "ts":1774922828977112, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpriteMaskModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":11, "ts":1774922828977844, "dur":59, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1774922828977904, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.IMGUIModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":11, "ts":1774922828978156, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.OpenXR.Features.RuntimeDebugger-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":11, "ts":1774922828978655, "dur":168, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.Runtime.CompilerServices.Unsafe.dll" }}
-,{ "pid":12345, "tid":11, "ts":1774922828978825, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Burst.Unsafe-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":11, "ts":1774922828979024, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1774922828979205, "dur":503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828951767, "dur":11506, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828963763, "dur":851, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Reflection.TypeExtensions.dll" }}
-,{ "pid":12345, "tid":12, "ts":1774922828963281, "dur":1966, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828965248, "dur":6282, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828971784, "dur":446, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828972236, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization.exe" }}
-,{ "pid":12345, "tid":12, "ts":1774922828972369, "dur":4211, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828976582, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.ARFoundation-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":12, "ts":1774922828976714, "dur":602, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828977425, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConsentModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":12, "ts":1774922828977552, "dur":321, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConsentModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":12, "ts":1774922828978004, "dur":628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.StreamingModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":12, "ts":1774922828978632, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828978738, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ScreenCaptureModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":12, "ts":1774922828978798, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828978905, "dur":196, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Accessibility-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":12, "ts":1774922828979102, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1774922828979292, "dur":398, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828951958, "dur":11420, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828963695, "dur":538, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\il2cpp\\build\\deploy\\mscordaccore_amd64_amd64_8.0.424.16909.dll" }}
-,{ "pid":12345, "tid":13, "ts":1774922828963384, "dur":1197, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828964582, "dur":6946, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828971542, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828971605, "dur":309, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/Oculus.Interaction.Samples-FeaturesChecked.txt_gome.info" }}
-,{ "pid":12345, "tid":13, "ts":1774922828971916, "dur":432, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828972400, "dur":4343, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828976745, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":13, "ts":1774922828976920, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.Universal.Shaders-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828977081, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SubsystemsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828977586, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.DirectorModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828977779, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/netstandard-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828977967, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.OpenXR.TestTooling-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828978098, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828978324, "dur":254, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828978586, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Runtime.Serialization.Formatters.Soap-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828978792, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828978854, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Multiplayer.Center.Common-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828978933, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1774922828979102, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Timeline-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":13, "ts":1774922828979257, "dur":440, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828951960, "dur":11499, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828963463, "dur":961, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828964424, "dur":944, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828965368, "dur":6152, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828971546, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828971865, "dur":599, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828972468, "dur":4129, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828976598, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Data.DataSetExtensions-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828976838, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/mscorlib-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828977047, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputForUIModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828977251, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Web.ApplicationServices-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828977565, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Core-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828977767, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Data-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828978119, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VRModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828978300, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ImageConversionModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828978419, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828978563, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828978729, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828978835, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Oculus.Interaction-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828979070, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PhysicsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":14, "ts":1774922828979137, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1774922828979285, "dur":435, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828952595, "dur":12254, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828964849, "dur":6709, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828971566, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828971686, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828971803, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828972031, "dur":417, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828972453, "dur":4152, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1774922828976606, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.ComponentModel.DataAnnotations-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":15, "ts":1774922828976879, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.MarshallingModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":15, "ts":1774922828977542, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.DSPGraphModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":15, "ts":1774922828978114, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Windows.Forms-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":15, "ts":1774922828978395, "dur":468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityAnalyticsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":15, "ts":1774922828979186, "dur":536, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828952712, "dur":12179, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828964891, "dur":6729, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828971711, "dur":103, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityWebRequestModule-FeaturesChecked.txt_b1wr.info" }}
-,{ "pid":12345, "tid":16, "ts":1774922828972186, "dur":231, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":16, "ts":1774922828972418, "dur":4646, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828977064, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GameCenterModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":16, "ts":1774922828977145, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828977301, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.Core.ShaderLibrary-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":16, "ts":1774922828977355, "dur":514, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828977982, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.Physics2DModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":16, "ts":1774922828978211, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ShaderVariantAnalyticsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":16, "ts":1774922828978558, "dur":50, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1774922828978614, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1774922828978680, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Web.Services-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":16, "ts":1774922828978810, "dur":146, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Web.Services-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":16, "ts":1774922828979152, "dur":546, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828952221, "dur":11512, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828963736, "dur":892, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.dll" }}
-,{ "pid":12345, "tid":17, "ts":1774922828963736, "dur":1658, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828965395, "dur":6314, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828971750, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828971919, "dur":332, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828972257, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Plugins/x86_64/openxr_loader.dll" }}
-,{ "pid":12345, "tid":17, "ts":1774922828972385, "dur":61, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/level0" }}
-,{ "pid":12345, "tid":17, "ts":1774922828972447, "dur":4539, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828976988, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.CoreModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":17, "ts":1774922828977271, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.CompositionLayers.UIInteraction-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":17, "ts":1774922828977550, "dur":479, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":17, "ts":1774922828978030, "dur":323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpatialTracking-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":17, "ts":1774922828978472, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1774922828978569, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.XR.LegacyInputHelpers-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":17, "ts":1774922828978839, "dur":53, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":17, "ts":1774922828978893, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Mono.Security-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":17, "ts":1774922828979141, "dur":542, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828952287, "dur":11460, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828963753, "dur":730, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828964483, "dur":398, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828964882, "dur":6737, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828971621, "dur":346, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828972171, "dur":61, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":18, "ts":1774922828972233, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":18, "ts":1774922828972373, "dur":4204, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828976578, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Drawing.Design-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828976865, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpriteShapeModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828976985, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Oculus.Interaction.OVR-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828977272, "dur":300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Meta.XR.MultiplayerBlocks.Shared-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828977700, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml.Linq-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828977824, "dur":103, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml.Linq-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828977997, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SubstanceModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828978345, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Oculus.VR-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828978672, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.Management-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828978871, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Mono.Posix-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828978964, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1774922828979087, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":18, "ts":1774922828979338, "dur":388, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828951866, "dur":11475, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828963345, "dur":627, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828963972, "dur":439, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828964412, "dur":426, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828964838, "dur":6701, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828971541, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/Oculus.Interaction-FeaturesChecked.txt_pnog.info" }}
-,{ "pid":12345, "tid":19, "ts":1774922828971737, "dur":467, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828972386, "dur":4197, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828976588, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.IO.Compression-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":19, "ts":1774922828976849, "dur":903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputLegacyModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":19, "ts":1774922828977753, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828977823, "dur":131, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputLegacyModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":19, "ts":1774922828978152, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.Simulation.dll" }}
-,{ "pid":12345, "tid":19, "ts":1774922828978275, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828978372, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":19, "ts":1774922828978532, "dur":111, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":19, "ts":1774922828978739, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextRenderingModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":19, "ts":1774922828978871, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1774922828979072, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TerrainModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":19, "ts":1774922828979309, "dur":396, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828952429, "dur":11344, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828963780, "dur":434, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828964214, "dur":1027, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828965242, "dur":6741, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828972166, "dur":81, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":20, "ts":1774922828972376, "dur":4564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828976941, "dur":365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GridModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":20, "ts":1774922828977415, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.TextMeshPro-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":20, "ts":1774922828977547, "dur":463, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828978068, "dur":135, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.AMDModule.dll" }}
-,{ "pid":12345, "tid":20, "ts":1774922828978204, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":20, "ts":1774922828978312, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":20, "ts":1774922828978447, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828978618, "dur":319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.Universal.2D.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":20, "ts":1774922828978938, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1774922828979191, "dur":503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828951893, "dur":11464, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828963360, "dur":423, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828963783, "dur":383, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828964166, "dur":470, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828964636, "dur":7249, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828972178, "dur":224, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":21, "ts":1774922828972403, "dur":5285, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1774922828977689, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.OpenXR-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":21, "ts":1774922828977848, "dur":166, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":21, "ts":1774922828978016, "dur":951, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityCurlModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":21, "ts":1774922828979199, "dur":497, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828952512, "dur":12135, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828964647, "dur":7103, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828971966, "dur":486, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/Unity.VisualScripting.Core-FeaturesChecked.txt_bnmf.info" }}
-,{ "pid":12345, "tid":22, "ts":1774922828972453, "dur":4918, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828977372, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AdaptivePerformanceModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":22, "ts":1774922828977523, "dur":237, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":22, "ts":1774922828977808, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.GPUDriven.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":22, "ts":1774922828978044, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828978189, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828978246, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828978306, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClusterRendererModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":22, "ts":1774922828978676, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.Simulation-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":22, "ts":1774922828979056, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1774922828979287, "dur":417, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828952547, "dur":12128, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828964676, "dur":6893, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828971729, "dur":416, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828972150, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":23, "ts":1774922828972318, "dur":106, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/D3D12/D3D12Core.dll" }}
-,{ "pid":12345, "tid":23, "ts":1774922828972425, "dur":4757, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828977450, "dur":475, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828977961, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AnimationModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":23, "ts":1774922828978119, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Configuration-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":23, "ts":1774922828978287, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestTextureModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":23, "ts":1774922828978561, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828978749, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AccessibilityModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":23, "ts":1774922828978865, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1774922828979113, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UI-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":23, "ts":1774922828979252, "dur":441, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828952021, "dur":11502, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828963901, "dur":788, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.Android.dll" }}
-,{ "pid":12345, "tid":24, "ts":1774922828963526, "dur":1218, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828964745, "dur":6779, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828971542, "dur":396, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828971947, "dur":495, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828972447, "dur":4154, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828976668, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.DirectoryServices-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":24, "ts":1774922828976955, "dur":570, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828977525, "dur":71, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.Core.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":24, "ts":1774922828977891, "dur":217, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828978180, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828978245, "dur":383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Runtime.CompilerServices.Unsafe-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":24, "ts":1774922828978628, "dur":283, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828979005, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828979067, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TilemapModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":24, "ts":1774922828979194, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1774922828979314, "dur":399, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1774922828952618, "dur":12242, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1774922828964860, "dur":6655, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1774922828971530, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":25, "ts":1774922828971588, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1774922828971654, "dur":843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":25, "ts":1774922828972551, "dur":4698, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1774922828977393, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.IO.Hashing-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":25, "ts":1774922828977555, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VehiclesModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":25, "ts":1774922828977624, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1774922828977776, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Core-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":25, "ts":1774922828978113, "dur":502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.XRModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":25, "ts":1774922828978740, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ShaderRuntimeModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":25, "ts":1774922828979114, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.ARFoundation.InternalUtils-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":25, "ts":1774922828979265, "dur":441, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828952631, "dur":12240, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828964871, "dur":6646, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828971887, "dur":236, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ClusterInputModule-FeaturesChecked.txt_frb1.info" }}
-,{ "pid":12345, "tid":26, "ts":1774922828972176, "dur":198, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":26, "ts":1774922828972374, "dur":4201, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828976576, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TLSModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":26, "ts":1774922828976659, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828976919, "dur":583, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828977545, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Flow-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":26, "ts":1774922828977667, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828977734, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828977893, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.InputSystem.ForUI-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":26, "ts":1774922828978155, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.Multiplayer.Center.Common.dll" }}
-,{ "pid":12345, "tid":26, "ts":1774922828978364, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.InternalAPIEngineBridge.004-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":26, "ts":1774922828978657, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1774922828978888, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":26, "ts":1774922828979074, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.EnterpriseServices-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":26, "ts":1774922828979227, "dur":473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828952783, "dur":12115, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828964899, "dur":6697, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828971604, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828971803, "dur":503, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/UnityEngine.PhysicsModule-FeaturesChecked.txt_2kc2.info" }}
-,{ "pid":12345, "tid":27, "ts":1774922828972308, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/StreamingAssets/RuntimeActionBindings.json" }}
-,{ "pid":12345, "tid":27, "ts":1774922828972410, "dur":4190, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828976691, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.NVIDIAModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":27, "ts":1774922828977393, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Collections-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":27, "ts":1774922828977556, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828978080, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll" }}
-,{ "pid":12345, "tid":27, "ts":1774922828978157, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828978339, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestWWWModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":27, "ts":1774922828978736, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.HierarchyCoreModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":27, "ts":1774922828979067, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1774922828979183, "dur":505, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828952136, "dur":11486, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828963624, "dur":472, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828964096, "dur":416, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828964512, "dur":596, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828965108, "dur":7068, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828972225, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":28, "ts":1774922828972400, "dur":4532, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828976932, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.WindModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":28, "ts":1774922828977197, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.DocCodeExamples-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":28, "ts":1774922828977250, "dur":976, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1774922828979072, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Meta.XR.ImmersiveDebugger-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":28, "ts":1774922828979222, "dur":504, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1774922828952870, "dur":12035, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1774922828964905, "dur":7066, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1774922828972097, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":29, "ts":1774922828972183, "dur":234, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":29, "ts":1774922828972418, "dur":5053, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1774922828977553, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InsightsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":29, "ts":1774922828977786, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Burst-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":29, "ts":1774922828977879, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1774922828978259, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.Core.Runtime.Shared-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":29, "ts":1774922828978374, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VectorGraphicsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":29, "ts":1774922828978699, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.UnifiedRayTracing.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":29, "ts":1774922828979104, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Drawing-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":29, "ts":1774922828979365, "dur":337, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828952926, "dur":11988, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828964914, "dur":6612, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828972073, "dur":379, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828972454, "dur":5013, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828977668, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Numerics-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":30, "ts":1774922828977857, "dur":179, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":30, "ts":1774922828978142, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828978297, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":30, "ts":1774922828978521, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PhysicsBackendPhysXModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":30, "ts":1774922828978811, "dur":265, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1774922828979131, "dur":548, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1774922828952964, "dur":11961, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1774922828964925, "dur":7160, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1774922828972169, "dur":287, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":31, "ts":1774922828972457, "dur":4407, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1774922828976865, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.MultiplayerModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":31, "ts":1774922828977419, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConnectModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":31, "ts":1774922828978130, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ARModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":31, "ts":1774922828978300, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SharedInternalsModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":31, "ts":1774922828978534, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.RenderPipelines.Universal.Config.Runtime-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":31, "ts":1774922828978791, "dur":379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Runtime.Serialization-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":31, "ts":1774922828979239, "dur":477, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828953000, "dur":11938, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828964938, "dur":6826, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828972047, "dur":413, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828972465, "dur":4662, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828977127, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.XR.OpenXR.Features.MetaQuestSupport-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":32, "ts":1774922828977255, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":32, "ts":1774922828977528, "dur":72, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Meta.XR.BuildingBlocks.AIBlocks-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":32, "ts":1774922828977701, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Security-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":32, "ts":1774922828978256, "dur":67, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/ziang/Desktop/Revowave_Visualizer/App/GEDI_Visualization_Data/Managed/Unity.XR.Management.dll" }}
-,{ "pid":12345, "tid":32, "ts":1774922828978403, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ParticleSystemModule-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":32, "ts":1774922828978643, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Collections.LowLevel.ILSupport-FeaturesChecked.txt" }}
-,{ "pid":12345, "tid":32, "ts":1774922828978727, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828978852, "dur":365, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1774922828979221, "dur":465, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1774922828988793, "dur":1189, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1774926309476234, "dur":18166, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1774926309494404, "dur":144, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1774926309494586, "dur":67, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1774926309494658, "dur":3780, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1774926309498439, "dur":520683, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1774926310019206, "dur":834, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1774926309494606, "dur":3838, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1774926309498532, "dur":79, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"../../../../../../Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport" }}
+,{ "pid":12345, "tid":1, "ts":1774926309498611, "dur":149, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"../../../../../../Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/Resources/BuildPipeline" }}
+,{ "pid":12345, "tid":1, "ts":1774926309498760, "dur":64, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport" }}
+,{ "pid":12345, "tid":1, "ts":1774926309498824, "dur":266, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/MonoBleedingEdge/etc" }}
+,{ "pid":12345, "tid":1, "ts":1774926309499120, "dur":120, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/Resources/BuildPipeline" }}
+,{ "pid":12345, "tid":1, "ts":1774926309499240, "dur":825, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/Resources/Scripting/il2cpp/build/deploy" }}
+,{ "pid":12345, "tid":1, "ts":1774926309500065, "dur":3730, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"/Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents/Resources/Scripting/il2cpp/libil2cpp" }}
+,{ "pid":12345, "tid":1, "ts":1774926309503795, "dur":58, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Assets/StreamingAssets" }}
+,{ "pid":12345, "tid":1, "ts":1774926309503853, "dur":71, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Library/PlayerDataCache/OSXUniversal2/Data" }}
+,{ "pid":12345, "tid":1, "ts":1774926309503924, "dur":67, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Temp/StagingArea/Data/UnitySubsystems" }}
+,{ "pid":12345, "tid":1, "ts":1774926309498446, "dur":5552, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1774926309505832, "dur":127, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309505983, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.BuildingBlocks.AIBlocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309506071, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.BuildingBlocks.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309506177, "dur":210, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.EnvironmentDepth.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309506402, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.ImmersiveDebugger.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309506556, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.MultiplayerBlocks.Shared.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309506620, "dur":371, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.Interaction.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309506992, "dur":53, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.Interaction.OVR.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309507086, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.Interaction.Samples.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309507211, "dur":368, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.VR.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309507580, "dur":128, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309507712, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309507879, "dur":344, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309508225, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309508331, "dur":251, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309508584, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309508642, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309508695, "dur":362, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509059, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509157, "dur":107, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509313, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509415, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509490, "dur":252, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509743, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509802, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309509963, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510040, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.UnifiedRayTracing.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510109, "dur":205, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510364, "dur":159, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510574, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARFoundation.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510689, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARFoundation.InternalUtils.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510746, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARFoundation.VisualScripting.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510805, "dur":104, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARSubsystems.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510911, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.CompositionLayers.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309510985, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.CompositionLayers.UIInteraction.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309511037, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.CoreUtils.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309511143, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309511271, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309511371, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.MockRuntime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309511570, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.Simulation.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309511707, "dur":112, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1774926309512387, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/artifacts/UnityLinkerInputs/EditorToUnityLinkerData.json" }}
+,{ "pid":12345, "tid":1, "ts":1774926309503998, "dur":9368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker /Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/artifacts/unitylinker_hph0.traceevents" }}
+,{ "pid":12345, "tid":1, "ts":1774926309513747, "dur":116, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1774926310013746, "dur":692, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1774926309529517, "dur":485301, "ph":"X", "name": "UnityLinker",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/artifacts/unitylinker_hph0.traceevents" }}
+,{ "pid":12345, "tid":2, "ts":1774926309494610, "dur":3838, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309498455, "dur":438, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309498893, "dur":658, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309499551, "dur":651, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309500202, "dur":532, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309500734, "dur":3282, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504046, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504213, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504389, "dur":111, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504522, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504639, "dur":69, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504739, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504830, "dur":72, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1774926309504962, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1774926309505123, "dur":134, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1774926309505911, "dur":469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1774926309506486, "dur":68, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1774926309506565, "dur":512571, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309494620, "dur":3838, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309498460, "dur":305, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309498765, "dur":695, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309499460, "dur":648, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309500108, "dur":590, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309500698, "dur":3333, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504117, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504180, "dur":63, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504393, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504463, "dur":114, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504618, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504716, "dur":78, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504799, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1774926309504857, "dur":86, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505067, "dur":86, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505187, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/MainMenu.nib/designable.nib" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505273, "dur":85, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/MainMenu.nib/designable.nib" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505393, "dur":69, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"WriteText /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Info.plist" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505479, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505529, "dur":97, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505645, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/StreamingAssets/RuntimeActionBindings.json" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505852, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libmonobdwgc-2.0.dylib" }}
+,{ "pid":12345, "tid":3, "ts":1774926309506562, "dur":124, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libmonobdwgc-2.0.dylib" }}
+,{ "pid":12345, "tid":3, "ts":1774926309505975, "dur":717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libmonobdwgc-2.0.dylib" }}
+,{ "pid":12345, "tid":3, "ts":1774926309506695, "dur":512451, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309494626, "dur":3839, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309498467, "dur":469, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309498936, "dur":651, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309499587, "dur":660, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309500247, "dur":494, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309500741, "dur":3277, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309504025, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1774926309504188, "dur":478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MacOSCodeSignDylibCopy /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/PlugIns/XRSimulationSubsystem.bundle" }}
+,{ "pid":12345, "tid":4, "ts":1774926309504666, "dur":69, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"MacOSCodeSignDylibCopy /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/PlugIns/XRSimulationSubsystem.bundle" }}
+,{ "pid":12345, "tid":4, "ts":1774926309504772, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1774926309504837, "dur":71, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1774926309504946, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libMonoPosixHelper.dylib" }}
+,{ "pid":12345, "tid":4, "ts":1774926309505120, "dur":69, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libMonoPosixHelper.dylib" }}
+,{ "pid":12345, "tid":4, "ts":1774926309505773, "dur":551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libMonoPosixHelper.dylib" }}
+,{ "pid":12345, "tid":4, "ts":1774926309506407, "dur":72, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1774926309506627, "dur":341, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/GEDI_Visualization_bxyv.info" }}
+,{ "pid":12345, "tid":4, "ts":1774926309506968, "dur":512162, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309494635, "dur":3842, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309498481, "dur":756, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309499237, "dur":618, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309499855, "dur":694, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309500549, "dur":124, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309500674, "dur":3327, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309504155, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library/PlayerDataCache/OSXUniversal2/Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1774926309505981, "dur":164, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.BuildingBlocks.AIBlocks.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309506148, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.BuildingBlocks.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309506284, "dur":92, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.EnvironmentDepth.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309506378, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.ImmersiveDebugger.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309506556, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Meta.XR.MultiplayerBlocks.Shared.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309506619, "dur":363, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.Interaction.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309506984, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.Interaction.OVR.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309507083, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.Interaction.Samples.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309507209, "dur":367, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Oculus.VR.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309507579, "dur":134, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309507714, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309507878, "dur":346, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309508225, "dur":53, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309508280, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.004.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309508333, "dur":250, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309508584, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309508641, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309508699, "dur":353, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509055, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509155, "dur":108, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509265, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509315, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509416, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509489, "dur":249, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509744, "dur":54, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509800, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309509964, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510043, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.UnifiedRayTracing.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510112, "dur":202, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510366, "dur":159, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510526, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510578, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARFoundation.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510689, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARFoundation.InternalUtils.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510748, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARFoundation.VisualScripting.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510807, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.ARSubsystems.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510913, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.CompositionLayers.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309510987, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.CompositionLayers.UIInteraction.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309511040, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.CoreUtils.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309511145, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309511271, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309511370, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.OpenXR.Features.MockRuntime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309511570, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/Unity.XR.Simulation.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309511704, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Research/Revowave_Visualization/Unity/GEDI_Visualization/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1774926309504055, "dur":8272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/MacStandalonePlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1774926309512502, "dur":269, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1774926309513009, "dur":176533, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/MacStandalonePlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1774926309691112, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1774926309691109, "dur":63, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1774926309690847, "dur":337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1774926309691186, "dur":327967, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309494642, "dur":3845, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309498491, "dur":732, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309499223, "dur":615, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309499838, "dur":680, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309500518, "dur":239, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309500757, "dur":3283, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504041, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504194, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MacOSCodeSignDylibCopy /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/PlugIns/libUnityARFoundationMeta.dylib" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504359, "dur":70, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"MacOSCodeSignDylibCopy /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/PlugIns/libUnityARFoundationMeta.dylib" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504434, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504515, "dur":149, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504677, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504742, "dur":80, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504846, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1774926309504914, "dur":66, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505028, "dur":64, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505131, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/DefaultPreferences.plist" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505251, "dur":101, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/DefaultPreferences.plist" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505375, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/MainMenu.nib/keyedobjects.nib" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505465, "dur":69, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/MainMenu.nib/keyedobjects.nib" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505559, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/UnitySubsystems/libUnityARFoundationMeta/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505643, "dur":81, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/UnitySubsystems/libUnityARFoundationMeta/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505862, "dur":370, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Assets/StreamingAssets/path.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309505789, "dur":443, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/StreamingAssets/path.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309506232, "dur":148, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/StreamingAssets/path.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309506744, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/StreamingAssets/path.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309506735, "dur":134, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/StreamingAssets/path.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309506498, "dur":378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/StreamingAssets/path.json" }}
+,{ "pid":12345, "tid":6, "ts":1774926309506879, "dur":512273, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309494648, "dur":3849, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309498499, "dur":734, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309499233, "dur":619, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309499852, "dur":701, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309500553, "dur":3447, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504022, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MergeApplePrivacyManifests Library/Bee/artifacts/MacStandalonePlayerBuildProgram/PrivacyInfo.xcprivacy (+1 other)" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504082, "dur":270, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504396, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504508, "dur":106, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504614, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504689, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504769, "dur":76, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1774926309504865, "dur":249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libmono-native.dylib" }}
+,{ "pid":12345, "tid":7, "ts":1774926309505114, "dur":63, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libmono-native.dylib" }}
+,{ "pid":12345, "tid":7, "ts":1774926309505777, "dur":581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/libmono-native.dylib" }}
+,{ "pid":12345, "tid":7, "ts":1774926309506368, "dur":64, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1774926309506501, "dur":59, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Resources/Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1774926309506560, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1774926309506682, "dur":512458, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1774926309494655, "dur":3845, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1774926309498500, "dur":745, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1774926309499245, "dur":636, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1774926309499881, "dur":680, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1774926309500561, "dur":3464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1774926309504395, "dur":176, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/UnityPlayer.dylib_hmlx.info" }}
+,{ "pid":12345, "tid":8, "ts":1774926309504572, "dur":415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MacOSCodeSignDylibCopy /Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/UnityPlayer.dylib" }}
+,{ "pid":12345, "tid":8, "ts":1774926309505800, "dur":207835, "ph":"X", "name": "MacOSCodeSignDylibCopy",  "args": { "detail":"/Users/zliu177/Desktop/Revowave_mac/App/Revowave_viz.app/Contents/Frameworks/UnityPlayer.dylib" }}
+,{ "pid":12345, "tid":8, "ts":1774926309713683, "dur":305494, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1774926310022622, "dur":225, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
