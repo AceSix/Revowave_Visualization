@@ -47,6 +47,7 @@ public class DataManager : MonoBehaviour
         Params.referenceCenter.y = referenceElevation;
         Params.referenceCenter.z = referenceLatitude;
 
+        Debug.Log("Reference: " + Params.referenceCenter);
         //// load data
         this.footprints = BinaryParser.Load(config.footprints_bin);
         this.clusters = BinaryParser.Load(config.clusters_bin);

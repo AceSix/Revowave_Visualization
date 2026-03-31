@@ -138,6 +138,27 @@ public class TerrainManager : MonoBehaviour
         }
     }
 
+    private void AddBoundaryPoint(
+        float latitude,
+        float longitude,
+        float elevation,
+        Dictionary<Vector2Int, TerrainPoint> terrainPoints)
+    {
+        Vector3 position = Params.LatLong2Unity(latitude, longitude, elevation);
+
+        Vector2Int gridKey = new Vector2Int(
+            Mathf.RoundToInt(position.x * 1000),
+            Mathf.RoundToInt(position.z * 1000)
+        );
+
+        terrainPoints[gridKey] = new TerrainPoint(
+            position,
+            latitude,
+            longitude,
+            elevation
+        );
+    }
+
     public void CreateTerrainMeshDELNET(List<Footprint> footprints)
     {
         Dictionary<Vector2Int, TerrainPoint> terrainPoints = new Dictionary<Vector2Int, TerrainPoint>();
@@ -166,6 +187,30 @@ public class TerrainManager : MonoBehaviour
             );
         }
 
+        // get a default low elevation value to use for points without data
+        // var ys = footprints.Select(p => p.elevation).OrderBy(y => y).ToList();
+        // int idx = Mathf.FloorToInt(0.1f * ys.Count);
+        // float lowY = ys[idx];
+        // Debug.Log($"Low elevation for boundary points: {lowY} (10th percentile of footprint elevations)");
+
+        // float minLon = dataManager.geoBounds.x;
+        // float maxLon = dataManager.geoBounds.y;
+        // float minLat = dataManager.geoBounds.z;
+        // float maxLat = dataManager.geoBounds.w;
+        // int edgeCount = Mathf.Max(2, Mathf.RoundToInt(Mathf.Sqrt(footprints.Count)));
+        // for (int i = 0; i < edgeCount; i++)
+        // {
+        //     float t = (edgeCount == 1) ? 0f : (float)i / (edgeCount - 1);
+
+        //     AddBoundaryPoint(minLat, Mathf.Lerp(minLon, maxLon, t), lowY, terrainPoints);
+        //     AddBoundaryPoint(maxLat, Mathf.Lerp(minLon, maxLon, t), lowY, terrainPoints);
+
+        //     AddBoundaryPoint(Mathf.Lerp(minLat, maxLat, t), minLon, lowY, terrainPoints);
+        //     AddBoundaryPoint(Mathf.Lerp(minLat, maxLat, t), maxLon, lowY, terrainPoints);
+        // }
+
+
+
         if (terrainPoints.Count < 3)
         {
             Debug.LogWarning("Not enough points for triangulation (minimum 3 required)!");
@@ -184,6 +229,10 @@ public class TerrainManager : MonoBehaviour
             pointMap[id] = point;
             id++;
         }
+
+
+
+
         
         // Debug.Log($"Geographic bounds - Lat: {minLat} to {maxLat}, Lon: {minLon} to {maxLon}");
 

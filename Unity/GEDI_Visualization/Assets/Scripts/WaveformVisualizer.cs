@@ -41,6 +41,7 @@ public partial class WaveformVisualizer : MonoBehaviour
 
             dataManager.LoadData(appConfig);
 
+
             VisualizeData(this.dataManager.GetFootprints(),
                           this.dataManager.GetSubclusters(),
                           this.dataManager.GetClusters());
